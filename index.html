@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompted Wisdom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+</head>
+<body>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a class="site-title" href="#welcome">Prompted Wisdom</a>
+      <div class="site-tagline">Timeless ideas, machine-rendered.</div>
+    </div>
+
+    <ul class="chapter-list">
+      <li class="chapter-item">
+        <a href="#welcome">Welcome</a>
+      </li>
+      <li class="chapter-item">
+        <a href="#about">About</a>
+      </li>
+      <li class="chapter-item">
+        <a href="#stats">Statistics</a>
+      </li>
+    </ul>
+
+    <hr class="sidebar-divider">
+
+    <ol class="chapter-list">
+      <li class="chapter-item">
+        <a href="#chapter/greatest-thinkers">What the Greatest Thinkers Taught Us</a>
+      </li>
+      <li class="chapter-item">
+        <a href="#chapter/knowing-yourself">On Knowing Yourself</a>
+      </li>
+      <li class="chapter-item">
+        <a href="#chapter/relationships-and-love">On Relationships and Love</a>
+      </li>
+      <li class="chapter-item">
+        <a href="#chapter/work-and-purpose">On Work and Purpose</a>
+      </li>
+      <li class="chapter-item">
+        <a href="#chapter/suffering-and-resilience">On Suffering and Resilience</a>
+      </li>
+      <li class="chapter-item">
+        <a href="#chapter/money-and-security">On Money and Security</a>
+      </li>
+      <li class="chapter-item">
+        <a href="#chapter/time-and-mortality">On Time and Mortality</a>
+      </li>
+      <li class="chapter-item">
+        <a href="#chapter/society-and-place">On Society and Your Place in It</a>
+      </li>
+      <li class="chapter-item">
+        <a href="#chapter/happiness-and-meaning">On Happiness and Meaning</a>
+      </li>
+      <li class="chapter-item">
+        <a href="#chapter/letter-to-you">A Letter to You</a>
+      </li>
+    </ol>
+
+    <div class="sidebar-footer">
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-toggle-icon">◑</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="content">
+
+    <!-- ── Welcome view ───────────────────────────────────── -->
+    <article class="welcome" id="view-welcome">
+      <div class="welcome-wordmark">Prompted Wisdom</div>
+
+      <h1 class="welcome-hero">The ideas in every self-help book you've ever read are not new — and that's the most reassuring thing about them.</h1>
+
+      <div class="welcome-body">
+        <p>The concepts that keep resurfacing — how to live with uncertainty, how to find meaning, how to face loss — were first worked out roughly 2,500 years ago, across Ancient Greece, India, and China. The Stoics, the Buddhists, the Confucians didn't know about each other, but they were asking the same questions and arriving at strikingly similar answers. Scholars have returned to this material for centuries. So have ordinary people, in difficult moments, looking for something solid to hold onto. Every self-improvement book, every thoughtful podcast, every philosophy course eventually leads back to the same wells.</p>
+
+        <p>Large language models were trained on vast amounts of human writing — including, almost certainly, the public domain works of the thinkers who shaped these ideas. Plato, Marcus Aurelius, the Upanishads, Montaigne. When you ask a model to distill this material, something interesting happens. The results aren't coherent because the model is wise. They're coherent because the source material is, and because it has been refined over millennia.</p>
+
+        <p>This is a small experiment and an open invitation. We gave the same carefully constructed prompt to several leading models, under identical conditions, and asked each one to write a concise guide across ten themes — the kind of overview you could actually read and carry with you. Concise by design: easier to read, and a fair test across models. The chapters are short enough to explore in a sitting, and each one points back to the original sources if you want to go further. That's the real goal — not to replace those works, but to make them feel approachable.</p>
+      </div>
+
+      <div class="welcome-method">
+        <p>Same prompt, word for word, across every model. Temperature set to zero. Every response stored with full provenance so the work can be verified or reproduced. <a href="#about">Full methodology →</a></p>
+      </div>
+    </article>
+
+    <!-- ── About view ─────────────────────────────────────── -->
+    <article class="welcome" id="view-about" style="display:none">
+      <div class="welcome-wordmark">About</div>
+
+      <h1 class="welcome-hero">A small experiment in ancient wisdom and modern AI.</h1>
+
+      <div class="welcome-body">
+
+        <h2 class="about-heading">The project</h2>
+        <p>Prompted Wisdom is an open experiment. The goal is simple: take the core themes of human wisdom — the ones that have been written about for 2,500 years — and ask several leading AI models to distill them, under identical conditions, into something readable. Then compare the results. The chapters are intentionally concise: short enough to read in a sitting, specific enough to point you toward the original sources.</p>
+
+        <h2 class="about-heading">The methodology</h2>
+        <p>Every chapter is generated from the same prompt, word for word, across every model. Temperature is set to zero to minimise variation within a model. Token limits are fixed so no model wins by writing more. No system prompts, no extra instructions — one clean input. Each response is stored with full metadata: model version, generation timestamp, token counts, and a SHA-256 hash of the raw output so the content can be verified against what the model actually produced.</p>
+        <p>The full prompt and all API parameters are documented in <a href="PROMPT.md" target="_blank">PROMPT.md</a> in the GitHub repository.</p>
+
+        <h2 class="about-heading">The sources</h2>
+        <p>Every resource linked from this site is free to access, distraction-free, and points directly to the text — no paywalls, no algorithmic feeds, no recommendation engines. Primary sources come from <a href="https://standardebooks.org" target="_blank" rel="noopener">Standard Ebooks</a>, <a href="https://www.gutenberg.org" target="_blank" rel="noopener">Project Gutenberg</a>, <a href="https://archive.org" target="_blank" rel="noopener">Internet Archive</a>, <a href="https://wikisource.org" target="_blank" rel="noopener">Wikisource</a>, and <a href="https://librivox.org" target="_blank" rel="noopener">LibriVox</a>. Reference entries come from the <a href="https://plato.stanford.edu" target="_blank" rel="noopener">Stanford Encyclopedia of Philosophy</a>.</p>
+
+        <h2 class="about-heading">Contributing</h2>
+        <p>[Placeholder — contribution guidelines to be written once METHODOLOGY.md is finalised. Will cover: how to run the generation script, how to submit a new model's output via pull request, what the validation script checks, and what the approval criteria are for new models.]</p>
+
+        <h2 class="about-heading">The repository</h2>
+        <p>All content, methodology, and source code are publicly available. <a href="#">View on GitHub →</a></p>
+
+        <h2 class="about-heading">Built by</h2>
+        <p>[Placeholder — your name / handle / link here.]</p>
+
+      </div>
+    </article>
+
+    <!-- ── Statistics view ────────────────────────────────── -->
+    <article class="welcome" id="view-stats" style="display:none">
+      <div class="welcome-wordmark">Statistics</div>
+      <h1 class="welcome-hero">How do the models compare?</h1>
+      <p class="stats-notice">All data below is placeholder — generated from dummy values for design purposes. This page will populate automatically from content file metadata once chapters are generated.</p>
+
+      <div class="stats-cards">
+        <div class="stats-card">
+          <div class="stats-card-value">3</div>
+          <div class="stats-card-label">Models</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card-value">10</div>
+          <div class="stats-card-label">Chapters</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card-value">18,450</div>
+          <div class="stats-card-label">Tokens generated</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card-value">674</div>
+          <div class="stats-card-label">Avg words / chapter</div>
+        </div>
+      </div>
+
+      <h2 class="about-heading">Average output length by model</h2>
+      <p class="stats-caption">Mean word count per chapter across all ten themes.</p>
+      <div class="chart-wrap">
+        <canvas id="chart-avg"></canvas>
+      </div>
+
+      <h2 class="about-heading">Word count by chapter</h2>
+      <p class="stats-caption">How each model approached the length target across five sample chapters.</p>
+      <div class="chart-wrap chart-wrap--tall">
+        <canvas id="chart-chapters"></canvas>
+      </div>
+    </article>
+
+    <!-- ── Chapter view (dynamic) ─────────────────────────── -->
+    <article class="chapter" id="view-chapter" style="display:none"></article>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

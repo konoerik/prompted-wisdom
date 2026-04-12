@@ -1,0 +1,509 @@
+/* ============================================================
+   PROMPTED WISDOM — Modern variant
+   Theme: CSS custom properties, data-theme="light|dark"
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Light theme (default) ───────────────────────────────── */
+:root,
+[data-theme="light"] {
+  --bg:             #ffffff;
+  --bg-sidebar:     #f7f7f5;
+  --bg-resources:   #f4f4f1;
+  --border:         #e8e8e3;
+
+  --accent:         #2563eb;
+  --accent-subtle:  #eff6ff;
+
+  --text:           #111110;
+  --text-secondary: #6b6b63;
+  --text-placeholder: #b0b0a8;
+
+  --tab-active-bg:  #111110;
+  --tab-active-fg:  #ffffff;
+
+  color-scheme: light;
+}
+
+/* ── Dark theme ──────────────────────────────────────────── */
+[data-theme="dark"] {
+  --bg:             #111110;
+  --bg-sidebar:     #0d0d0c;
+  --bg-resources:   #161614;
+  --border:         #2a2a26;
+
+  --accent:         #60a5fa;
+  --accent-subtle:  #1e3a5f;
+
+  --text:           #f0f0ec;
+  --text-secondary: #8a8a80;
+  --text-placeholder: #3a3a34;
+
+  --tab-active-bg:  #f0f0ec;
+  --tab-active-fg:  #111110;
+
+  color-scheme: dark;
+}
+
+/* ── Tokens (theme-independent) ─────────────────────────── */
+:root {
+  --sidebar-w:    260px;
+  --content-max:  680px;
+
+  --font-ui:   'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Lora', 'Georgia', serif;
+}
+
+/* ── Base ────────────────────────────────────────────────── */
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  display: flex;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────── */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-w);
+  height: 100vh;
+  background: var(--bg-sidebar);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.sidebar-header {
+  padding: 1.75rem 1.5rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-title {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+
+.site-tagline {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ── Chapter list ────────────────────────────────────────── */
+.chapter-list {
+  list-style: none;
+  flex: 1;
+  padding: 0.75rem 0;
+}
+
+
+.chapter-item a {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.45rem 1.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  line-height: 1.4;
+  transition: color 0.12s ease, background 0.12s ease;
+  border-radius: 0;
+}
+
+.chapter-item a:hover {
+  color: var(--text);
+  background: var(--border);
+}
+
+.chapter-item.active a {
+  color: var(--text);
+  font-weight: 500;
+  background: var(--accent-subtle);
+  border-right: 2px solid var(--accent);
+}
+
+
+/* ── Sidebar footer: theme button ───────────────────────── */
+.sidebar-footer {
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ── Theme toggle ────────────────────────────────────────── */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.65rem;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: all 0.12s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+  border-color: var(--text-secondary);
+}
+
+.theme-toggle-icon {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+/* ── Main content ────────────────────────────────────────── */
+.content {
+  margin-left: var(--sidebar-w);
+  flex: 1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 3rem 6rem;
+}
+
+.chapter {
+  width: 100%;
+  max-width: var(--content-max);
+  animation: fadein 0.25s ease;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Chapter header ──────────────────────────────────────── */
+.chapter-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.chapter-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.chapter-title {
+  font-family: var(--font-body);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.chapter-meta {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+/* ── Body text ───────────────────────────────────────────── */
+.chapter-body {
+  margin-bottom: 3.5rem;
+}
+
+.chapter-body p {
+  font-size: 1.05rem;
+  color: var(--text);
+  margin-bottom: 1.4rem;
+  max-width: 65ch;
+}
+
+.chapter-body p.lead {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.8;
+  border-left: 3px solid var(--accent);
+  padding-left: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.chapter-body h2 {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 2.5rem 0 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.chapter-body em {
+  font-style: italic;
+}
+
+/* ── Resources ───────────────────────────────────────────── */
+.resources {
+  background: var(--bg-resources);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.75rem 2rem;
+}
+
+.resources-heading {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+.resources-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.resource-group-label {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-placeholder);
+  margin-bottom: 0.4rem;
+}
+
+.resource-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.resource-list a {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.12s ease;
+}
+
+.resource-list a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.resource-source {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  margin-left: 0.35rem;
+}
+
+/* ── Sidebar divider ─────────────────────────────────────── */
+.sidebar-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0.5rem 1.5rem;
+}
+
+/* ── Welcome view ────────────────────────────────────────── */
+.welcome {
+  width: 100%;
+  max-width: var(--content-max);
+  animation: fadein 0.25s ease;
+}
+
+.welcome-wordmark {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-placeholder);
+  margin-bottom: 2rem;
+}
+
+.welcome-hero {
+  font-family: var(--font-body);
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 2.25rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.welcome-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.welcome-body p {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text);
+}
+
+/* ── Statistics page ─────────────────────────────────────── */
+.stats-notice {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--text-placeholder);
+  background: var(--bg-resources);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.stats-card {
+  background: var(--bg-resources);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.stats-card-value {
+  font-family: var(--font-ui);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.stats-card-label {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.stats-caption {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.chart-wrap {
+  position: relative;
+  height: 220px;
+  margin-bottom: 3rem;
+}
+
+.chart-wrap--tall {
+  height: 280px;
+}
+
+/* ── About headings ──────────────────────────────────────── */
+.about-heading {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 2rem 0 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.welcome-method {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.welcome-method p {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.welcome-method a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.welcome-method a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* ── Mobile ──────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 2rem 1.25rem 4rem;
+  }
+
+  .chapter-title {
+    font-size: 1.7rem;
+  }
+}

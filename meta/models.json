@@ -1,0 +1,48 @@
+{
+  "models": [
+    {
+      "id": "anthropic/claude-sonnet-4-5",
+      "openrouter_id": "anthropic/claude-sonnet-4.5",
+      "display": "Claude",
+      "slug": "claude-sonnet-4",
+      "provider": "Anthropic",
+      "via": "openrouter",
+      "approved": true,
+      "approved_date": "2026-04-10",
+      "notes": "Claude Sonnet 4.5 via OpenRouter"
+    },
+    {
+      "id": "openai/gpt-4o",
+      "openrouter_id": "openai/gpt-4o",
+      "display": "GPT-4o",
+      "slug": "gpt-4o",
+      "provider": "OpenAI",
+      "via": "openrouter",
+      "approved": true,
+      "approved_date": "2026-04-11",
+      "notes": "GPT-4o via OpenRouter"
+    },
+    {
+      "id": "google/gemini-2.0-flash",
+      "openrouter_id": "google/gemini-2.0-flash-001",
+      "display": "Gemini",
+      "slug": "gemini-2-flash",
+      "provider": "Google",
+      "via": "openrouter",
+      "approved": true,
+      "approved_date": "2026-04-11",
+      "notes": "Gemini 2.0 Flash via OpenRouter"
+    },
+    {
+      "id": "mistralai/mistral-large-2411",
+      "openrouter_id": "mistralai/mistral-large-2411",
+      "display": "Mistral",
+      "slug": "mistral-large",
+      "provider": "Mistral AI",
+      "via": "openrouter",
+      "approved": true,
+      "approved_date": "2026-04-11",
+      "notes": "Mistral Large 2411 via OpenRouter"
+    }
+  ]
+}
