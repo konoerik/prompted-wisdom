@@ -1,3 +1,24 @@
+# Claude / local tooling
 .claude/archive/
-.env
 .venv/
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if local tooling is added)
+node_modules/
+npm-debug.log*
+
+# Env / secrets
+.env
+.env.local
+
+# Logs
+*.log
