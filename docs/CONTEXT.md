@@ -1,8 +1,8 @@
 # Context
 <!-- Updated by /wrap at session end. Edit manually if needed. Keep it under 8 lines. -->
 
-**Current focus:** Post-launch polish — mobile experience and LibriVox link verification.
-**Last session:** Site is live at konoerik.github.io/prompted-wisdom; fixed Jekyll blocking .md fetches (.nojekyll), caught and pushed uncommitted foreword formatting.
-**Blocking:** Task #1 — LibriVox links need manual verification. Task #2 — mobile improvements pending.
-**Next action:** Verify LibriVox links (Task #1), then tackle mobile layout (Task #2).
+**Current focus:** LibriVox link verification (manual check still pending).
+**Last session:** Added next/prev chapter nav cards, collapsible hamburger nav for mobile, and `make serve-mobile` for local network testing; fixed iOS Safari sticky-positioning bug.
+**Blocking:** LibriVox links require manual verification in a browser — can't be automated.
+**Next action:** Verify each LibriVox link on the Resources page and fix any broken slugs (Task #1).
 <!-- wrapped: 2026-04-13 -->

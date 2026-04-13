@@ -4,8 +4,6 @@
 <!-- Current sprint items. Keep this short — 5-10 items max.
      If it grows beyond that, move lower-priority items to Backlog. -->
 - [ ] Verify LibriVox links on Resources page (manual check — best-guess slugs used)
-- [ ] Mobile layout improvements
-- [x] Next/previous chapter navigation buttons in chapter content view
 
 
 ## Backlog
@@ -17,6 +15,8 @@
 ## Done
 <!-- Completed items land here temporarily.
      The stop hook archives these to .claude/archive/YYYY-MM.md and clears this section. -->
+- Mobile layout: collapsible hamburger nav; `make serve-mobile` added for local network testing
+- Next/previous chapter navigation cards (two-column, themed, with chapter title)
 - Deployed to GitHub Pages: added .nojekyll to fix .md fetch interception by Jekyll; site live at konoerik.github.io/prompted-wisdom
 - GitHub Pages readiness: favicon (SVG), meta description, Open Graph + Twitter card tags, robots index
 - Added Makefile (install, serve, stats, generate, freeze) and requirements.txt
