@@ -14,6 +14,7 @@
 ## Done
 <!-- Completed items land here temporarily.
      The stop hook archives these to .claude/archive/YYYY-MM.md and clears this section. -->
+- Deployed to GitHub Pages: added .nojekyll to fix .md fetch interception by Jekyll; site live at konoerik.github.io/prompted-wisdom
 - GitHub Pages readiness: favicon (SVG), meta description, Open Graph + Twitter card tags, robots index
 - Added Makefile (install, serve, stats, generate, freeze) and requirements.txt
 - Fixed Resources page stubs: direct Gutenberg ebook IDs + best-guess LibriVox slugs (manual check pending)
