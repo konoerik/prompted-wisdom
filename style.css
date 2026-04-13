@@ -768,6 +768,53 @@ body {
   text-underline-offset: 3px;
 }
 
+/* ── Chapter navigation ──────────────────────────────────── */
+.chapter-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.chapter-nav-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--bg-resources);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: border-color 0.12s ease, background 0.12s ease;
+}
+
+.chapter-nav-card:hover {
+  border-color: var(--text-secondary);
+  background: var(--accent-subtle);
+}
+
+.chapter-nav-card--next {
+  text-align: right;
+}
+
+.chapter-nav-label {
+  font-family: var(--font-ui);
+  font-size: 0.63rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+}
+
+.chapter-nav-title {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
 /* ── Scrollbar ───────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }

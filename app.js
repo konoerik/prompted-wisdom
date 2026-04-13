@@ -108,6 +108,7 @@ function setActiveModel(slug) {
 // ── Chapter loading and rendering ────────────────────────────────────
 
 async function loadChapter(slug) {
+  window.scrollTo(0, 0);
   showStatic('chapter');
   const el = document.getElementById('view-chapter');
   el.innerHTML = '<p style="padding:2rem;font-family:var(--font-ui);font-size:0.85rem;color:var(--text-secondary)">Loading\u2026</p>';
@@ -148,6 +149,7 @@ function renderChapter(raw, slug) {
     </header>
     <div class="chapter-body">${paragraphs}</div>
     ${buildResourcesHtml(fm.resources)}
+    ${buildChapterNavHtml(slug)}
   `;
 }
 
@@ -163,6 +165,30 @@ function renderNotAvailable(slug) {
       <p>This chapter has not been generated yet. Check back later.</p>
     </div>
   `;
+}
+
+function buildChapterNavHtml(slug) {
+  const idx  = CHAPTERS.findIndex(c => c.slug === slug);
+  const prev = CHAPTERS[idx - 1];
+  const next = CHAPTERS[idx + 1];
+
+  if (!prev && !next) return '';
+
+  const prevHtml = prev
+    ? `<a class="chapter-nav-card chapter-nav-card--prev" href="#chapter/${prev.slug}/${activeModel}">
+        <span class="chapter-nav-label">← Previous</span>
+        <span class="chapter-nav-title">${escapeHtml(prev.title)}</span>
+      </a>`
+    : '<span></span>';
+
+  const nextHtml = next
+    ? `<a class="chapter-nav-card chapter-nav-card--next" href="#chapter/${next.slug}/${activeModel}">
+        <span class="chapter-nav-label">Next →</span>
+        <span class="chapter-nav-title">${escapeHtml(next.title)}</span>
+      </a>`
+    : '<span></span>';
+
+  return `<nav class="chapter-nav">${prevHtml}${nextHtml}</nav>`;
 }
 
 function buildResourcesHtml(resources) {

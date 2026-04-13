@@ -3,6 +3,9 @@
 ## Active
 <!-- Current sprint items. Keep this short — 5-10 items max.
      If it grows beyond that, move lower-priority items to Backlog. -->
+- [ ] Verify LibriVox links on Resources page (manual check — best-guess slugs used)
+- [ ] Mobile layout improvements
+- [x] Next/previous chapter navigation buttons in chapter content view
 
 
 ## Backlog
