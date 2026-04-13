@@ -1,6 +1,15 @@
 // app.js — Prompted Wisdom
 
-const MODEL   = 'claude-sonnet-4';
+const MODELS = [
+  { slug: 'claude-sonnet-4', display: 'Claude'  },
+  { slug: 'gpt-4o',          display: 'GPT-4o'  },
+  { slug: 'gemini-2-flash',  display: 'Gemini'  },
+  { slug: 'mistral-large',   display: 'Mistral' },
+];
+
+let activeModel = 'claude-sonnet-4';
+let activeSlug  = null;
+
 const CHAPTERS = [
   { slug: 'greatest-thinkers',        title: 'What the Greatest Thinkers Taught Us', n: 1  },
   { slug: 'knowing-yourself',         title: 'On Knowing Yourself',                   n: 2  },
@@ -34,8 +43,23 @@ function route() {
       break;
     case 'resources': showStatic('resources'); break;
     case 'chapter': {
-      const slug = parts[1];
+      const slug      = parts[1];
+      const modelSlug = parts[2];
+
+      // Normalize old-format URLs (no model slug) → redirect
+      if (slug && !modelSlug) {
+        location.hash = `#chapter/${slug}/${activeModel}`;
+        return;
+      }
+
+      if (modelSlug && MODELS.find(m => m.slug === modelSlug)) {
+        activeModel = modelSlug;
+        updateModelButtons();
+        updateChapterHrefs();
+      }
+
       if (slug) {
+        activeSlug = slug;
         loadChapter(slug);
       } else {
         showStatic('welcome');
@@ -57,6 +81,30 @@ function showStatic(name) {
   });
 }
 
+// ── Model selector ───────────────────────────────────────────────────
+
+function updateChapterHrefs() {
+  document.querySelectorAll('a[data-slug]').forEach(a => {
+    a.href = `#chapter/${a.dataset.slug}/${activeModel}`;
+  });
+}
+
+function updateModelButtons() {
+  document.querySelectorAll('.model-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.model === activeModel);
+  });
+}
+
+function setActiveModel(slug) {
+  if (!MODELS.find(m => m.slug === slug)) return;
+  activeModel = slug;
+  updateModelButtons();
+  updateChapterHrefs();
+  if (activeSlug) {
+    location.hash = `#chapter/${activeSlug}/${activeModel}`;
+  }
+}
+
 // ── Chapter loading and rendering ────────────────────────────────────
 
 async function loadChapter(slug) {
@@ -65,7 +113,7 @@ async function loadChapter(slug) {
   el.innerHTML = '<p style="padding:2rem;font-family:var(--font-ui);font-size:0.85rem;color:var(--text-secondary)">Loading\u2026</p>';
 
   try {
-    const res = await fetch(`content/${MODEL}/${slug}.md`);
+    const res = await fetch(`content/${activeModel}/${slug}.md`);
     if (!res.ok) throw new Error(res.status);
     const raw = await res.text();
     renderChapter(raw, slug);
@@ -295,6 +343,12 @@ function init() {
   if (saved) document.documentElement.dataset.theme = saved;
 
   document.querySelector('.theme-toggle').addEventListener('click', toggleTheme);
+
+  document.querySelectorAll('.model-btn').forEach(btn => {
+    btn.addEventListener('click', () => setActiveModel(btn.dataset.model));
+  });
+
+  updateChapterHrefs(); // Set initial hrefs before first route()
 
   window.addEventListener('hashchange', route);
   route();

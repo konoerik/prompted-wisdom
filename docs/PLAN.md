@@ -14,6 +14,7 @@
 ## Done
 <!-- Completed items land here temporarily.
      The stop hook archives these to .claude/archive/YYYY-MM.md and clears this section. -->
+- Implemented hybrid model toggle: sidebar selector + model slug in URL (`#chapter/slug/model-slug`); select once to read all chapters in a model; shareable per-model links; old-format URLs auto-redirect
 - Updated statistics page with real data: stats.py script, stats.json, model registry table, thinker/tradition entity grid
 - Updated About page caveats: all-model non-determinism, instruction-following failures documented
 - Reviewed and updated welcome page (shortened, broadened scope beyond ancient wisdom)

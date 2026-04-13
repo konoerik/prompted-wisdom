@@ -341,6 +341,52 @@ body {
   margin: 0.5rem 1.5rem;
 }
 
+/* ── Model selector ──────────────────────────────────────── */
+.model-selector {
+  padding: 0.6rem 1.5rem 0.25rem;
+}
+
+.model-selector-label {
+  font-family: var(--font-ui);
+  font-size: 0.63rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-placeholder);
+  margin-bottom: 0.45rem;
+}
+
+.model-btns {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.model-btn {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 500;
+  padding: 0.18rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  line-height: 1.6;
+  transition: all 0.12s ease;
+}
+
+.model-btn:hover {
+  color: var(--text);
+  border-color: var(--text-secondary);
+}
+
+.model-btn.active {
+  background: var(--tab-active-bg);
+  color: var(--tab-active-fg);
+  border-color: var(--tab-active-bg);
+}
+
 /* ── Welcome view ────────────────────────────────────────── */
 .welcome {
   width: 100%;

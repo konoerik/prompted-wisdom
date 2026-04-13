@@ -1,8 +1,8 @@
 # Context
 <!-- Updated by /wrap at session end. Edit manually if needed. Keep it under 8 lines. -->
 
-**Current focus:** Model toggle — allow reader to switch between Claude, GPT-4o, Gemini, Mistral when viewing a chapter.
-**Last session:** Updated About caveats (all-model non-determinism, instruction-following failures); rebuilt statistics page with real data from stats.py/stats.json; added model registry table and thinker/tradition mention counts (entity grid, top 5 per model); subtitle updated; Mistral quality issue documented and accepted as-is per methodology.
-**Blocking:** None — Mistral decision made (document in caveats, don't correct).
-**Next action:** Design and implement the model toggle on the chapter view.
+**Current focus:** Pre-deployment polish — smaller additions and changes before going live.
+**Last session:** Implemented hybrid model toggle: sidebar selector (Claude/GPT-4o/Gemini/Mistral) with model slug encoded in URL (`#chapter/slug/model-slug`); select once, read all 12 chapters; shared links preserve model.
+**Blocking:** None — toggle confirmed working, ready for deployment after remaining small changes.
+**Next action:** Make any final small additions/fixes, then deploy.
 <!-- wrapped: 2026-04-12 -->
