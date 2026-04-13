@@ -29,6 +29,9 @@
       <li class="chapter-item">
         <a href="#stats">Statistics</a>
       </li>
+      <li class="chapter-item">
+        <a href="#resources">Resources</a>
+      </li>
     </ul>
 
     <hr class="sidebar-divider">
@@ -41,16 +44,19 @@
         <a href="#chapter/knowing-yourself">On Knowing Yourself</a>
       </li>
       <li class="chapter-item">
+        <a href="#chapter/virtue-and-character">On Virtue and Character</a>
+      </li>
+      <li class="chapter-item">
         <a href="#chapter/relationships-and-love">On Relationships and Love</a>
       </li>
       <li class="chapter-item">
         <a href="#chapter/work-and-purpose">On Work and Purpose</a>
       </li>
       <li class="chapter-item">
-        <a href="#chapter/suffering-and-resilience">On Suffering and Resilience</a>
+        <a href="#chapter/desire-and-attachment">On Desire and Attachment</a>
       </li>
       <li class="chapter-item">
-        <a href="#chapter/money-and-security">On Money and Security</a>
+        <a href="#chapter/suffering-and-resilience">On Suffering and Resilience</a>
       </li>
       <li class="chapter-item">
         <a href="#chapter/time-and-mortality">On Time and Mortality</a>
@@ -59,7 +65,10 @@
         <a href="#chapter/society-and-place">On Society and Your Place in It</a>
       </li>
       <li class="chapter-item">
-        <a href="#chapter/happiness-and-meaning">On Happiness and Meaning</a>
+        <a href="#chapter/happiness">On Happiness</a>
+      </li>
+      <li class="chapter-item">
+        <a href="#chapter/meaning">On Meaning</a>
       </li>
       <li class="chapter-item">
         <a href="#chapter/letter-to-you">A Letter to You</a>
@@ -79,14 +88,12 @@
     <article class="welcome" id="view-welcome">
       <div class="welcome-wordmark">Prompted Wisdom</div>
 
-      <h1 class="welcome-hero">The ideas in every self-help book you've ever read are not new — and that's the most reassuring thing about them.</h1>
+      <h1 class="welcome-hero">Welcome to Prompted Wisdom</h1>
 
       <div class="welcome-body">
-        <p>The concepts that keep resurfacing — how to live with uncertainty, how to find meaning, how to face loss — were first worked out roughly 2,500 years ago, across Ancient Greece, India, and China. The Stoics, the Buddhists, the Confucians didn't know about each other, but they were asking the same questions and arriving at strikingly similar answers. Scholars have returned to this material for centuries. So have ordinary people, in difficult moments, looking for something solid to hold onto. Every self-improvement book, every thoughtful podcast, every philosophy course eventually leads back to the same wells.</p>
+        <p>The ideas that matter most — how to live, how to find meaning, how to face loss — have been explored by thinkers across every era and culture. We gave the same carefully constructed prompt to several leading AI models and asked each one to distill those ideas across ten themes of human life. Same prompt, identical conditions, each model's response laid out for comparison.</p>
 
-        <p>Large language models were trained on vast amounts of human writing — including, almost certainly, the public domain works of the thinkers who shaped these ideas. Plato, Marcus Aurelius, the Upanishads, Montaigne. When you ask a model to distill this material, something interesting happens. The results aren't coherent because the model is wise. They're coherent because the source material is, and because it has been refined over millennia.</p>
-
-        <p>This is a small experiment and an open invitation. We gave the same carefully constructed prompt to several leading models, under identical conditions, and asked each one to write a concise guide across ten themes — the kind of overview you could actually read and carry with you. Concise by design: easier to read, and a fair test across models. The chapters are short enough to explore in a sitting, and each one points back to the original sources if you want to go further. That's the real goal — not to replace those works, but to make them feel approachable.</p>
+        <p>The chapters are short enough to read in a sitting, and each one points back to the original sources if you want to go further. That's the real goal — not to replace those works, but to make them feel approachable.</p>
       </div>
 
       <div class="welcome-method">
@@ -98,22 +105,38 @@
     <article class="welcome" id="view-about" style="display:none">
       <div class="welcome-wordmark">About</div>
 
-      <h1 class="welcome-hero">A small experiment in ancient wisdom and modern AI.</h1>
+      <h1 class="welcome-hero">An experiment in human wisdom and machine-rendered thought.</h1>
 
       <div class="welcome-body">
 
+        <div class="about-personal-note">
+          <!-- Your personal note about the inspiration for the project goes here -->
+        </div>
+
         <h2 class="about-heading">The project</h2>
-        <p>Prompted Wisdom is an open experiment. The goal is simple: take the core themes of human wisdom — the ones that have been written about for 2,500 years — and ask several leading AI models to distill them, under identical conditions, into something readable. Then compare the results. The chapters are intentionally concise: short enough to read in a sitting, specific enough to point you toward the original sources.</p>
+        <p>Prompted Wisdom asks what happens when you give the same question to every major AI model. We took the themes that have occupied thinkers across every era and culture — how to live, what to value, how to face loss — and asked several leading models to distill them, under identical conditions. Then compared the results.</p>
 
         <h2 class="about-heading">The methodology</h2>
-        <p>Every chapter is generated from the same prompt, word for word, across every model. Temperature is set to zero to minimise variation within a model. Token limits are fixed so no model wins by writing more. No system prompts, no extra instructions — one clean input. Each response is stored with full metadata: model version, generation timestamp, token counts, and a SHA-256 hash of the raw output so the content can be verified against what the model actually produced.</p>
-        <p>The full prompt and all API parameters are documented in <a href="PROMPT.md" target="_blank">PROMPT.md</a> in the GitHub repository.</p>
+        <ul class="about-method-list">
+          <li>Same prompt, word for word, across every model</li>
+          <li>Temperature set to zero to minimise variation within a model</li>
+          <li>Token limits fixed so no model wins by writing more</li>
+          <li>No system prompts, no extra instructions — one clean input</li>
+          <li>One canonical response per model per chapter — not an average or selection across runs</li>
+          <li>Each prompt is run twice to verify determinism; any divergence between runs is noted rather than resolved editorially</li>
+          <li>Each response stored with model version, generation timestamp, token counts, and a SHA-256 hash of the raw output</li>
+        </ul>
 
-        <h2 class="about-heading">The sources</h2>
-        <p>Every resource linked from this site is free to access, distraction-free, and points directly to the text — no paywalls, no algorithmic feeds, no recommendation engines. Primary sources come from <a href="https://standardebooks.org" target="_blank" rel="noopener">Standard Ebooks</a>, <a href="https://www.gutenberg.org" target="_blank" rel="noopener">Project Gutenberg</a>, <a href="https://archive.org" target="_blank" rel="noopener">Internet Archive</a>, <a href="https://wikisource.org" target="_blank" rel="noopener">Wikisource</a>, and <a href="https://librivox.org" target="_blank" rel="noopener">LibriVox</a>. Reference entries come from the <a href="https://plato.stanford.edu" target="_blank" rel="noopener">Stanford Encyclopedia of Philosophy</a>.</p>
+        <h2 class="about-heading">Limitations and caveats</h2>
+        <ul class="about-method-list">
+          <li>All API calls are routed through OpenRouter. Conditions are as identical as that layer allows — not a guarantee of parity with each model's native API.</li>
+          <li>Temperature zero is not deterministic in practice. Running the same prompt twice produces different output across all four models via OpenRouter. Each chapter is a single canonical run; divergence between runs is a known property of the pipeline, not an anomaly.</li>
+          <li>Models do not follow instructions uniformly. Some use markdown despite being told not to. Some invent specific scenes, locations, or named individuals that have no basis in the prompt. Some contain attributions that cannot be verified. These are properties of the model, not editorial choices — and they cannot be corrected without violating the single-run methodology.</li>
+          <li>This project was built with Claude Code. That makes it an inherently partial instrument in one direction, which is worth naming even if it cannot be corrected for. The tool is invaluable; the bias is real.</li>
+        </ul>
 
-        <h2 class="about-heading">Contributing</h2>
-        <p>[Placeholder — contribution guidelines to be written once METHODOLOGY.md is finalised. Will cover: how to run the generation script, how to submit a new model's output via pull request, what the validation script checks, and what the approval criteria are for new models.]</p>
+        <h2 class="about-heading">Further reading</h2>
+        <p>All primary sources linked from this site are freely available in the public domain. <a href="#resources">Browse the Resources page →</a></p>
 
         <h2 class="about-heading">The repository</h2>
         <p>All content, methodology, and source code are publicly available. <a href="https://github.com/konoerik/prompted-wisdom" target="_blank" rel="noopener">View on GitHub →</a></p>
@@ -128,37 +151,208 @@
     <article class="welcome" id="view-stats" style="display:none">
       <div class="welcome-wordmark">Statistics</div>
       <h1 class="welcome-hero">How do the models compare?</h1>
-      <p class="stats-notice">All data below is placeholder — generated from dummy values for design purposes. This page will populate automatically from content file metadata once chapters are generated.</p>
-
       <div class="stats-cards">
         <div class="stats-card">
-          <div class="stats-card-value">3</div>
+          <div class="stats-card-value" id="stat-models">—</div>
           <div class="stats-card-label">Models</div>
         </div>
         <div class="stats-card">
-          <div class="stats-card-value">10</div>
+          <div class="stats-card-value" id="stat-chapters">—</div>
           <div class="stats-card-label">Chapters</div>
         </div>
         <div class="stats-card">
-          <div class="stats-card-value">18,450</div>
+          <div class="stats-card-value" id="stat-tokens">—</div>
           <div class="stats-card-label">Tokens generated</div>
         </div>
         <div class="stats-card">
-          <div class="stats-card-value">674</div>
+          <div class="stats-card-value" id="stat-avg-words">—</div>
           <div class="stats-card-label">Avg words / chapter</div>
         </div>
       </div>
 
+      <h2 class="about-heading">Model registry</h2>
+      <p class="stats-caption">Exact model versions used for generation. All calls routed via OpenRouter.</p>
+      <div class="model-table-wrap">
+        <table class="model-table" id="model-registry-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Model ID</th>
+              <th>Provider</th>
+              <th>Avg words</th>
+            </tr>
+          </thead>
+          <tbody id="model-registry-body"></tbody>
+        </table>
+      </div>
+
       <h2 class="about-heading">Average output length by model</h2>
-      <p class="stats-caption">Mean word count per chapter across all ten themes.</p>
+      <p class="stats-caption">Mean word count per chapter across all twelve chapters.</p>
       <div class="chart-wrap">
         <canvas id="chart-avg"></canvas>
       </div>
 
       <h2 class="about-heading">Word count by chapter</h2>
-      <p class="stats-caption">How each model approached the length target across five sample chapters.</p>
+      <p class="stats-caption">Word count per chapter across all four models.</p>
       <div class="chart-wrap chart-wrap--tall">
         <canvas id="chart-chapters"></canvas>
+      </div>
+
+      <h2 class="about-heading">Most referenced thinkers &amp; traditions</h2>
+      <p class="stats-caption">Top 5 named entities by mention count across all chapters, per model.</p>
+      <div class="entities-grid" id="entities-grid"></div>
+    </article>
+
+    <!-- ── Resources view ───────────────────────────────────── -->
+    <article class="welcome" id="view-resources" style="display:none">
+      <div class="welcome-wordmark">Resources</div>
+      <h1 class="welcome-hero">Further reading</h1>
+
+      <div class="welcome-body">
+        <p>Every work listed here is freely available in the public domain — no paywalls, no accounts required. Audio recordings are from LibriVox, free and volunteer-read.</p>
+      </div>
+
+      <div class="resources-page">
+
+        <h2 class="about-heading">Stoicism</h2>
+        <div class="resource-entries">
+          <div class="resource-entry">
+            <span class="resource-work"><em>Meditations</em> — Marcus Aurelius</span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://librivox.org" target="_blank" rel="noopener" title="Listen">&#127911;</a>
+              <a class="resource-icon" href="https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+          <div class="resource-entry">
+            <span class="resource-work"><em>The Enchiridion</em> — Epictetus</span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://librivox.org" target="_blank" rel="noopener" title="Listen">&#127911;</a>
+              <a class="resource-icon" href="https://standardebooks.org/ebooks/epictetus/the-enchiridion/elizabeth-carter" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+          <div class="resource-entry">
+            <span class="resource-work"><em>On the Shortness of Life</em> — Seneca</span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://librivox.org" target="_blank" rel="noopener" title="Listen">&#127911;</a>
+              <a class="resource-icon" href="https://www.gutenberg.org" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+        </div>
+
+        <h2 class="about-heading">Ancient Greece</h2>
+        <div class="resource-entries">
+          <div class="resource-entry">
+            <span class="resource-work"><em>The Apology</em> — Plato</span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://librivox.org" target="_blank" rel="noopener" title="Listen">&#127911;</a>
+              <a class="resource-icon" href="https://www.gutenberg.org" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+          <div class="resource-entry">
+            <span class="resource-work"><em>The Republic</em> — Plato</span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://standardebooks.org/ebooks/plato/the-republic/benjamin-jowett" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+          <div class="resource-entry">
+            <span class="resource-work"><em>Nicomachean Ethics</em> — Aristotle</span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://librivox.org" target="_blank" rel="noopener" title="Listen">&#127911;</a>
+              <a class="resource-icon" href="https://www.gutenberg.org" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+        </div>
+
+        <h2 class="about-heading">Buddhism</h2>
+        <div class="resource-entries">
+          <div class="resource-entry">
+            <span class="resource-work"><em>The Dhammapada</em></span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://librivox.org" target="_blank" rel="noopener" title="Listen">&#127911;</a>
+              <a class="resource-icon" href="https://www.gutenberg.org" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+        </div>
+
+        <h2 class="about-heading">Taoism</h2>
+        <div class="resource-entries">
+          <div class="resource-entry">
+            <span class="resource-work"><em>Tao Te Ching</em> — Laozi</span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://librivox.org" target="_blank" rel="noopener" title="Listen">&#127911;</a>
+              <a class="resource-icon" href="https://www.gutenberg.org" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+        </div>
+
+        <h2 class="about-heading">Confucianism</h2>
+        <div class="resource-entries">
+          <div class="resource-entry">
+            <span class="resource-work"><em>The Analects</em> — Confucius</span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://www.gutenberg.org" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+        </div>
+
+        <h2 class="about-heading">Indian Philosophy</h2>
+        <div class="resource-entries">
+          <div class="resource-entry">
+            <span class="resource-work"><em>The Bhagavad Gita</em></span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://librivox.org" target="_blank" rel="noopener" title="Listen">&#127911;</a>
+              <a class="resource-icon" href="https://www.gutenberg.org" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+          <div class="resource-entry">
+            <span class="resource-work"><em>The Upanishads</em></span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://www.gutenberg.org" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+        </div>
+
+        <h2 class="about-heading">Essays &amp; Humanism</h2>
+        <div class="resource-entries">
+          <div class="resource-entry">
+            <span class="resource-work"><em>Essays</em> — Michel de Montaigne</span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://librivox.org" target="_blank" rel="noopener" title="Listen">&#127911;</a>
+              <a class="resource-icon" href="https://standardebooks.org/ebooks/michel-de-montaigne/essays/charles-cotton" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+          <div class="resource-entry">
+            <span class="resource-work"><em>Walden</em> — Henry David Thoreau</span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://librivox.org" target="_blank" rel="noopener" title="Listen">&#127911;</a>
+              <a class="resource-icon" href="https://standardebooks.org/ebooks/henry-david-thoreau/walden" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+          <div class="resource-entry">
+            <span class="resource-work"><em>Essays: First Series</em> — Ralph Waldo Emerson</span>
+            <span class="resource-icons">
+              <a class="resource-icon" href="https://librivox.org" target="_blank" rel="noopener" title="Listen">&#127911;</a>
+              <a class="resource-icon" href="https://www.gutenberg.org" target="_blank" rel="noopener" title="Read">&#128218;</a>
+            </span>
+          </div>
+        </div>
+
+        <h2 class="about-heading">Reference</h2>
+        <div class="resource-entries">
+          <div class="resource-entry resource-entry--ref">
+            <span class="resource-work">Stanford Encyclopedia of Philosophy —
+              <a class="resource-ref-link" href="https://plato.stanford.edu/entries/stoicism/" target="_blank" rel="noopener">Stoicism</a>,
+              <a class="resource-ref-link" href="https://plato.stanford.edu/entries/marcus-aurelius/" target="_blank" rel="noopener">Marcus Aurelius</a>,
+              <a class="resource-ref-link" href="https://plato.stanford.edu/entries/epictetus/" target="_blank" rel="noopener">Epictetus</a>,
+              <a class="resource-ref-link" href="https://plato.stanford.edu/entries/plato/" target="_blank" rel="noopener">Plato</a>,
+              <a class="resource-ref-link" href="https://plato.stanford.edu/entries/aristotle/" target="_blank" rel="noopener">Aristotle</a>,
+              <a class="resource-ref-link" href="https://plato.stanford.edu/entries/buddhism/" target="_blank" rel="noopener">Buddhism</a>,
+              <a class="resource-ref-link" href="https://plato.stanford.edu/entries/confucius/" target="_blank" rel="noopener">Confucius</a>,
+              <a class="resource-ref-link" href="https://plato.stanford.edu/entries/laozi/" target="_blank" rel="noopener">Laozi</a>
+            </span>
+          </div>
+        </div>
+
       </div>
     </article>
 

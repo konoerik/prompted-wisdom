@@ -1,0 +1,308 @@
+{
+  "summary": {
+    "models": 4,
+    "chapters": 12,
+    "total_output_tokens": 42822,
+    "avg_words_per_chapter": 701
+  },
+  "by_model": [
+    {
+      "slug": "claude-sonnet-4",
+      "display": "Claude",
+      "model_id": "anthropic/claude-sonnet-4-5",
+      "provider": "Anthropic",
+      "via": "openrouter",
+      "avg_words": 697,
+      "word_counts": [
+        930,
+        701,
+        680,
+        682,
+        717,
+        717,
+        719,
+        691,
+        701,
+        691,
+        695,
+        443
+      ],
+      "top_entities": [
+        {
+          "name": "Stoicism",
+          "count": 21
+        },
+        {
+          "name": "Marcus Aurelius",
+          "count": 18
+        },
+        {
+          "name": "Nietzsche",
+          "count": 13
+        },
+        {
+          "name": "Epictetus",
+          "count": 11
+        },
+        {
+          "name": "Buddhism",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "slug": "gpt-4o",
+      "display": "GPT-4o",
+      "model_id": "openai/gpt-4o",
+      "provider": "OpenAI",
+      "via": "openrouter",
+      "avg_words": 680,
+      "word_counts": [
+        782,
+        715,
+        703,
+        693,
+        677,
+        692,
+        625,
+        674,
+        743,
+        688,
+        700,
+        474
+      ],
+      "top_entities": [
+        {
+          "name": "Frankl",
+          "count": 20
+        },
+        {
+          "name": "Stoicism",
+          "count": 19
+        },
+        {
+          "name": "Montaigne",
+          "count": 15
+        },
+        {
+          "name": "Nietzsche",
+          "count": 15
+        },
+        {
+          "name": "Buddhism",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "slug": "gemini-2-flash",
+      "display": "Gemini",
+      "model_id": "google/gemini-2.0-flash",
+      "provider": "Google",
+      "via": "openrouter",
+      "avg_words": 654,
+      "word_counts": [
+        838,
+        727,
+        613,
+        708,
+        684,
+        667,
+        645,
+        654,
+        645,
+        644,
+        594,
+        423
+      ],
+      "top_entities": [
+        {
+          "name": "Stoicism",
+          "count": 18
+        },
+        {
+          "name": "Buddhism",
+          "count": 16
+        },
+        {
+          "name": "Frankl",
+          "count": 14
+        },
+        {
+          "name": "Nietzsche",
+          "count": 11
+        },
+        {
+          "name": "Epictetus",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "slug": "mistral-large",
+      "display": "Mistral",
+      "model_id": "mistralai/mistral-large-2411",
+      "provider": "Mistral AI",
+      "via": "openrouter",
+      "avg_words": 773,
+      "word_counts": [
+        972,
+        757,
+        711,
+        721,
+        797,
+        676,
+        814,
+        860,
+        757,
+        726,
+        939,
+        541
+      ],
+      "top_entities": [
+        {
+          "name": "Stoicism",
+          "count": 29
+        },
+        {
+          "name": "Nietzsche",
+          "count": 20
+        },
+        {
+          "name": "Spinoza",
+          "count": 17
+        },
+        {
+          "name": "Frankl",
+          "count": 16
+        },
+        {
+          "name": "Buddhism",
+          "count": 16
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "slug": "greatest-thinkers",
+      "label": "Greatest Thinkers",
+      "word_counts": {
+        "Claude": 930,
+        "GPT-4o": 782,
+        "Gemini": 838,
+        "Mistral": 972
+      }
+    },
+    {
+      "slug": "knowing-yourself",
+      "label": "Knowing Yourself",
+      "word_counts": {
+        "Claude": 701,
+        "GPT-4o": 715,
+        "Gemini": 727,
+        "Mistral": 757
+      }
+    },
+    {
+      "slug": "virtue-and-character",
+      "label": "Virtue & Character",
+      "word_counts": {
+        "Claude": 680,
+        "GPT-4o": 703,
+        "Gemini": 613,
+        "Mistral": 711
+      }
+    },
+    {
+      "slug": "relationships-and-love",
+      "label": "Relationships & Love",
+      "word_counts": {
+        "Claude": 682,
+        "GPT-4o": 693,
+        "Gemini": 708,
+        "Mistral": 721
+      }
+    },
+    {
+      "slug": "work-and-purpose",
+      "label": "Work & Purpose",
+      "word_counts": {
+        "Claude": 717,
+        "GPT-4o": 677,
+        "Gemini": 684,
+        "Mistral": 797
+      }
+    },
+    {
+      "slug": "desire-and-attachment",
+      "label": "Desire & Attachment",
+      "word_counts": {
+        "Claude": 717,
+        "GPT-4o": 692,
+        "Gemini": 667,
+        "Mistral": 676
+      }
+    },
+    {
+      "slug": "suffering-and-resilience",
+      "label": "Suffering & Resilience",
+      "word_counts": {
+        "Claude": 719,
+        "GPT-4o": 625,
+        "Gemini": 645,
+        "Mistral": 814
+      }
+    },
+    {
+      "slug": "time-and-mortality",
+      "label": "Time & Mortality",
+      "word_counts": {
+        "Claude": 691,
+        "GPT-4o": 674,
+        "Gemini": 654,
+        "Mistral": 860
+      }
+    },
+    {
+      "slug": "society-and-place",
+      "label": "Society & Place",
+      "word_counts": {
+        "Claude": 701,
+        "GPT-4o": 743,
+        "Gemini": 645,
+        "Mistral": 757
+      }
+    },
+    {
+      "slug": "happiness",
+      "label": "Happiness",
+      "word_counts": {
+        "Claude": 691,
+        "GPT-4o": 688,
+        "Gemini": 644,
+        "Mistral": 726
+      }
+    },
+    {
+      "slug": "meaning",
+      "label": "Meaning",
+      "word_counts": {
+        "Claude": 695,
+        "GPT-4o": 700,
+        "Gemini": 594,
+        "Mistral": 939
+      }
+    },
+    {
+      "slug": "letter-to-you",
+      "label": "Letter to You",
+      "word_counts": {
+        "Claude": 443,
+        "GPT-4o": 474,
+        "Gemini": 423,
+        "Mistral": 541
+      }
+    }
+  ]
+}

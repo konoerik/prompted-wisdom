@@ -42,14 +42,16 @@ GENERATION_PARAMS = {
 CHAPTERS = {
     "greatest-thinkers":        ("What the Greatest Thinkers Taught Us", 1),
     "knowing-yourself":         ("On Knowing Yourself",                   2),
-    "relationships-and-love":   ("On Relationships and Love",             3),
-    "work-and-purpose":         ("On Work and Purpose",                   4),
-    "suffering-and-resilience": ("On Suffering and Resilience",           5),
-    "money-and-security":       ("On Money and Security",                 6),
-    "time-and-mortality":       ("On Time and Mortality",                 7),
-    "society-and-place":        ("On Society and Your Place in It",       8),
-    "happiness-and-meaning":    ("On Happiness and Meaning",              9),
-    "letter-to-you":            ("A Letter to You",                       10),
+    "virtue-and-character":     ("On Virtue and Character",               3),
+    "relationships-and-love":   ("On Relationships and Love",             4),
+    "work-and-purpose":         ("On Work and Purpose",                   5),
+    "desire-and-attachment":    ("On Desire and Attachment",              6),
+    "suffering-and-resilience": ("On Suffering and Resilience",           7),
+    "time-and-mortality":       ("On Time and Mortality",                 8),
+    "society-and-place":        ("On Society and Your Place in It",       9),
+    "happiness":                ("On Happiness",                          10),
+    "meaning":                  ("On Meaning",                            11),
+    "letter-to-you":            ("A Letter to You",                       12),
 }
 
 # ── Prompt parsing ────────────────────────────────────────────────────

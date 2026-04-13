@@ -5,13 +5,27 @@
 **Entry point:** `index.html`
 **Styles:** `style.css`
 **Logic:** `app.js`
-**Libraries:** <!-- e.g. Chart.js 4.x (CDN), Alpine.js 3.x (CDN) -->
-**Data:** <!-- e.g. hardcoded, data.json, external API -->
+**Libraries:** Chart.js 4.x (CDN), js-yaml 4.x (CDN)
+**Scripts:** `scripts/generate.py` (content generation), `scripts/stats.py` (aggregates stats.json from content files)
+**Data:** `meta/stats.json` fetched at runtime by `app.js`; `content/<model-slug>/<chapter-slug>.md` fetched on chapter navigation; `meta/models.json` read by Python scripts only
 **Key constraint:** CDN imports only; run via `npx serve` or `python3 -m http.server` if loading local files
 
 
 ## Decisions (ADRs)
 <!-- Append new ADRs with /log -->
+
+### ADR-4: Build-time statistics pipeline via stats.py → meta/stats.json
+**Date:** 2026-04-12
+**Context:** The statistics page needs word counts, token totals, model metadata, and thinker/tradition mention counts derived from all generated content files. Doing this at runtime in the browser would require fetching and parsing 48 markdown files on page load.
+**Decision:**
+- `scripts/stats.py` reads all content files and `meta/models.json`, aggregates the data, and writes `meta/stats.json`.
+- `app.js` fetches `meta/stats.json` once when the statistics view is first opened and drives all cards, charts, and the entity grid from it.
+- `stats.py` must be re-run manually after any new chapters are generated. It is not automated.
+- Thinker/tradition mention counts use a curated entity list with case-insensitive whole-word matching across chapter bodies (frontmatter excluded). Top 5 per model are stored in `stats.json`.
+
+**Alternatives considered:** Runtime aggregation in the browser — rejected: too slow, requires fetching all 48 content files. Hardcoded values — rejected: breaks every time content is regenerated.
+
+**Consequences:** `meta/stats.json` must be committed alongside content changes or the statistics page will show stale data. The entity list in `stats.py` is the single place to add new thinkers for tracking.
 
 ### ADR-3: Generation scripts, validation pipeline, and model approval registry
 **Date:** 2026-04-10

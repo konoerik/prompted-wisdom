@@ -437,6 +437,104 @@ body {
   line-height: 1.5;
 }
 
+/* ── Entity grid ─────────────────────────────────────────── */
+.entities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.entities-col {
+  background: var(--bg-resources);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+}
+
+.entities-model {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.entities-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.entities-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.entities-name {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+.entities-count {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+/* ── Model registry table ────────────────────────────────── */
+.model-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 2.5rem;
+}
+
+.model-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+}
+
+.model-table th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 0.68rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.model-table td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: middle;
+}
+
+.model-table tr:last-child td {
+  border-bottom: none;
+}
+
+.model-table-name {
+  font-weight: 500;
+}
+
+.model-table-id {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+/* ── Chart ───────────────────────────────────────────────── */
 .chart-wrap {
   position: relative;
   height: 220px;
@@ -444,7 +542,112 @@ body {
 }
 
 .chart-wrap--tall {
-  height: 280px;
+  height: 380px;
+}
+
+/* ── Resources page ─────────────────────────────────────── */
+.resources-page {
+  margin-top: 0.5rem;
+}
+
+.resource-entries {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.resource-entry {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.resource-entry:last-child {
+  border-bottom: none;
+}
+
+.resource-work {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text);
+  flex: 1;
+}
+
+.resource-icons {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  width: 3rem;
+  justify-content: flex-end;
+}
+
+.resource-icon {
+  font-size: 0.95rem;
+  text-decoration: none;
+  opacity: 0.45;
+  transition: opacity 0.12s ease;
+  line-height: 1;
+}
+
+.resource-icon:hover {
+  opacity: 1;
+}
+
+.resource-entry--ref .resource-work {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.resource-ref-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.resource-ref-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ── About page ─────────────────────────────────────────── */
+.about-personal-note {
+  min-height: 6rem;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-placeholder);
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+}
+
+.about-personal-note:empty::before {
+  content: "Personal note — your inspiration for the project";
+}
+
+.about-method-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-method-list li {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--text);
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.about-method-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--text-secondary);
 }
 
 /* ── About headings ──────────────────────────────────────── */

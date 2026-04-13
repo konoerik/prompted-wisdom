@@ -4,14 +4,16 @@ const MODEL   = 'claude-sonnet-4';
 const CHAPTERS = [
   { slug: 'greatest-thinkers',        title: 'What the Greatest Thinkers Taught Us', n: 1  },
   { slug: 'knowing-yourself',         title: 'On Knowing Yourself',                   n: 2  },
-  { slug: 'relationships-and-love',   title: 'On Relationships and Love',             n: 3  },
-  { slug: 'work-and-purpose',         title: 'On Work and Purpose',                   n: 4  },
-  { slug: 'suffering-and-resilience', title: 'On Suffering and Resilience',           n: 5  },
-  { slug: 'money-and-security',       title: 'On Money and Security',                 n: 6  },
-  { slug: 'time-and-mortality',       title: 'On Time and Mortality',                 n: 7  },
-  { slug: 'society-and-place',        title: 'On Society and Your Place in It',       n: 8  },
-  { slug: 'happiness-and-meaning',    title: 'On Happiness and Meaning',              n: 9  },
-  { slug: 'letter-to-you',            title: 'A Letter to You',                       n: 10 },
+  { slug: 'virtue-and-character',     title: 'On Virtue and Character',               n: 3  },
+  { slug: 'relationships-and-love',   title: 'On Relationships and Love',             n: 4  },
+  { slug: 'work-and-purpose',         title: 'On Work and Purpose',                   n: 5  },
+  { slug: 'desire-and-attachment',    title: 'On Desire and Attachment',              n: 6  },
+  { slug: 'suffering-and-resilience', title: 'On Suffering and Resilience',           n: 7  },
+  { slug: 'time-and-mortality',       title: 'On Time and Mortality',                 n: 8  },
+  { slug: 'society-and-place',        title: 'On Society and Your Place in It',       n: 9  },
+  { slug: 'happiness',                title: 'On Happiness',                          n: 10 },
+  { slug: 'meaning',                  title: 'On Meaning',                            n: 11 },
+  { slug: 'letter-to-you',            title: 'A Letter to You',                       n: 12 },
 ];
 
 let chartsReady = false;
@@ -30,6 +32,7 @@ function route() {
       showStatic('stats');
       if (!chartsReady) { initCharts(); chartsReady = true; }
       break;
+    case 'resources': showStatic('resources'); break;
     case 'chapter': {
       const slug = parts[1];
       if (slug) {
@@ -49,7 +52,7 @@ function route() {
 // ── Static views ────────────────────────────────────────────────────
 
 function showStatic(name) {
-  ['welcome', 'about', 'stats', 'chapter'].forEach(v => {
+  ['welcome', 'about', 'stats', 'resources', 'chapter'].forEach(v => {
     document.getElementById('view-' + v).style.display = v === name ? '' : 'none';
   });
 }
@@ -166,25 +169,65 @@ function toggleTheme() {
 
 // ── Charts (statistics page) ─────────────────────────────────────────
 
-function initCharts() {
+const MODEL_COLORS = {
+  'Claude':  '#2563eb',
+  'GPT-4o':  '#7c3aed',
+  'Gemini':  '#0891b2',
+  'Mistral': '#059669',
+};
+
+async function initCharts() {
+  const res   = await fetch('meta/stats.json');
+  const stats = await res.json();
+
+  // Populate model registry table
+  const tbody = document.getElementById('model-registry-body');
+  tbody.innerHTML = stats.by_model.map(m => `
+    <tr>
+      <td class="model-table-name">${escapeHtml(m.display)}</td>
+      <td class="model-table-id">${escapeHtml(m.model_id)}</td>
+      <td>${escapeHtml(m.provider)}</td>
+      <td>${m.avg_words} w</td>
+    </tr>
+  `).join('');
+
+  // Populate summary cards
+  document.getElementById('stat-models').textContent   = stats.summary.models;
+  document.getElementById('stat-chapters').textContent = stats.summary.chapters;
+  document.getElementById('stat-tokens').textContent   = stats.summary.total_output_tokens.toLocaleString();
+  document.getElementById('stat-avg-words').textContent = stats.summary.avg_words_per_chapter;
+
   const isDark     = document.documentElement.dataset.theme === 'dark';
   const gridColor  = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)';
   const labelColor = isDark ? '#8a8a80' : '#6b6b63';
-  const fontUI     = "'Inter', system-ui, sans-serif";
 
-  Chart.defaults.font.family = fontUI;
+  Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
   Chart.defaults.font.size   = 12;
   Chart.defaults.color       = labelColor;
 
-  const MODEL_COLORS = { claude: '#2563eb', gpt4: '#7c3aed', gemini: '#0891b2' };
+  // Populate entity grid
+  document.getElementById('entities-grid').innerHTML = stats.by_model.map(m => `
+    <div class="entities-col">
+      <div class="entities-model">${escapeHtml(m.display)}</div>
+      <ol class="entities-list">
+        ${m.top_entities.map(e => `
+          <li class="entities-item">
+            <span class="entities-name">${escapeHtml(e.name)}</span>
+            <span class="entities-count">${e.count}</span>
+          </li>
+        `).join('')}
+      </ol>
+    </div>
+  `).join('');
 
+  // Chart 1: average words per model
   new Chart(document.getElementById('chart-avg'), {
     type: 'bar',
     data: {
-      labels: ['Claude', 'GPT-4', 'Gemini'],
+      labels: stats.by_model.map(m => m.display),
       datasets: [{
-        data: [682, 731, 658],
-        backgroundColor: [MODEL_COLORS.claude, MODEL_COLORS.gpt4, MODEL_COLORS.gemini],
+        data:            stats.by_model.map(m => m.avg_words),
+        backgroundColor: stats.by_model.map(m => MODEL_COLORS[m.display] || '#94a3b8'),
         borderRadius: 4,
         borderSkipped: false,
       }]
@@ -194,24 +237,24 @@ function initCharts() {
       plugins: { legend: { display: false } },
       scales: {
         x: { grid: { display: false } },
-        y: { beginAtZero: true, max: 900, grid: { color: gridColor },
+        y: { beginAtZero: true, grid: { color: gridColor },
              ticks: { callback: v => v + ' w' } }
       }
     }
   });
 
+  // Chart 2: word count by chapter, grouped by model
   new Chart(document.getElementById('chart-chapters'), {
     type: 'bar',
     data: {
-      labels: ['Greatest Thinkers', 'Knowing Yourself', 'Relationships', 'Work & Purpose', 'Suffering'],
-      datasets: [
-        { label: 'Claude',  data: [820, 680, 710, 695, 730], backgroundColor: MODEL_COLORS.claude,
-          borderRadius: 3, borderSkipped: false },
-        { label: 'GPT-4',   data: [890, 720, 755, 740, 800], backgroundColor: MODEL_COLORS.gpt4,
-          borderRadius: 3, borderSkipped: false },
-        { label: 'Gemini',  data: [760, 650, 680, 665, 700], backgroundColor: MODEL_COLORS.gemini,
-          borderRadius: 3, borderSkipped: false },
-      ]
+      labels: stats.chapters.map(c => c.label),
+      datasets: stats.by_model.map(m => ({
+        label:           m.display,
+        data:            stats.chapters.map(c => c.word_counts[m.display] ?? 0),
+        backgroundColor: MODEL_COLORS[m.display] || '#94a3b8',
+        borderRadius: 3,
+        borderSkipped: false,
+      }))
     },
     options: {
       responsive: true,
@@ -221,7 +264,7 @@ function initCharts() {
       },
       scales: {
         x: { grid: { display: false } },
-        y: { beginAtZero: true, max: 1000, grid: { color: gridColor },
+        y: { beginAtZero: true, grid: { color: gridColor },
              ticks: { callback: v => v + ' w' } }
       }
     }
