@@ -39,3 +39,4 @@ The full generation prompt and API parameters are documented in [PROMPT.md](PROM
 ## License
 
 [CC BY 4.0](LICENSE) — Erikton Konomi
+
