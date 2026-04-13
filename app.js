@@ -42,6 +42,10 @@ function route() {
       if (!chartsReady) { initCharts(); chartsReady = true; }
       break;
     case 'resources': showStatic('resources'); break;
+    case 'methodology':
+      showStatic('methodology');
+      renderMethodologyPage();
+      break;
     case 'chapter': {
       const slug      = parts[1];
       const modelSlug = parts[2];
@@ -76,7 +80,7 @@ function route() {
 // ── Static views ────────────────────────────────────────────────────
 
 function showStatic(name) {
-  ['welcome', 'about', 'stats', 'resources', 'chapter'].forEach(v => {
+  ['welcome', 'about', 'stats', 'resources', 'methodology', 'chapter'].forEach(v => {
     document.getElementById('view-' + v).style.display = v === name ? '' : 'none';
   });
 }
@@ -105,6 +109,26 @@ function setActiveModel(slug) {
   }
 }
 
+// ── Prompt loading ───────────────────────────────────────────────────
+
+let promptMdCache = null;
+
+async function fetchPromptMd() {
+  if (promptMdCache) return promptMdCache;
+  try {
+    const res = await fetch('PROMPT.md');
+    promptMdCache = res.ok ? await res.text() : '';
+  } catch (_) {
+    promptMdCache = '';
+  }
+  return promptMdCache;
+}
+
+function parsePromptBlock(text, slug) {
+  const m = text.match(new RegExp(`<!-- BEGIN:${slug} -->([\\s\\S]*?)<!-- END:${slug} -->`));
+  return m ? m[1].trim() : null;
+}
+
 // ── Chapter loading and rendering ────────────────────────────────────
 
 async function loadChapter(slug) {
@@ -114,16 +138,19 @@ async function loadChapter(slug) {
   el.innerHTML = '<p style="padding:2rem;font-family:var(--font-ui);font-size:0.85rem;color:var(--text-secondary)">Loading\u2026</p>';
 
   try {
-    const res = await fetch(`content/${activeModel}/${slug}.md`);
+    const [res, promptMd] = await Promise.all([
+      fetch(`content/${activeModel}/${slug}.md`),
+      fetchPromptMd(),
+    ]);
     if (!res.ok) throw new Error(res.status);
     const raw = await res.text();
-    renderChapter(raw, slug);
+    renderChapter(raw, slug, promptMd);
   } catch (_) {
     renderNotAvailable(slug);
   }
 }
 
-function renderChapter(raw, slug) {
+function renderChapter(raw, slug, promptMd) {
   const fmMatch = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
   if (!fmMatch) { renderNotAvailable(slug); return; }
 
@@ -149,6 +176,7 @@ function renderChapter(raw, slug) {
     </header>
     <div class="chapter-body">${paragraphs}</div>
     ${buildResourcesHtml(fm.resources)}
+    ${buildPromptHtml(slug, promptMd)}
     ${buildChapterNavHtml(slug)}
   `;
 }
@@ -165,6 +193,98 @@ function renderNotAvailable(slug) {
       <p>This chapter has not been generated yet. Check back later.</p>
     </div>
   `;
+}
+
+async function renderMethodologyPage() {
+  const el = document.getElementById('view-methodology');
+  const promptMd = await fetchPromptMd();
+  if (!promptMd) {
+    el.innerHTML = '<p style="padding:2rem;font-family:var(--font-ui);font-size:0.85rem;color:var(--text-secondary)">Could not load prompt.</p>';
+    return;
+  }
+
+  const core = parsePromptBlock(promptMd, 'core');
+
+  // Build chapter table rows — extract word target from each block
+  const chapterRows = CHAPTERS.map(c => {
+    const text  = parsePromptBlock(promptMd, c.slug) || '';
+    const match = text.match(/Aim for approximately (\d+) words/);
+    const words = match ? `~${match[1]}` : '—';
+    return `<tr>
+      <td>${c.n}</td>
+      <td>${escapeHtml(c.title)}</td>
+      <td>${words}</td>
+    </tr>`;
+  }).join('');
+
+  // letter-to-you has a unique instruction beyond the shared template
+  const letterBlock = parsePromptBlock(promptMd, 'letter-to-you') || '';
+
+  el.innerHTML = `
+    <div class="welcome-wordmark">Methodology</div>
+    <h1 class="welcome-hero">How the chapters were made.</h1>
+    <div class="welcome-body">
+      <p>Each chapter is the output of a single API call: the core persona below, followed by a chapter-specific instruction. No system prompt, no retries, no editorial selection between runs.</p>
+    </div>
+
+    <h2 class="about-heading">Generation parameters</h2>
+    <div class="model-table-wrap" style="margin-bottom:2rem">
+      <table class="model-table">
+        <thead><tr><th>Parameter</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Temperature</td><td>0</td></tr>
+          <tr><td>Max tokens</td><td>1,500</td></tr>
+          <tr><td>System prompt</td><td><span class="tooltip" data-tip="APIs allow a separate privileged instruction layer before the user message. Not using one means the full prompt is a single transparent user message — identical and verifiable across all models.">None</span></td></tr>
+          <tr><td>Runs per chapter</td><td>1 canonical + 1 verification</td></tr>
+          <tr><td>API routing</td><td>OpenRouter</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="about-heading">Core persona</h2>
+    <p class="stats-caption">Sent at the start of every call, for every model, for every chapter.</p>
+    <div class="prompt-block" style="margin-bottom:2rem">
+      <p class="prompt-block-text">${escapeHtml(core || '')}</p>
+    </div>
+
+    <h2 class="about-heading">Chapter instructions</h2>
+    <p class="stats-caption">Appended after the persona. Chapters 1–11 share the same structure — write a continuous essay, no markdown, follow the thread of influence — varying only in title and word target. Chapter 12 carries a unique closing instruction.</p>
+    <div class="model-table-wrap" style="margin-bottom:1.5rem">
+      <table class="model-table">
+        <thead><tr><th>#</th><th>Chapter</th><th>Word target</th></tr></thead>
+        <tbody>${chapterRows}</tbody>
+      </table>
+    </div>
+
+    <h2 class="about-heading">Chapter 12 — unique instruction</h2>
+    <div class="prompt-block" style="margin-bottom:2rem">
+      <p class="prompt-block-text">${escapeHtml(letterBlock)}</p>
+    </div>
+
+    <h2 class="about-heading">Provenance</h2>
+    <ul class="about-method-list">
+      <li>Every response stored with model version, generation timestamp, token counts, and a SHA-256 hash of the body</li>
+      <li>Hash covers the body only — resources can be updated without invalidating the generation record</li>
+      <li>All prompts version-controlled in <code>PROMPT.md</code> — changes require a new version</li>
+      <li>Source code and all content publicly available on <a href="https://github.com/konoerik/prompted-wisdom" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  `;
+}
+
+function buildPromptHtml(slug, promptMd) {
+  if (!promptMd) return '';
+  const chapter = parsePromptBlock(promptMd, slug);
+  if (!chapter) return '';
+
+  return `
+    <details class="prompt-disclosure">
+      <summary>View prompt</summary>
+      <div class="prompt-block">
+        <div class="prompt-block-label">Chapter instruction</div>
+        <p class="prompt-block-text">${escapeHtml(chapter)}</p>
+      </div>
+      <p class="prompt-disclosure-note">The core persona sent before this instruction is on the <a href="#methodology">Methodology page</a>.</p>
+    </details>`;
 }
 
 function buildChapterNavHtml(slug) {

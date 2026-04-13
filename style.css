@@ -798,6 +798,115 @@ body {
   width: 100%;
 }
 
+/* ── Prompt disclosure ───────────────────────────────────── */
+.prompt-disclosure {
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.prompt-disclosure summary {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+.prompt-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+
+.prompt-disclosure summary::before {
+  content: '+ ';
+}
+
+.prompt-disclosure[open] summary::before {
+  content: '− ';
+}
+
+.prompt-disclosure[open] summary {
+  color: var(--text);
+  margin-bottom: 1.25rem;
+}
+
+.prompt-block {
+  background: var(--bg-resources);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.prompt-block-label {
+  font-family: var(--font-ui);
+  font-size: 0.63rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  margin-bottom: 0.6rem;
+}
+
+/* ── Tooltip ─────────────────────────────────────────────── */
+.tooltip {
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dashed var(--text-secondary);
+}
+
+.tooltip::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  padding: 0.5rem 0.75rem;
+  background: var(--text);
+  color: var(--bg);
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  z-index: 100;
+  white-space: normal;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}
+
+/* ── Prompt disclosure ───────────────────────────────────── */
+.prompt-disclosure-note {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+.prompt-disclosure-note a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.prompt-disclosure-note a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prompt-block-text {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--text);
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
 /* ── Chapter navigation ──────────────────────────────────── */
 .chapter-nav {
   display: grid;

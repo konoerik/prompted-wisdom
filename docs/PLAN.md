@@ -3,12 +3,12 @@
 ## Active
 <!-- Current sprint items. Keep this short — 5-10 items max.
      If it grows beyond that, move lower-priority items to Backlog. -->
-- [ ] Verify LibriVox links on Resources page (manual check — best-guess slugs used)
+
 
 
 ## Backlog
 <!-- Accepted but not yet active. Load this section only when planning or prioritizing. -->
-- Commentary page — author's own observations and insights from reading across all four models; per-chapter or per-theme notes on what stood out, diverged, or surprised
+- Commentary page — author's own observations from reading across all four models; depends on completing offline review first
 - Open-source model tier: add a separate comparison track for strong open-source models (e.g. Llama, Mistral) — kept distinct from the frontier tier so the comparison framing stays clean
 - DeepSeek V3 (China): interesting for Buddhist/Confucian chapters specifically — evaluate once core four models have real content to compare against
 
@@ -16,6 +16,8 @@
 ## Done
 <!-- Completed items land here temporarily.
      The stop hook archives these to .claude/archive/YYYY-MM.md and clears this section. -->
+- Methodology page: prompt (persona + chapter table), generation parameters, provenance; trimmed About; in-chapter prompt disclosure; CSS tooltip on system prompt
+- Verified and fixed all 8 broken LibriVox links on Resources page
 - Mobile layout: collapsible hamburger nav; `make serve-mobile` added for local network testing
 - Next/previous chapter navigation cards (two-column, themed, with chapter title)
 - Word cloud on Statistics page: packed canvas layout via wordcloud2.js (CDN); frequencies pre-computed in stats.py, no runtime cost

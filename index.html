@@ -59,6 +59,9 @@
         <a href="#stats">Statistics</a>
       </li>
       <li class="chapter-item">
+        <a href="#methodology">Methodology</a>
+      </li>
+      <li class="chapter-item">
         <a href="#resources">Resources</a>
       </li>
     </ul>
@@ -184,17 +187,7 @@
           asked several leading models to distill them, under identical conditions. Then compared the results.</p>
 
         <h2 class="about-heading">The methodology</h2>
-        <ul class="about-method-list">
-          <li>Same prompt, word for word, across every model</li>
-          <li>Temperature set to zero to minimise variation within a model</li>
-          <li>Token limits fixed so no model wins by writing more</li>
-          <li>No system prompts, no extra instructions — one clean input</li>
-          <li>One canonical response per model per chapter — not an average or selection across runs</li>
-          <li>Each prompt is run twice to verify determinism; any divergence between runs is noted rather than resolved
-            editorially</li>
-          <li>Each response stored with model version, generation timestamp, token counts, and a SHA-256 hash of the raw
-            output</li>
-        </ul>
+        <p>Same prompt, temperature zero, fixed token limits, no system prompts — one canonical run per model per chapter, stored with full provenance. <a href="#methodology">Full methodology and prompt →</a></p>
 
         <h2 class="about-heading">Limitations and caveats</h2>
         <ul class="about-method-list">
@@ -471,6 +464,9 @@
 
       </div>
     </article>
+
+    <!-- ── Methodology view (dynamic) ──────────────────────── -->
+    <article class="welcome" id="view-methodology" style="display:none"></article>
 
     <!-- ── Chapter view (dynamic) ─────────────────────────── -->
     <article class="chapter" id="view-chapter" style="display:none"></article>
