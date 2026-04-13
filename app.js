@@ -373,6 +373,22 @@ function init() {
 
   document.querySelector('.theme-toggle').addEventListener('click', toggleTheme);
 
+  const sidebar   = document.querySelector('.sidebar');
+  const navToggle = document.querySelector('.nav-toggle');
+  navToggle.addEventListener('click', () => {
+    const open = sidebar.classList.toggle('sidebar--open');
+    navToggle.setAttribute('aria-expanded', open);
+    navToggle.querySelector('.nav-toggle-icon').textContent = open ? '✕' : '☰';
+  });
+
+  document.querySelectorAll('.chapter-item a').forEach(a => {
+    a.addEventListener('click', () => {
+      sidebar.classList.remove('sidebar--open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.querySelector('.nav-toggle-icon').textContent = '☰';
+    });
+  });
+
   document.querySelectorAll('.model-btn').forEach(btn => {
     btn.addEventListener('click', () => setActiveModel(btn.dataset.model));
   });
