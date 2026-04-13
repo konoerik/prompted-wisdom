@@ -14,6 +14,12 @@
 ## Done
 <!-- Completed items land here temporarily.
      The stop hook archives these to .claude/archive/YYYY-MM.md and clears this section. -->
+- GitHub Pages readiness: favicon (SVG), meta description, Open Graph + Twitter card tags, robots index
+- Added Makefile (install, serve, stats, generate, freeze) and requirements.txt
+- Fixed Resources page stubs: direct Gutenberg ebook IDs + best-guess LibriVox slugs (manual check pending)
+- Refactored stats chart to grouped horizontal bars; fixed maintainAspectRatio gap; tuned bar thickness
+- Added Foreword section to About page with warm amber styling; formatted and spell-checked author's text
+- Dropped "ten themes" count from Welcome copy
 - Implemented hybrid model toggle: sidebar selector + model slug in URL (`#chapter/slug/model-slug`); select once to read all chapters in a model; shareable per-model links; old-format URLs auto-redirect
 - Updated statistics page with real data: stats.py script, stats.json, model registry table, thinker/tradition entity grid
 - Updated About page caveats: all-model non-determinism, instruction-following failures documented

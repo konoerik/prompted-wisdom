@@ -8,7 +8,8 @@
 **Libraries:** Chart.js 4.x (CDN), js-yaml 4.x (CDN)
 **Scripts:** `scripts/generate.py` (content generation), `scripts/stats.py` (aggregates stats.json from content files)
 **Data:** `meta/stats.json` fetched at runtime by `app.js`; `content/<model-slug>/<chapter-slug>.md` fetched on chapter navigation; `meta/models.json` read by Python scripts only
-**Key constraint:** CDN imports only; run via `npx serve` or `python3 -m http.server` if loading local files
+**Dev tooling:** `Makefile` (install, serve, stats, generate, freeze targets); `requirements.txt` (pinned Python deps for scripts)
+**Key constraint:** CDN imports only; run via `make serve` or `python3 -m http.server` if loading local files
 
 
 ## Decisions (ADRs)
