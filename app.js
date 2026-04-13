@@ -291,7 +291,7 @@ async function initCharts() {
     }
   });
 
-  // Chart 2: word count by chapter, grouped by model
+  // Chart 2: word count by chapter, grouped horizontal bars
   new Chart(document.getElementById('chart-chapters'), {
     type: 'bar',
     data: {
@@ -300,20 +300,23 @@ async function initCharts() {
         label:           m.display,
         data:            stats.chapters.map(c => c.word_counts[m.display] ?? 0),
         backgroundColor: MODEL_COLORS[m.display] || '#94a3b8',
-        borderRadius: 3,
+        borderRadius: 2,
         borderSkipped: false,
+        barThickness: 6,
       }))
     },
     options: {
+      indexAxis: 'y',
       responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         legend: { position: 'top', align: 'start',
                   labels: { boxWidth: 10, boxHeight: 10, padding: 16 } }
       },
       scales: {
-        x: { grid: { display: false } },
-        y: { beginAtZero: true, grid: { color: gridColor },
-             ticks: { callback: v => v + ' w' } }
+        x: { beginAtZero: true, grid: { color: gridColor },
+             ticks: { callback: v => v + ' w' } },
+        y: { grid: { display: false } }
       }
     }
   });

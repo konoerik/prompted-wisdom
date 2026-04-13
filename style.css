@@ -27,6 +27,9 @@
   --tab-active-bg:  #111110;
   --tab-active-fg:  #ffffff;
 
+  --bg-foreword:      #faf9f6;
+  --border-foreword:  #c9a96e;
+
   color-scheme: light;
 }
 
@@ -46,6 +49,9 @@
 
   --tab-active-bg:  #f0f0ec;
   --tab-active-fg:  #111110;
+
+  --bg-foreword:      #161512;
+  --border-foreword:  #8a6a3a;
 
   color-scheme: dark;
 }
@@ -588,7 +594,7 @@ body {
 }
 
 .chart-wrap--tall {
-  height: 380px;
+  height: 480px;
 }
 
 /* ── Resources page ─────────────────────────────────────── */
@@ -658,22 +664,56 @@ body {
   text-underline-offset: 3px;
 }
 
-/* ── About page ─────────────────────────────────────────── */
-.about-personal-note {
-  min-height: 6rem;
-  border: 1px dashed var(--border);
+/* ── Foreword (human-authored, About page) ───────────────── */
+.foreword {
+  background: var(--bg-foreword);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border-foreword);
   border-radius: 6px;
-  padding: 1.25rem 1.5rem;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.foreword-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.63rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--border-foreword);
   margin-bottom: 0.5rem;
-  color: var(--text-placeholder);
+}
+
+.foreword-heading {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.foreword-body p {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.foreword-body p:last-child {
+  margin-bottom: 0;
+}
+
+.foreword-body:empty::before {
+  content: "Your foreword goes here — write about your inspiration for the project.";
   font-family: var(--font-ui);
   font-size: 0.8rem;
+  color: var(--text-placeholder);
+  font-style: italic;
 }
 
-.about-personal-note:empty::before {
-  content: "Personal note — your inspiration for the project";
-}
-
+/* ── About page ─────────────────────────────────────────── */
 .about-method-list {
   list-style: none;
   display: flex;
