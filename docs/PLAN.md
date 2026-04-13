@@ -8,6 +8,7 @@
 
 ## Backlog
 <!-- Accepted but not yet active. Load this section only when planning or prioritizing. -->
+- Commentary page — author's own observations and insights from reading across all four models; per-chapter or per-theme notes on what stood out, diverged, or surprised
 - Open-source model tier: add a separate comparison track for strong open-source models (e.g. Llama, Mistral) — kept distinct from the frontier tier so the comparison framing stays clean
 - DeepSeek V3 (China): interesting for Buddhist/Confucian chapters specifically — evaluate once core four models have real content to compare against
 
@@ -17,6 +18,7 @@
      The stop hook archives these to .claude/archive/YYYY-MM.md and clears this section. -->
 - Mobile layout: collapsible hamburger nav; `make serve-mobile` added for local network testing
 - Next/previous chapter navigation cards (two-column, themed, with chapter title)
+- Word cloud on Statistics page: packed canvas layout via wordcloud2.js (CDN); frequencies pre-computed in stats.py, no runtime cost
 - Deployed to GitHub Pages: added .nojekyll to fix .md fetch interception by Jekyll; site live at konoerik.github.io/prompted-wisdom
 - GitHub Pages readiness: favicon (SVG), meta description, Open Graph + Twitter card tags, robots index
 - Added Makefile (install, serve, stats, generate, freeze) and requirements.txt

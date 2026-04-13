@@ -1,8 +1,8 @@
 # Context
 <!-- Updated by /wrap at session end. Edit manually if needed. Keep it under 8 lines. -->
 
-**Current focus:** LibriVox link verification (manual check still pending).
-**Last session:** Added next/prev chapter nav cards, collapsible hamburger nav for mobile, and `make serve-mobile` for local network testing; fixed iOS Safari sticky-positioning bug.
-**Blocking:** LibriVox links require manual verification in a browser — can't be automated.
-**Next action:** Verify each LibriVox link on the Resources page and fix any broken slugs (Task #1).
+**Current focus:** Offline review of all four models before next feature work.
+**Last session:** Added word clouds to Statistics page (wordcloud2.js, frequencies pre-computed in stats.py); also added generator meta tag and make serve-mobile target.
+**Blocking:** LibriVox links still need manual verification; offline review pending before next session.
+**Next action:** After review — verify LibriVox links (Task #1), then consider commentary page.
 <!-- wrapped: 2026-04-13 -->
