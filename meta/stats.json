@@ -48,6 +48,328 @@
           "name": "Buddhism",
           "count": 11
         }
+      ],
+      "word_freq": [
+        {
+          "word": "people",
+          "count": 44
+        },
+        {
+          "word": "work",
+          "count": 34
+        },
+        {
+          "word": "life",
+          "count": 30
+        },
+        {
+          "word": "meaning",
+          "count": 30
+        },
+        {
+          "word": "self",
+          "count": 22
+        },
+        {
+          "word": "suffering",
+          "count": 21
+        },
+        {
+          "word": "way",
+          "count": 21
+        },
+        {
+          "word": "stoics",
+          "count": 20
+        },
+        {
+          "word": "love",
+          "count": 20
+        },
+        {
+          "word": "person",
+          "count": 20
+        },
+        {
+          "word": "character",
+          "count": 19
+        },
+        {
+          "word": "control",
+          "count": 18
+        },
+        {
+          "word": "live",
+          "count": 17
+        },
+        {
+          "word": "cannot",
+          "count": 16
+        },
+        {
+          "word": "world",
+          "count": 13
+        },
+        {
+          "word": "human",
+          "count": 13
+        },
+        {
+          "word": "different",
+          "count": 13
+        },
+        {
+          "word": "attention",
+          "count": 13
+        },
+        {
+          "word": "nietzsche",
+          "count": 13
+        },
+        {
+          "word": "others",
+          "count": 12
+        },
+        {
+          "word": "path",
+          "count": 12
+        },
+        {
+          "word": "wrote",
+          "count": 12
+        },
+        {
+          "word": "happiness",
+          "count": 12
+        },
+        {
+          "word": "epictetus",
+          "count": 11
+        },
+        {
+          "word": "trying",
+          "count": 11
+        },
+        {
+          "word": "writing",
+          "count": 11
+        },
+        {
+          "word": "virtue",
+          "count": 11
+        },
+        {
+          "word": "choose",
+          "count": 11
+        },
+        {
+          "word": "taught",
+          "count": 10
+        },
+        {
+          "word": "fully",
+          "count": 10
+        },
+        {
+          "word": "met",
+          "count": 10
+        },
+        {
+          "word": "right",
+          "count": 10
+        },
+        {
+          "word": "montaigne",
+          "count": 10
+        },
+        {
+          "word": "further",
+          "count": 10
+        },
+        {
+          "word": "matters",
+          "count": 10
+        },
+        {
+          "word": "understood",
+          "count": 9
+        },
+        {
+          "word": "else",
+          "count": 9
+        },
+        {
+          "word": "marcus",
+          "count": 9
+        },
+        {
+          "word": "aurelius",
+          "count": 9
+        },
+        {
+          "word": "nature",
+          "count": 9
+        },
+        {
+          "word": "buddhists",
+          "count": 9
+        },
+        {
+          "word": "living",
+          "count": 9
+        },
+        {
+          "word": "death",
+          "count": 9
+        },
+        {
+          "word": "freedom",
+          "count": 9
+        },
+        {
+          "word": "clearly",
+          "count": 9
+        },
+        {
+          "word": "frankl",
+          "count": 9
+        },
+        {
+          "word": "camps",
+          "count": 9
+        },
+        {
+          "word": "need",
+          "count": 9
+        },
+        {
+          "word": "desire",
+          "count": 9
+        },
+        {
+          "word": "moment",
+          "count": 9
+        },
+        {
+          "word": "society",
+          "count": 9
+        },
+        {
+          "word": "happens",
+          "count": 8
+        },
+        {
+          "word": "sounds",
+          "count": 8
+        },
+        {
+          "word": "truth",
+          "count": 8
+        },
+        {
+          "word": "grand",
+          "count": 8
+        },
+        {
+          "word": "values",
+          "count": 8
+        },
+        {
+          "word": "survived",
+          "count": 8
+        },
+        {
+          "word": "time",
+          "count": 8
+        },
+        {
+          "word": "philosophy",
+          "count": 7
+        },
+        {
+          "word": "arrived",
+          "count": 7
+        },
+        {
+          "word": "suffer",
+          "count": 7
+        },
+        {
+          "word": "circumstances",
+          "count": 7
+        },
+        {
+          "word": "less",
+          "count": 7
+        },
+        {
+          "word": "roles",
+          "count": 7
+        },
+        {
+          "word": "good",
+          "count": 7
+        },
+        {
+          "word": "practice",
+          "count": 7
+        },
+        {
+          "word": "similar",
+          "count": 7
+        },
+        {
+          "word": "honesty",
+          "count": 7
+        },
+        {
+          "word": "like",
+          "count": 7
+        },
+        {
+          "word": "viktor",
+          "count": 7
+        },
+        {
+          "word": "spent",
+          "count": 7
+        },
+        {
+          "word": "years",
+          "count": 7
+        },
+        {
+          "word": "noticed",
+          "count": 7
+        },
+        {
+          "word": "doing",
+          "count": 7
+        },
+        {
+          "word": "yours",
+          "count": 7
+        },
+        {
+          "word": "day",
+          "count": 7
+        },
+        {
+          "word": "meet",
+          "count": 6
+        },
+        {
+          "word": "slave",
+          "count": 6
+        },
+        {
+          "word": "power",
+          "count": 6
+        },
+        {
+          "word": "simple",
+          "count": 6
+        }
       ]
     },
     {
@@ -91,6 +413,328 @@
         {
           "name": "Buddhism",
           "count": 15
+        }
+      ],
+      "word_freq": [
+        {
+          "word": "life",
+          "count": 59
+        },
+        {
+          "word": "meaning",
+          "count": 37
+        },
+        {
+          "word": "world",
+          "count": 32
+        },
+        {
+          "word": "suffering",
+          "count": 30
+        },
+        {
+          "word": "love",
+          "count": 29
+        },
+        {
+          "word": "human",
+          "count": 28
+        },
+        {
+          "word": "lives",
+          "count": 25
+        },
+        {
+          "word": "purpose",
+          "count": 25
+        },
+        {
+          "word": "understanding",
+          "count": 24
+        },
+        {
+          "word": "wisdom",
+          "count": 22
+        },
+        {
+          "word": "virtue",
+          "count": 22
+        },
+        {
+          "word": "path",
+          "count": 22
+        },
+        {
+          "word": "people",
+          "count": 21
+        },
+        {
+          "word": "frankl",
+          "count": 20
+        },
+        {
+          "word": "journey",
+          "count": 20
+        },
+        {
+          "word": "resilience",
+          "count": 18
+        },
+        {
+          "word": "self",
+          "count": 18
+        },
+        {
+          "word": "others",
+          "count": 18
+        },
+        {
+          "word": "happiness",
+          "count": 17
+        },
+        {
+          "word": "insights",
+          "count": 17
+        },
+        {
+          "word": "society",
+          "count": 17
+        },
+        {
+          "word": "taught",
+          "count": 16
+        },
+        {
+          "word": "importance",
+          "count": 16
+        },
+        {
+          "word": "nature",
+          "count": 15
+        },
+        {
+          "word": "offer",
+          "count": 15
+        },
+        {
+          "word": "stoics",
+          "count": 15
+        },
+        {
+          "word": "idea",
+          "count": 15
+        },
+        {
+          "word": "montaigne",
+          "count": 15
+        },
+        {
+          "word": "nietzsche",
+          "count": 15
+        },
+        {
+          "word": "oneself",
+          "count": 15
+        },
+        {
+          "word": "way",
+          "count": 15
+        },
+        {
+          "word": "thinkers",
+          "count": 13
+        },
+        {
+          "word": "desire",
+          "count": 13
+        },
+        {
+          "word": "live",
+          "count": 13
+        },
+        {
+          "word": "character",
+          "count": 13
+        },
+        {
+          "word": "true",
+          "count": 13
+        },
+        {
+          "word": "time",
+          "count": 13
+        },
+        {
+          "word": "work",
+          "count": 13
+        },
+        {
+          "word": "moments",
+          "count": 12
+        },
+        {
+          "word": "control",
+          "count": 12
+        },
+        {
+          "word": "cultures",
+          "count": 12
+        },
+        {
+          "word": "navigate",
+          "count": 12
+        },
+        {
+          "word": "freedom",
+          "count": 12
+        },
+        {
+          "word": "confucius",
+          "count": 12
+        },
+        {
+          "word": "living",
+          "count": 12
+        },
+        {
+          "word": "quiet",
+          "count": 11
+        },
+        {
+          "word": "teachings",
+          "count": 11
+        },
+        {
+          "word": "power",
+          "count": 11
+        },
+        {
+          "word": "remind",
+          "count": 11
+        },
+        {
+          "word": "relationships",
+          "count": 11
+        },
+        {
+          "word": "strength",
+          "count": 11
+        },
+        {
+          "word": "reminder",
+          "count": 11
+        },
+        {
+          "word": "shared",
+          "count": 11
+        },
+        {
+          "word": "courage",
+          "count": 11
+        },
+        {
+          "word": "pursuit",
+          "count": 10
+        },
+        {
+          "word": "emphasis",
+          "count": 10
+        },
+        {
+          "word": "walked",
+          "count": 10
+        },
+        {
+          "word": "across",
+          "count": 10
+        },
+        {
+          "word": "different",
+          "count": 10
+        },
+        {
+          "word": "finding",
+          "count": 10
+        },
+        {
+          "word": "ideas",
+          "count": 10
+        },
+        {
+          "word": "existence",
+          "count": 10
+        },
+        {
+          "word": "perspective",
+          "count": 10
+        },
+        {
+          "word": "harmony",
+          "count": 10
+        },
+        {
+          "word": "viktor",
+          "count": 10
+        },
+        {
+          "word": "personal",
+          "count": 10
+        },
+        {
+          "word": "face",
+          "count": 10
+        },
+        {
+          "word": "search",
+          "count": 10
+        },
+        {
+          "word": "circumstances",
+          "count": 10
+        },
+        {
+          "word": "profound",
+          "count": 9
+        },
+        {
+          "word": "buddhists",
+          "count": 9
+        },
+        {
+          "word": "attachment",
+          "count": 9
+        },
+        {
+          "word": "interconnectedness",
+          "count": 9
+        },
+        {
+          "word": "values",
+          "count": 9
+        },
+        {
+          "word": "embrace",
+          "count": 9
+        },
+        {
+          "word": "travels",
+          "count": 9
+        },
+        {
+          "word": "knowledge",
+          "count": 9
+        },
+        {
+          "word": "wrote",
+          "count": 9
+        },
+        {
+          "word": "role",
+          "count": 9
+        },
+        {
+          "word": "humanity",
+          "count": 8
         }
       ]
     },
@@ -136,6 +780,328 @@
           "name": "Epictetus",
           "count": 10
         }
+      ],
+      "word_freq": [
+        {
+          "word": "meaning",
+          "count": 45
+        },
+        {
+          "word": "suffering",
+          "count": 37
+        },
+        {
+          "word": "life",
+          "count": 35
+        },
+        {
+          "word": "love",
+          "count": 34
+        },
+        {
+          "word": "self",
+          "count": 26
+        },
+        {
+          "word": "understanding",
+          "count": 25
+        },
+        {
+          "word": "way",
+          "count": 23
+        },
+        {
+          "word": "actions",
+          "count": 21
+        },
+        {
+          "word": "world",
+          "count": 20
+        },
+        {
+          "word": "control",
+          "count": 19
+        },
+        {
+          "word": "choose",
+          "count": 19
+        },
+        {
+          "word": "purpose",
+          "count": 19
+        },
+        {
+          "word": "live",
+          "count": 18
+        },
+        {
+          "word": "finding",
+          "count": 18
+        },
+        {
+          "word": "thoughts",
+          "count": 17
+        },
+        {
+          "word": "people",
+          "count": 17
+        },
+        {
+          "word": "understood",
+          "count": 16
+        },
+        {
+          "word": "power",
+          "count": 16
+        },
+        {
+          "word": "accepting",
+          "count": 16
+        },
+        {
+          "word": "importance",
+          "count": 16
+        },
+        {
+          "word": "happiness",
+          "count": 16
+        },
+        {
+          "word": "work",
+          "count": 16
+        },
+        {
+          "word": "others",
+          "count": 16
+        },
+        {
+          "word": "wrote",
+          "count": 15
+        },
+        {
+          "word": "good",
+          "count": 14
+        },
+        {
+          "word": "virtue",
+          "count": 14
+        },
+        {
+          "word": "emphasis",
+          "count": 14
+        },
+        {
+          "word": "human",
+          "count": 14
+        },
+        {
+          "word": "argued",
+          "count": 14
+        },
+        {
+          "word": "frankl",
+          "count": 14
+        },
+        {
+          "word": "requires",
+          "count": 14
+        },
+        {
+          "word": "recognizing",
+          "count": 13
+        },
+        {
+          "word": "face",
+          "count": 13
+        },
+        {
+          "word": "living",
+          "count": 12
+        },
+        {
+          "word": "nature",
+          "count": 12
+        },
+        {
+          "word": "desire",
+          "count": 12
+        },
+        {
+          "word": "true",
+          "count": 12
+        },
+        {
+          "word": "different",
+          "count": 11
+        },
+        {
+          "word": "external",
+          "count": 11
+        },
+        {
+          "word": "reality",
+          "count": 11
+        },
+        {
+          "word": "nietzsche",
+          "count": 11
+        },
+        {
+          "word": "viktor",
+          "count": 11
+        },
+        {
+          "word": "connection",
+          "count": 11
+        },
+        {
+          "word": "freedom",
+          "count": 11
+        },
+        {
+          "word": "stoics",
+          "count": 10
+        },
+        {
+          "word": "epictetus",
+          "count": 10
+        },
+        {
+          "word": "lies",
+          "count": 10
+        },
+        {
+          "word": "striving",
+          "count": 10
+        },
+        {
+          "word": "compassion",
+          "count": 10
+        },
+        {
+          "word": "awareness",
+          "count": 10
+        },
+        {
+          "word": "moment",
+          "count": 10
+        },
+        {
+          "word": "simple",
+          "count": 10
+        },
+        {
+          "word": "circumstances",
+          "count": 9
+        },
+        {
+          "word": "focus",
+          "count": 9
+        },
+        {
+          "word": "buddhists",
+          "count": 9
+        },
+        {
+          "word": "cannot",
+          "count": 9
+        },
+        {
+          "word": "resilience",
+          "count": 9
+        },
+        {
+          "word": "lives",
+          "count": 9
+        },
+        {
+          "word": "like",
+          "count": 9
+        },
+        {
+          "word": "joy",
+          "count": 9
+        },
+        {
+          "word": "path",
+          "count": 8
+        },
+        {
+          "word": "stoic",
+          "count": 8
+        },
+        {
+          "word": "offer",
+          "count": 8
+        },
+        {
+          "word": "embrace",
+          "count": 8
+        },
+        {
+          "word": "observed",
+          "count": 8
+        },
+        {
+          "word": "countless",
+          "count": 8
+        },
+        {
+          "word": "time",
+          "count": 8
+        },
+        {
+          "word": "emotions",
+          "count": 8
+        },
+        {
+          "word": "constantly",
+          "count": 7
+        },
+        {
+          "word": "emphasized",
+          "count": 7
+        },
+        {
+          "word": "buddhist",
+          "count": 7
+        },
+        {
+          "word": "inner",
+          "count": 7
+        },
+        {
+          "word": "larger",
+          "count": 7
+        },
+        {
+          "word": "montaigne",
+          "count": 7
+        },
+        {
+          "word": "grand",
+          "count": 7
+        },
+        {
+          "word": "right",
+          "count": 7
+        },
+        {
+          "word": "spinoza",
+          "count": 7
+        },
+        {
+          "word": "arises",
+          "count": 7
+        },
+        {
+          "word": "focusing",
+          "count": 7
+        },
+        {
+          "word": "attitude",
+          "count": 7
+        }
       ]
     },
     {
@@ -179,6 +1145,328 @@
         {
           "name": "Buddhism",
           "count": 16
+        }
+      ],
+      "word_freq": [
+        {
+          "word": "meaning",
+          "count": 54
+        },
+        {
+          "word": "life",
+          "count": 40
+        },
+        {
+          "word": "suffering",
+          "count": 38
+        },
+        {
+          "word": "love",
+          "count": 32
+        },
+        {
+          "word": "virtue",
+          "count": 30
+        },
+        {
+          "word": "human",
+          "count": 25
+        },
+        {
+          "word": "stoics",
+          "count": 24
+        },
+        {
+          "word": "work",
+          "count": 22
+        },
+        {
+          "word": "understanding",
+          "count": 21
+        },
+        {
+          "word": "quiet",
+          "count": 20
+        },
+        {
+          "word": "control",
+          "count": 20
+        },
+        {
+          "word": "way",
+          "count": 20
+        },
+        {
+          "word": "nietzsche",
+          "count": 20
+        },
+        {
+          "word": "living",
+          "count": 20
+        },
+        {
+          "word": "desire",
+          "count": 19
+        },
+        {
+          "word": "self",
+          "count": 19
+        },
+        {
+          "word": "power",
+          "count": 18
+        },
+        {
+          "word": "argued",
+          "count": 18
+        },
+        {
+          "word": "man",
+          "count": 18
+        },
+        {
+          "word": "time",
+          "count": 18
+        },
+        {
+          "word": "choose",
+          "count": 17
+        },
+        {
+          "word": "world",
+          "count": 17
+        },
+        {
+          "word": "spinoza",
+          "count": 17
+        },
+        {
+          "word": "path",
+          "count": 17
+        },
+        {
+          "word": "wisdom",
+          "count": 17
+        },
+        {
+          "word": "purpose",
+          "count": 17
+        },
+        {
+          "word": "nature",
+          "count": 16
+        },
+        {
+          "word": "frankl",
+          "count": 16
+        },
+        {
+          "word": "happiness",
+          "count": 16
+        },
+        {
+          "word": "taught",
+          "count": 15
+        },
+        {
+          "word": "like",
+          "count": 15
+        },
+        {
+          "word": "others",
+          "count": 15
+        },
+        {
+          "word": "lives",
+          "count": 15
+        },
+        {
+          "word": "desires",
+          "count": 14
+        },
+        {
+          "word": "philosopher",
+          "count": 14
+        },
+        {
+          "word": "wrote",
+          "count": 13
+        },
+        {
+          "word": "fate",
+          "count": 13
+        },
+        {
+          "word": "moments",
+          "count": 13
+        },
+        {
+          "word": "attitude",
+          "count": 13
+        },
+        {
+          "word": "true",
+          "count": 13
+        },
+        {
+          "word": "knowledge",
+          "count": 13
+        },
+        {
+          "word": "journey",
+          "count": 13
+        },
+        {
+          "word": "ideas",
+          "count": 12
+        },
+        {
+          "word": "embrace",
+          "count": 12
+        },
+        {
+          "word": "day",
+          "count": 12
+        },
+        {
+          "word": "people",
+          "count": 12
+        },
+        {
+          "word": "live",
+          "count": 12
+        },
+        {
+          "word": "society",
+          "count": 12
+        },
+        {
+          "word": "idea",
+          "count": 12
+        },
+        {
+          "word": "echoed",
+          "count": 11
+        },
+        {
+          "word": "good",
+          "count": 11
+        },
+        {
+          "word": "freedom",
+          "count": 11
+        },
+        {
+          "word": "viktor",
+          "count": 11
+        },
+        {
+          "word": "circumstances",
+          "count": 11
+        },
+        {
+          "word": "cannot",
+          "count": 10
+        },
+        {
+          "word": "epictetus",
+          "count": 10
+        },
+        {
+          "word": "finding",
+          "count": 10
+        },
+        {
+          "word": "buddhists",
+          "count": 10
+        },
+        {
+          "word": "experiences",
+          "count": 10
+        },
+        {
+          "word": "moment",
+          "count": 10
+        },
+        {
+          "word": "aristotle",
+          "count": 10
+        },
+        {
+          "word": "remember",
+          "count": 10
+        },
+        {
+          "word": "thinkers",
+          "count": 9
+        },
+        {
+          "word": "centuries",
+          "count": 9
+        },
+        {
+          "word": "confucius",
+          "count": 9
+        },
+        {
+          "word": "montaigne",
+          "count": 9
+        },
+        {
+          "word": "emotions",
+          "count": 9
+        },
+        {
+          "word": "holocaust",
+          "count": 9
+        },
+        {
+          "word": "joy",
+          "count": 9
+        },
+        {
+          "word": "acceptance",
+          "count": 9
+        },
+        {
+          "word": "end",
+          "count": 9
+        },
+        {
+          "word": "importance",
+          "count": 9
+        },
+        {
+          "word": "search",
+          "count": 9
+        },
+        {
+          "word": "bustling",
+          "count": 9
+        },
+        {
+          "word": "doing",
+          "count": 9
+        },
+        {
+          "word": "present",
+          "count": 9
+        },
+        {
+          "word": "reality",
+          "count": 8
+        },
+        {
+          "word": "harmony",
+          "count": 8
+        },
+        {
+          "word": "survived",
+          "count": 8
+        },
+        {
+          "word": "constant",
+          "count": 8
         }
       ]
     }

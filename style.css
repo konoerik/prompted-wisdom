@@ -768,6 +768,36 @@ body {
   text-underline-offset: 3px;
 }
 
+/* ── Word cloud ──────────────────────────────────────────── */
+.wordcloud-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.wordcloud-panel {
+  background: var(--bg-resources);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+}
+
+.wordcloud-model {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.wordcloud-canvas {
+  display: block;
+  width: 100%;
+}
+
 /* ── Chapter navigation ──────────────────────────────────── */
 .chapter-nav {
   display: grid;

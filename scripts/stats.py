@@ -18,6 +18,68 @@ CONTENT_DIR  = ROOT / "content"
 MODELS_JSON  = ROOT / "meta" / "models.json"
 OUTPUT       = ROOT / "meta" / "stats.json"
 
+STOP_WORDS = frozenset({
+    # Articles, conjunctions, prepositions
+    'the','a','an','and','or','but','in','on','at','to','for','of','with',
+    'by','from','into','onto','upon','about','above','below','between',
+    'through','during','before','after','against','along','among','around',
+    'near','over','under','until','within','without','toward','towards',
+    # Pronouns
+    'i','me','my','we','our','you','your','he','him','his','she','her',
+    'it','its','they','them','their','this','that','these','those',
+    'what','which','who','whom','whose','myself','yourself','himself',
+    'herself','itself','ourselves','themselves',
+    # Common verbs
+    'is','are','was','were','be','been','being','have','has','had','do',
+    'does','did','will','would','could','should','may','might','must',
+    'shall','can','let','get','gets','got','make','makes','made','take',
+    'takes','took','come','comes','came','give','gives','gave','know',
+    'knows','knew','think','thinks','thought','see','sees','saw','find',
+    'finds','found','want','say','says','said','tell','told','put','use',
+    'uses','go','goes','went','ask','try','tried','mean','means','meant',
+    'keep','keeps','kept','show','shows','seem','seems','seemed','become',
+    'becomes','became','feel','feels','felt','leave','left','call','calls',
+    'called','turn','begin','began','move','moves','moved','bring','brought',
+    'hold','holds','held','believe','believes','believed','set','sets',
+    'sets','learn','change','changes','follow','follows','stop','create',
+    # Adverbs, conjunctions, common adjectives
+    'not','no','nor','so','yet','both','either','neither','than','as',
+    'if','when','where','how','why','all','any','each','every','more',
+    'most','other','some','such','up','out','here','there','very','just',
+    'also','even','only','own','same','too','much','well','often','always',
+    'never','perhaps','simply','already','away','back','still','again',
+    'then','once','really','however','therefore','thus','whether','rather',
+    'though','although','because','since','while','moreover','indeed',
+    'certainly','probably','actually','especially','generally','usually',
+    'sometimes','merely','quite','enough','truly',
+    # Contraction fragments (apostrophe splits "isn't" → "isn" + "t"; "t" filtered by len)
+    'isn','don','didn','won','can','couldn','wouldn','shouldn','doesn',
+    'wasn','weren','haven','hasn','hadn','that','they','i\'ve','we\'ve',
+    # Past participles of filtered verbs
+    'seen','gone','done','been','come','taken','given','known','thought',
+    'said','told','left','found','made','kept','held','brought','shown',
+    'become','used','called','turned','followed','led','set','tried',
+    # Numbers / quantifiers
+    'one','two','three','four','five','six','seven','eight','nine','ten',
+    'first','second','third','last','many','few','several','another',
+    # Generic nouns too vague to be interesting
+    'thing','things','something','nothing','everything','anything',
+    'someone','everyone','anyone','nobody','somebody','kind','kinds',
+    'part','parts','place','places','point','fact','sense','case',
+    'example','form','forms','word','words','reason','reasons',
+    'number','lot','bit','question','answer',
+})
+
+def extract_word_freq(body, top_n=80):
+    """Top-N word frequencies from body text, excluding stop words."""
+    words = re.findall(r'\b[a-z]{3,}\b', body.lower())
+    counts = {}
+    for w in words:
+        if w not in STOP_WORDS:
+            counts[w] = counts.get(w, 0) + 1
+    ranked = sorted(counts.items(), key=lambda x: x[1], reverse=True)
+    return [{'word': w, 'count': c} for w, c in ranked[:top_n]]
+
 # Curated entity list: (canonical display name, list of forms to match)
 ENTITIES = [
     ("Epictetus",      ["epictetus"]),
@@ -85,6 +147,7 @@ def main():
         model_words   = []
         model_tokens  = 0
         entity_totals = {}
+        model_text    = ""
 
         for slug, _ in CHAPTERS:
             path = CONTENT_DIR / m["slug"] / f"{slug}.md"
@@ -101,6 +164,7 @@ def main():
             total_output_tokens  += tok
             total_words          += wc
             total_files          += 1
+            model_text           += " " + body
             for entity, count in count_entities(body).items():
                 entity_totals[entity] = entity_totals.get(entity, 0) + count
 
@@ -115,6 +179,7 @@ def main():
             "avg_words":   round(sum(present) / len(present)) if present else 0,
             "word_counts": model_words,
             "top_entities": [{"name": name, "count": count} for name, count in top_entities],
+            "word_freq":   extract_word_freq(model_text),
         })
 
     for i, (slug, label) in enumerate(CHAPTERS):

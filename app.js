@@ -279,6 +279,34 @@ async function initCharts() {
   Chart.defaults.font.size   = 12;
   Chart.defaults.color       = labelColor;
 
+  // Word clouds
+  const wcGrid = document.getElementById('wordcloud-grid');
+  wcGrid.innerHTML = stats.by_model.map(m =>
+    `<div class="wordcloud-panel">
+       <div class="wordcloud-model">${escapeHtml(m.display)}</div>
+       <canvas class="wordcloud-canvas" data-model="${escapeHtml(m.slug)}"></canvas>
+     </div>`
+  ).join('');
+
+  const wcIsDark = document.documentElement.dataset.theme === 'dark';
+  stats.by_model.forEach(m => {
+    const canvas = wcGrid.querySelector(`canvas[data-model="${m.slug}"]`);
+    if (!canvas || !m.word_freq?.length) return;
+    const w       = canvas.parentElement.clientWidth - 40;
+    canvas.width  = w;
+    canvas.height = 240;
+    WordCloud(canvas, {
+      list:            m.word_freq.map(({ word, count }) => [word, count]),
+      gridSize:        8,
+      weightFactor:    w / 480,
+      fontFamily:      'Inter, system-ui, sans-serif',
+      color:           wcIsDark ? 'random-light' : 'random-dark',
+      rotateRatio:     0.3,
+      rotationSteps:   2,
+      backgroundColor: 'transparent',
+    });
+  });
+
   // Populate entity grid
   document.getElementById('entities-grid').innerHTML = stats.by_model.map(m => `
     <div class="entities-col">
