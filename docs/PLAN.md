@@ -9,6 +9,8 @@
 ## Backlog
 <!-- Accepted but not yet active. Load this section only when planning or prioritizing. -->
 - Commentary page — author's own observations from reading across all four models; depends on completing offline review first
+- Community insights page — readers post thoughts via GitHub (issue or discussion), author curates and adds them to a page; no backend needed; format TBD
+- Methodology page: add "Decisions and trade-offs" section covering — no system prompt (transparency + verifiability), separate prompts per chapter not one session (equal treatment per theme, continuity via shared persona), frontier models only (open-source would dilute framing), single canonical run (no editorial selection between runs), temperature zero (minimise within-model variation), OpenRouter (single interface across models, adds one indirection layer noted in caveats)
 - Open-source model tier: add a separate comparison track for strong open-source models (e.g. Llama, Mistral) — kept distinct from the frontier tier so the comparison framing stays clean
 - DeepSeek V3 (China): interesting for Buddhist/Confucian chapters specifically — evaluate once core four models have real content to compare against
 
