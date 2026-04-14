@@ -15,6 +15,19 @@
 ## Decisions (ADRs)
 <!-- Append new ADRs with /log -->
 
+### ADR-5: Git tags mark prompt version boundaries
+**Date:** 2026-04-14
+**Context:** The prompt evolved through several iterations (v1.0 → v1.3b) before content was finalised. Keeping multiple rendered versions of 48+ chapters in the live site would require UI complexity and multiply the content surface. The project needs a way to let readers or contributors compare prompt versions without that overhead.
+**Decision:**
+- Each time the canonical prompt changes and all chapters are regenerated, a git tag is created whose name matches the `prompt_version` field written into every content file's frontmatter (e.g. `v1.0`, `v1.3b`).
+- The live site always reflects the latest canonical prompt. Prior versions are accessible by checking out the corresponding tag and running the site locally (`git checkout v1.0 && npx serve`).
+- **Tag before regenerating** — the prior version must be tagged while it is still the HEAD content, so the reference point is never lost.
+- Tag names must match exactly the string passed to `generate.py --prompt-version`. No aliases or synonyms.
+
+**Alternatives considered:** Rendering all prompt versions in the UI as a third axis alongside model and chapter — rejected: multiplies rendered content, requires significant UI work, and frames the project as a lab notebook rather than a readable guide. Storing prior content in a separate branch — rejected: harder to discover and checkout than a tag.
+
+**Consequences:** Regeneration is a deliberate, versioned event, not an incremental edit. The `--prompt-version` flag in `generate.py` must be set correctly on every generation run. Anyone cloning the repo can reproduce any prior version of the site exactly.
+
 ### ADR-4: Build-time statistics pipeline via stats.py → meta/stats.json
 **Date:** 2026-04-12
 **Context:** The statistics page needs word counts, token totals, model metadata, and thinker/tradition mention counts derived from all generated content files. Doing this at runtime in the browser would require fetching and parsing 48 markdown files on page load.
