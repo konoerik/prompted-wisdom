@@ -124,7 +124,7 @@ def word_count(text):
 def sha256(text):
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
-def write_output(chapter_slug, model, body, input_tok, output_tok, test=False):
+def write_output(chapter_slug, model, body, input_tok, output_tok, test=False, prompt_version="v1.2"):
     chapter  = CHAPTERS.get(chapter_slug)
     title    = chapter[0] if chapter else chapter_slug.replace("-", " ").title()
     chapter_n = chapter[1] if chapter else None
@@ -138,6 +138,7 @@ title: "{title}"
 slug: {chapter_slug}
 {chapter_line}model: {model['id']}
 model_display: {model['display']}
+prompt_version: {prompt_version}
 generated_at: "{ts}"
 word_count: {wc}
 token_count_input: {input_tok}
@@ -169,6 +170,8 @@ def main():
                         help="Write output to tests/<model>/ instead of content/<model>/")
     parser.add_argument("--skip-moderation", action="store_true",
                         help="Skip the OpenAI moderation check")
+    parser.add_argument("--prompt-version", default="v1.2",
+                        help="Prompt version string recorded in frontmatter (default: v1.2)")
     args = parser.parse_args()
 
     if not args.test and args.chapter not in CHAPTERS:
@@ -198,7 +201,7 @@ def main():
         else:
             print("Skipping moderation (OPENAI_API_KEY not set)")
 
-    out_path, checksum, wc = write_output(args.chapter, model, body, input_tok, output_tok, test=args.test)
+    out_path, checksum, wc = write_output(args.chapter, model, body, input_tok, output_tok, test=args.test, prompt_version=args.prompt_version)
 
     print(f"\nDone.")
     print(f"  File:   {out_path.relative_to(ROOT)}")
