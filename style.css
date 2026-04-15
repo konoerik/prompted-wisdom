@@ -164,6 +164,58 @@ body {
   gap: 1rem;
 }
 
+/* ── Commentary ─────────────────────────────────────────── */
+.foreword-byline {
+  font-family: var(--font-ui);
+  font-size: 0.63rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-secondary);
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.commentary-version-block {
+  margin-bottom: 1.5rem;
+  background: var(--bg-resources);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+}
+.commentary-version-block ul {
+  padding-left: 1.25rem;
+  margin: 0.25rem 0 1rem;
+}
+.commentary-version-heading {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+.commentary-version-tag {
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  opacity: 0.6;
+  margin-left: 0.4em;
+}
+
+/* ── Prompt version label ───────────────────────────────── */
+.prompt-version-label {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.prompt-version-label:hover {
+  color: var(--accent);
+}
+
 /* ── Theme toggle ────────────────────────────────────────── */
 .theme-toggle {
   display: flex;
@@ -747,8 +799,7 @@ body {
 }
 
 .welcome-method {
-  border-top: 1px solid var(--border);
-  padding-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .welcome-method p {

@@ -17,6 +17,7 @@ ROOT         = Path(__file__).resolve().parent.parent
 CONTENT_DIR  = ROOT / "content"
 MODELS_JSON  = ROOT / "meta" / "models.json"
 OUTPUT       = ROOT / "meta" / "stats.json"
+SITE_OUTPUT  = ROOT / "meta" / "site.json"
 
 STOP_WORDS = frozenset({
     # Articles, conjunctions, prepositions
@@ -205,9 +206,24 @@ def main():
         "chapters":  chapters,
     }
 
+    # Read prompt_version from the first available content file
+    prompt_version = ""
+    for m in models:
+        for slug, _ in CHAPTERS:
+            path = CONTENT_DIR / m["slug"] / f"{slug}.md"
+            if path.exists():
+                v = parse_frontmatter(path.read_text(encoding="utf-8"), "prompt_version")
+                if v:
+                    prompt_version = v
+                    break
+        if prompt_version:
+            break
+
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(stats, indent=2), encoding="utf-8")
+    SITE_OUTPUT.write_text(json.dumps({"prompt_version": prompt_version}, indent=2), encoding="utf-8")
     print(f"Written: {OUTPUT.relative_to(ROOT)}")
+    print(f"Written: {SITE_OUTPUT.relative_to(ROOT)}")
     print(f"  Models:        {stats['summary']['models']}")
     print(f"  Chapters:      {stats['summary']['chapters']}")
     print(f"  Output tokens: {stats['summary']['total_output_tokens']:,}")

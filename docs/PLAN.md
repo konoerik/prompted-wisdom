@@ -4,11 +4,9 @@
 <!-- Current sprint items. Keep this short — 5-10 items max.
      If it grows beyond that, move lower-priority items to Backlog. -->
 
-
-
 ## Backlog
 <!-- Accepted but not yet active. Load this section only when planning or prioritizing. -->
-- Commentary page — author's own observations from reading across all four models; depends on completing offline review first
+- Visual exploration of thinkers and ideas — format TBD: geographic map, timeline, or chart showing relationships/progression across traditions; would complement the chapter content as an at-a-glance reference
 - Community insights page — readers post thoughts via GitHub (issue or discussion), author curates and adds them to a page; no backend needed; format TBD
 - Methodology page: add "Decisions and trade-offs" section covering — no system prompt (transparency + verifiability), separate prompts per chapter not one session (equal treatment per theme, continuity via shared persona), frontier models only (open-source would dilute framing), single canonical run (no editorial selection between runs), temperature zero (minimise within-model variation), OpenRouter (single interface across models, adds one indirection layer noted in caveats)
 - Open-source model tier: add a separate comparison track for strong open-source models (e.g. Llama, Mistral) — kept distinct from the frontier tier so the comparison framing stays clean
@@ -18,6 +16,7 @@
 ## Done
 <!-- Completed items land here temporarily.
      The stop hook archives these to .claude/archive/YYYY-MM.md and clears this section. -->
+- Commentary page — built card layout, version block template, per-version notes for all four models across v1.3b; v1.3a block added; "Author's Commentary" heading; CSS card styling
 - Methodology page: prompt (persona + chapter table), generation parameters, provenance; trimmed About; in-chapter prompt disclosure; CSS tooltip on system prompt
 - Verified and fixed all 8 broken LibriVox links on Resources page
 - Mobile layout: collapsible hamburger nav; `make serve-mobile` added for local network testing

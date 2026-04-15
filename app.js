@@ -41,7 +41,8 @@ function route() {
       showStatic('stats');
       if (!chartsReady) { initCharts(); chartsReady = true; }
       break;
-    case 'resources': showStatic('resources'); break;
+    case 'resources':    showStatic('resources');    break;
+    case 'commentary':   showStatic('commentary');   break;
     case 'methodology':
       showStatic('methodology');
       renderMethodologyPage();
@@ -80,7 +81,7 @@ function route() {
 // ── Static views ────────────────────────────────────────────────────
 
 function showStatic(name) {
-  ['welcome', 'about', 'stats', 'resources', 'methodology', 'chapter'].forEach(v => {
+  ['welcome', 'about', 'stats', 'resources', 'commentary', 'methodology', 'chapter'].forEach(v => {
     document.getElementById('view-' + v).style.display = v === name ? '' : 'none';
   });
 }
@@ -542,6 +543,14 @@ function init() {
   });
 
   updateChapterHrefs(); // Set initial hrefs before first route()
+
+  fetch('meta/site.json')
+    .then(r => r.json())
+    .then(site => {
+      const label = document.querySelector('.prompt-version-label');
+      if (label && site.prompt_version) label.textContent = 'prompt ' + site.prompt_version;
+    })
+    .catch(() => {});
 
   window.addEventListener('hashchange', route);
   route();
