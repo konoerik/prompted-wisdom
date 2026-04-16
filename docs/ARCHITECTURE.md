@@ -8,8 +8,19 @@
 **Libraries:** Chart.js 4.x (CDN), js-yaml 4.x (CDN)
 **Scripts:** `scripts/generate.py` (content generation), `scripts/stats.py` (aggregates stats.json from content files)
 **Data:** `meta/stats.json` fetched at runtime by `app.js`; `content/<model-slug>/<chapter-slug>.md` fetched on chapter navigation; `meta/models.json` read by Python scripts only
-**Dev tooling:** `Makefile` (install, serve, stats, generate, freeze targets); `requirements.txt` (pinned Python deps for scripts)
+**Dev tooling:** `Makefile` (install, serve, stats, estimate, generate, freeze targets); `requirements.txt` (pinned Python deps for scripts)
 **Key constraint:** CDN imports only; run via `make serve` or `python3 -m http.server` if loading local files
+
+**Generation costs** (OpenRouter, last checked 2026-04-15 — update `meta/models.json` pricing fields when rates change, then `make estimate` reflects the new numbers automatically):
+
+| Model | Slug | In $/1M | Out $/1M | 12 chapters |
+|---|---|---|---|---|
+| Claude Opus 4.6 | `claude-opus-4-6` | $5.00 | $25.00 | ~$0.17 |
+| GPT-5.4 | `gpt-5` | $2.50 | $15.00 | ~$0.10 |
+| Gemini 2.5 Pro | `gemini-2-5-pro` | $1.25 | $10.00 | ~$0.26 |
+| Mistral Large 3 | `mistral-large-3` | $0.50 | $1.50 | ~$0.01 |
+
+Full 48-chapter run: **~$0.54** · Run `make estimate` before each regeneration to confirm with live model config.
 
 
 ## Decisions (ADRs)

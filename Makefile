@@ -17,6 +17,7 @@ help:
 	@echo "  make serve PORT=8765      Start on a custom port"
 	@echo "  make serve-mobile         Serve on local network for iPhone testing (same WiFi required)"
 	@echo "  make stats                Rebuild meta/stats.json from content files"
+	@echo "  make estimate             Show projected cost for a full 48-chapter regeneration"
 	@echo "  make generate CHAPTER=x   Generate a chapter (all models)"
 	@echo "  make generate CHAPTER=x MODEL=y  Generate for a specific model"
 	@echo "  make freeze               Update requirements.txt from current venv"
@@ -47,6 +48,10 @@ serve-mobile:
 	python3 -m http.server $(PORT) --bind 0.0.0.0
 
 # ── Scripts ───────────────────────────────────────────────────────────
+.PHONY: estimate
+estimate:
+	@$(PYTHON) scripts/estimate.py
+
 .PHONY: stats
 stats:
 	$(PYTHON) scripts/stats.py

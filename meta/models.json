@@ -20,6 +20,12 @@
       "via": "openrouter",
       "approved": true,
       "approved_date": "2026-04-15",
+      "pricing": {
+        "input_per_1m": 5.00,
+        "output_per_1m": 25.00,
+        "retrieved": "2026-04-15"
+      },
+      "expected_output_tokens": 480,
       "notes": "Claude Opus 4.6 via OpenRouter — frontier Claude model for phase 2"
     },
     {
@@ -42,6 +48,12 @@
       "via": "openrouter",
       "approved": true,
       "approved_date": "2026-04-15",
+      "pricing": {
+        "input_per_1m": 2.50,
+        "output_per_1m": 15.00,
+        "retrieved": "2026-04-15"
+      },
+      "expected_output_tokens": 475,
       "notes": "GPT-5.4 via OpenRouter — frontier OpenAI model for phase 2"
     },
     {
@@ -65,6 +77,13 @@
       "approved": true,
       "approved_date": "2026-04-15",
       "max_tokens": 8000,
+      "pricing": {
+        "input_per_1m": 1.25,
+        "output_per_1m": 10.00,
+        "retrieved": "2026-04-15",
+        "note": "output_per_1m includes thinking tokens; expected_output_tokens reflects total billed output"
+      },
+      "expected_output_tokens": 2100,
       "notes": "Gemini 2.5 Pro via OpenRouter — thinking model; max_tokens raised to 8000 to accommodate thinking token budget"
     },
     {
@@ -87,6 +106,12 @@
       "via": "openrouter",
       "approved": true,
       "approved_date": "2026-04-15",
+      "pricing": {
+        "input_per_1m": 0.50,
+        "output_per_1m": 1.50,
+        "retrieved": "2026-04-15"
+      },
+      "expected_output_tokens": 530,
       "notes": "Mistral Large 3 (2512) via OpenRouter — frontier Mistral model for phase 2"
     }
   ]

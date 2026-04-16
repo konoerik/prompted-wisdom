@@ -25,6 +25,7 @@
 - All resolved or significantly improved in frontier model versions
 
 **Regeneration tasks:**
+- Run `make estimate` first — confirm cost and that account has sufficient funds
 - Regenerate all 48 chapters (12 × 4 models) with v1.4 prompt
 - Update Commentary v1.4 with per-model notes after reading output
 - Re-run stats.py and update stats.json
