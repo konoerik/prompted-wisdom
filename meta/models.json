@@ -7,9 +7,20 @@
       "slug": "claude-sonnet-4",
       "provider": "Anthropic",
       "via": "openrouter",
+      "approved": false,
+      "retired_date": "2026-04-15",
+      "notes": "Retired — replaced by claude-opus-4-6"
+    },
+    {
+      "id": "anthropic/claude-opus-4.6",
+      "openrouter_id": "anthropic/claude-opus-4.6",
+      "display": "Claude",
+      "slug": "claude-opus-4-6",
+      "provider": "Anthropic",
+      "via": "openrouter",
       "approved": true,
-      "approved_date": "2026-04-10",
-      "notes": "Claude Sonnet 4.5 via OpenRouter"
+      "approved_date": "2026-04-15",
+      "notes": "Claude Opus 4.6 via OpenRouter — frontier Claude model for phase 2"
     },
     {
       "id": "openai/gpt-4o",
@@ -18,9 +29,20 @@
       "slug": "gpt-4o",
       "provider": "OpenAI",
       "via": "openrouter",
+      "approved": false,
+      "retired_date": "2026-04-15",
+      "notes": "Retired — replaced by gpt-5"
+    },
+    {
+      "id": "openai/gpt-5.4",
+      "openrouter_id": "openai/gpt-5.4",
+      "display": "GPT-5",
+      "slug": "gpt-5",
+      "provider": "OpenAI",
+      "via": "openrouter",
       "approved": true,
-      "approved_date": "2026-04-11",
-      "notes": "GPT-4o via OpenRouter"
+      "approved_date": "2026-04-15",
+      "notes": "GPT-5.4 via OpenRouter — frontier OpenAI model for phase 2"
     },
     {
       "id": "google/gemini-2.0-flash",
@@ -29,9 +51,21 @@
       "slug": "gemini-2-flash",
       "provider": "Google",
       "via": "openrouter",
+      "approved": false,
+      "retired_date": "2026-04-15",
+      "notes": "Retired — replaced by gemini-2-5-pro"
+    },
+    {
+      "id": "google/gemini-2.5-pro",
+      "openrouter_id": "google/gemini-2.5-pro",
+      "display": "Gemini",
+      "slug": "gemini-2-5-pro",
+      "provider": "Google",
+      "via": "openrouter",
       "approved": true,
-      "approved_date": "2026-04-11",
-      "notes": "Gemini 2.0 Flash via OpenRouter"
+      "approved_date": "2026-04-15",
+      "max_tokens": 8000,
+      "notes": "Gemini 2.5 Pro via OpenRouter — thinking model; max_tokens raised to 8000 to accommodate thinking token budget"
     },
     {
       "id": "mistralai/mistral-large-2411",
@@ -40,9 +74,20 @@
       "slug": "mistral-large",
       "provider": "Mistral AI",
       "via": "openrouter",
+      "approved": false,
+      "retired_date": "2026-04-15",
+      "notes": "Retired — replaced by mistral-large-3"
+    },
+    {
+      "id": "mistralai/mistral-large-2512",
+      "openrouter_id": "mistralai/mistral-large-2512",
+      "display": "Mistral",
+      "slug": "mistral-large-3",
+      "provider": "Mistral AI",
+      "via": "openrouter",
       "approved": true,
-      "approved_date": "2026-04-11",
-      "notes": "Mistral Large 2411 via OpenRouter"
+      "approved_date": "2026-04-15",
+      "notes": "Mistral Large 3 (2512) via OpenRouter — frontier Mistral model for phase 2"
     }
   ]
 }

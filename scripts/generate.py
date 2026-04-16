@@ -79,9 +79,18 @@ def load_model(slug):
             return m
     raise ValueError(f"Model '{slug}' not found or not approved in models.json")
 
+def generation_params(model):
+    """Return GENERATION_PARAMS with any per-model overrides applied."""
+    params = GENERATION_PARAMS.copy()
+    if "max_tokens" in model:
+        params["max_tokens"] = model["max_tokens"]
+    return params
+
 # ── Generation ────────────────────────────────────────────────────────
 
-def generate(prompt, model_id, api_key, retries=3):
+def generate(prompt, model_id, api_key, params=None, retries=3):
+    if params is None:
+        params = GENERATION_PARAMS
     client = OpenAI(
         api_key=api_key,
         base_url="https://openrouter.ai/api/v1",
@@ -92,7 +101,7 @@ def generate(prompt, model_id, api_key, retries=3):
             response = client.chat.completions.create(
                 model=model_id,  # openrouter_id
                 messages=[{"role": "user", "content": prompt}],
-                **GENERATION_PARAMS,
+                **params,
             )
             body       = response.choices[0].message.content.strip()
             input_tok  = response.usage.prompt_tokens
@@ -124,7 +133,9 @@ def word_count(text):
 def sha256(text):
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
-def write_output(chapter_slug, model, body, input_tok, output_tok, test=False, prompt_version="v1.2"):
+def write_output(chapter_slug, model, body, input_tok, output_tok, test=False, prompt_version="v1.2", params=None):
+    if params is None:
+        params = GENERATION_PARAMS
     chapter  = CHAPTERS.get(chapter_slug)
     title    = chapter[0] if chapter else chapter_slug.replace("-", " ").title()
     chapter_n = chapter[1] if chapter else None
@@ -143,8 +154,8 @@ generated_at: "{ts}"
 word_count: {wc}
 token_count_input: {input_tok}
 token_count_output: {output_tok}
-temperature: {GENERATION_PARAMS['temperature']}
-max_tokens: {GENERATION_PARAMS['max_tokens']}
+temperature: {params['temperature']}
+max_tokens: {params['max_tokens']}
 sha256: "{checksum}"
 ---"""
 
@@ -162,8 +173,8 @@ def main():
     parser = argparse.ArgumentParser(description="Generate a chapter for Prompted Wisdom")
     parser.add_argument("--chapter", required=True,
                         help="Chapter slug to generate (or test slug with --test)")
-    parser.add_argument("--model", default="claude-sonnet-4",
-                        help="Model slug from models.json (default: claude-sonnet-4)")
+    parser.add_argument("--model", default="claude-opus-4-6",
+                        help="Model slug from models.json (default: claude-opus-4-6)")
     parser.add_argument("--core", default="core",
                         help="Core persona block name in PROMPT.md (default: core)")
     parser.add_argument("--test", action="store_true",
@@ -190,8 +201,12 @@ def main():
     print(f"Building prompt for: {args.chapter} (core: {args.core})")
     prompt = build_prompt(args.chapter, args.core)
 
+    params = generation_params(model)
+    if params["max_tokens"] != GENERATION_PARAMS["max_tokens"]:
+        print(f"  (max_tokens overridden to {params['max_tokens']} for this model)")
+
     print(f"Calling {model['id']} via OpenRouter…")
-    body, input_tok, output_tok = generate(prompt, model["openrouter_id"], api_key)
+    body, input_tok, output_tok = generate(prompt, model["openrouter_id"], api_key, params=params)
 
     if not args.skip_moderation:
         openai_key = os.environ.get("OPENAI_API_KEY")
@@ -201,7 +216,7 @@ def main():
         else:
             print("Skipping moderation (OPENAI_API_KEY not set)")
 
-    out_path, checksum, wc = write_output(args.chapter, model, body, input_tok, output_tok, test=args.test, prompt_version=args.prompt_version)
+    out_path, checksum, wc = write_output(args.chapter, model, body, input_tok, output_tok, test=args.test, prompt_version=args.prompt_version, params=params)
 
     print(f"\nDone.")
     print(f"  File:   {out_path.relative_to(ROOT)}")

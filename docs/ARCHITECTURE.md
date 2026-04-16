@@ -15,6 +15,21 @@
 ## Decisions (ADRs)
 <!-- Append new ADRs with /log -->
 
+### ADR-6: Phase 2 model lineup — full frontier upgrade
+**Date:** 2026-04-15
+**Context:** After completing the v1.3b read across all four models and running the v1.4 prompt experiment (chapter list addition), it was clear that structural quality issues in GPT-4o, Gemini 2.0 Flash, and Mistral Large 2411 were not solvable by prompt iteration alone. GPT-4o defaulted to a textbook-survey shape regardless of the chapter list. Gemini 2.0 Flash had a deterministic opening pattern ("X. It's a...") that persisted across all versions and produced near-identical structure between v1.0 and v1.3b. Mistral Large 2411 was verbose, exceeded word targets, and bled Viktor Frankl into chapters where he does not belong. Claude Sonnet 4.5 produced clean output but a newer version (4.6) and a more capable model (Opus 4.6) were available at comparable cost. A full 48-chapter run at frontier pricing costs $0.47–$0.54 total, making cost a non-factor.
+**Decision:** Retire all four current models and replace with frontier equivalents for phase 2 content regeneration:
+- Claude Sonnet 4.5 → Claude Opus 4.6 (`anthropic/claude-opus-4.6`, slug: `claude-opus-4-6`)
+- GPT-4o → GPT-5.4 (`openai/gpt-5.4`, slug: `gpt-5`)
+- Gemini 2.0 Flash → Gemini 2.5 Pro (`google/gemini-2.5-pro`, slug: `gemini-2-5-pro`)
+- Mistral Large 2411 → Mistral Large 3 (`mistralai/mistral-large-2512`, slug: `mistral-large-3`)
+
+Per-model `max_tokens` override added to `models.json` and honoured in `generate.py` via a new `generation_params(model)` helper. Gemini 2.5 Pro requires `max_tokens: 8000` to clear its internal thinking token budget before producing prose output (default 1500 caused truncation after ~50 words).
+
+**Alternatives considered:** Upgrading only the underperforming models (GPT and Gemini) while keeping Claude Sonnet 4.5 and Mistral Large 2411 — rejected: Sonnet 4.6/Opus 4.6 is a free or near-free upgrade, and Mistral Large 3 is actually 4× cheaper than 2411 while producing better output. Adding new models as a fifth/sixth slot rather than replacing — rejected: the project's four-way comparison framing is a deliberate constraint; expanding the model count would require significant UI work and dilute the focus.
+
+**Consequences:** All 48 chapters must be regenerated. Content directories for retired models (`claude-sonnet-4/`, `gpt-4o/`, `gemini-2-flash/`, `mistral-large/`) will be replaced by new slugs. Commentary page needs v1.4 blocks for all four new models. `stats.py` must be re-run. Git tag should be applied after regeneration. `generate.py` default model arg updated to `claude-opus-4-6`.
+
 ### ADR-5: Git tags mark prompt version boundaries
 **Date:** 2026-04-14
 **Context:** The prompt evolved through several iterations (v1.0 → v1.3b) before content was finalised. Keeping multiple rendered versions of 48+ chapters in the live site would require UI complexity and multiply the content surface. The project needs a way to let readers or contributors compare prompt versions without that overhead.

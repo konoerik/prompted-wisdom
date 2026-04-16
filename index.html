@@ -125,7 +125,7 @@
       <button class="theme-toggle" aria-label="Toggle dark mode">
         <span class="theme-toggle-icon">◑</span>
       </button>
-      <a href="#methodology" class="prompt-version-label">prompt v1.3b</a>
+      <a href="#methodology" class="prompt-version-label">prompt v1.4</a>
     </div>
   </nav>
 
@@ -584,6 +584,43 @@
         </div>
         ───────────────────────────────────────────────────────────────
         -->
+
+        <div class="commentary-version-block">
+          <h2 class="commentary-version-heading">Prompt v1.4 <span class="commentary-version-tag">experiment</span></h2>
+          <p>Added a full chapter list to the core persona to reduce cross-chapter repetition of thinkers and arguments.
+            This version was not used for a full content generation — instead it became the trigger for a broader model
+            evaluation that led to the phase 2 model upgrade.</p>
+          <p>Changes:</p>
+          <ul>
+            <li>Core persona extended with a single sentence listing all twelve chapters and the instruction:
+              "you are writing only the chapter you are given — do not preview, summarise, or defer to material that
+              belongs in another chapter."</li>
+          </ul>
+          <p>Outcome:</p>
+          <ul>
+            <li>The chapter list worked clearly for Claude and meaningfully for GPT-5.4, producing distinct theses
+              and better chapter separation. Effect was marginal for GPT-4o and Gemini 2.0 Flash — the structural
+              problems in those models proved resistant to prompt-level fixes.</li>
+            <li>The test surfaced that GPT-4o and Gemini 2.0 Flash had reached their ceiling with the current prompt.
+              This prompted a full evaluation of frontier model alternatives across seven candidates (Claude Sonnet 4.6,
+              Claude Opus 4.6, GPT-5.4, Gemini 2.5 Pro, Mistral Large 3, and the existing models).</li>
+            <li>Decision: retire all four current models and regenerate with frontier equivalents. See ADR-6.</li>
+          </ul>
+          <p>Notes:</p>
+          <ul>
+            <li>Claude (Sonnet 4.5 → Opus 4.6): Opus produced the sharpest conceptual distinctions — "Happiness is a
+              state. Meaning is a direction." and "Suffering is not redeemed by meaning. But meaning can be built from
+              suffering, the way a wall can be built from broken stone." Chapter separation was clean across all pairs.</li>
+            <li>GPT-4o → GPT-5.4: GPT-4o's default textbook-survey shape ("a common thread emerges") persisted despite
+              the chapter list. GPT-5.4 broke this pattern entirely — real theses, earned quotes, distinct closers per
+              chapter.</li>
+            <li>Gemini 2.0 Flash → Gemini 2.5 Pro: Flash's deterministic opening pattern and near-identical structure
+              did not respond to v1.4. Gemini 2.5 Pro (a thinking model) eliminated both issues — essays rather than
+              structured summaries. Requires max_tokens raised to 8000 to clear the thinking token budget.</li>
+            <li>Mistral Large 2411 → Mistral Large 3: Large 2411 remained verbose and continued bleeding Frankl into
+              unrelated chapters. Large 3 is cleaner, has real theses, and is 4× cheaper. No-brainer replacement.</li>
+          </ul>
+        </div>
 
         <div class="commentary-version-block">
           <h2 class="commentary-version-heading">Prompt v1.3b <span class="commentary-version-tag">full generation</span></h2>
