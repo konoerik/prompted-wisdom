@@ -1,0 +1,38 @@
+[
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "letter-to-you",
+    "violation": "top-level-heading",
+    "line": 2,
+    "original": "# A Letter to You",
+    "fixed": "(removed)",
+    "timestamp": "2026-04-16T01:50:18Z"
+  },
+  {
+    "model": "claude-sonnet-4",
+    "chapter": "letter-to-you",
+    "violation": "top-level-heading",
+    "line": 2,
+    "original": "# A Letter to You",
+    "fixed": "(removed)",
+    "timestamp": "2026-04-16T01:50:18Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "letter-to-you",
+    "violation": "bold-only-line",
+    "line": 2,
+    "original": "**A Letter to You**",
+    "fixed": "(removed)",
+    "timestamp": "2026-04-16T01:50:18Z"
+  }
+  ,{
+    "model": "claude-opus-4-6",
+    "chapter": "relationships-and-love",
+    "violation": "tokenization-artifact",
+    "line": 31,
+    "original": "does noteli minate passion",
+    "fixed": "does not eliminate passion",
+    "timestamp": "2026-04-16T02:10:00Z"
+  }
+]

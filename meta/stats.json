@@ -2,8 +2,8 @@
   "summary": {
     "models": 4,
     "chapters": 12,
-    "total_output_tokens": 72000,
-    "avg_words_per_chapter": 878
+    "total_output_tokens": 71714,
+    "avg_words_per_chapter": 872
   },
   "by_model": [
     {
@@ -12,7 +12,7 @@
       "model_id": "anthropic/claude-opus-4.6",
       "provider": "Anthropic",
       "via": "openrouter",
-      "avg_words": 793,
+      "avg_words": 792,
       "word_counts": [
         943,
         789,
@@ -25,7 +25,7 @@
         830,
         818,
         813,
-        483
+        478
       ],
       "top_entities": [
         {
@@ -378,9 +378,9 @@
       "model_id": "openai/gpt-5.4",
       "provider": "OpenAI",
       "via": "openrouter",
-      "avg_words": 956,
+      "avg_words": 976,
       "word_counts": [
-        1225,
+        1471,
         875,
         985,
         969,
@@ -395,11 +395,11 @@
       ],
       "top_entities": [
         {
-          "name": "Buddhism",
-          "count": 19
+          "name": "Stoicism",
+          "count": 16
         },
         {
-          "name": "Stoicism",
+          "name": "Buddhism",
           "count": 16
         },
         {
@@ -408,7 +408,7 @@
         },
         {
           "name": "Aristotle",
-          "count": 11
+          "count": 12
         },
         {
           "name": "Confucianism",
@@ -418,58 +418,50 @@
       "word_freq": [
         {
           "word": "life",
-          "count": 82
+          "count": 89
         },
         {
           "word": "love",
-          "count": 43
+          "count": 44
         },
         {
           "word": "self",
-          "count": 42
+          "count": 43
         },
         {
           "word": "people",
-          "count": 37
+          "count": 35
         },
         {
           "word": "less",
           "count": 33
         },
         {
-          "word": "work",
-          "count": 30
+          "word": "human",
+          "count": 31
         },
         {
-          "word": "human",
-          "count": 28
+          "word": "work",
+          "count": 29
         },
         {
           "word": "meaning",
+          "count": 28
+        },
+        {
+          "word": "world",
           "count": 26
         },
         {
           "word": "person",
-          "count": 25
-        },
-        {
-          "word": "world",
-          "count": 24
-        },
-        {
-          "word": "need",
-          "count": 24
-        },
-        {
-          "word": "good",
-          "count": 23
+          "count": 26
         },
         {
           "word": "way",
-          "count": 23
+          "count": 26
         },
         {
-          "word": "right",
+          "word": "good",
           "count": 22
         },
         {
@@ -477,19 +469,35 @@
           "count": 22
         },
         {
-          "word": "others",
-          "count": 21
-        },
-        {
           "word": "suffering",
           "count": 20
         },
         {
-          "word": "cannot",
+          "word": "right",
+          "count": 20
+        },
+        {
+          "word": "need",
           "count": 19
         },
         {
+          "word": "character",
+          "count": 19
+        },
+        {
+          "word": "desire",
+          "count": 18
+        },
+        {
           "word": "live",
+          "count": 18
+        },
+        {
+          "word": "mind",
+          "count": 18
+        },
+        {
+          "word": "cannot",
           "count": 18
         },
         {
@@ -497,79 +505,55 @@
           "count": 18
         },
         {
-          "word": "desire",
-          "count": 17
-        },
-        {
-          "word": "character",
-          "count": 17
+          "word": "sound",
+          "count": 16
         },
         {
           "word": "traditions",
           "count": 16
         },
         {
-          "word": "mind",
+          "word": "others",
           "count": 16
         },
         {
           "word": "better",
-          "count": 15
-        },
-        {
-          "word": "vanity",
-          "count": 15
-        },
-        {
-          "word": "stoics",
-          "count": 15
+          "count": 16
         },
         {
           "word": "survives",
           "count": 15
         },
         {
-          "word": "real",
-          "count": 15
-        },
-        {
-          "word": "tradition",
-          "count": 13
+          "word": "stoics",
+          "count": 14
         },
         {
           "word": "worth",
+          "count": 14
+        },
+        {
+          "word": "real",
+          "count": 14
+        },
+        {
+          "word": "vanity",
           "count": 13
         },
         {
-          "word": "appetite",
+          "word": "moral",
           "count": 13
         },
         {
-          "word": "matters",
-          "count": 13
-        },
-        {
-          "word": "practice",
-          "count": 13
-        },
-        {
-          "word": "fully",
-          "count": 13
-        },
-        {
-          "word": "action",
-          "count": 13
-        },
-        {
-          "word": "sound",
-          "count": 13
-        },
-        {
-          "word": "old",
+          "word": "aristotle",
           "count": 12
         },
         {
-          "word": "like",
+          "word": "appetite",
+          "count": 12
+        },
+        {
+          "word": "freedom",
           "count": 12
         },
         {
@@ -577,31 +561,27 @@
           "count": 12
         },
         {
-          "word": "pleasure",
+          "word": "wisdom",
           "count": 12
         },
         {
-          "word": "becoming",
-          "count": 11
+          "word": "tradition",
+          "count": 12
         },
         {
-          "word": "discipline",
-          "count": 11
+          "word": "matters",
+          "count": 12
         },
         {
-          "word": "aristotle",
-          "count": 11
+          "word": "action",
+          "count": 12
         },
         {
-          "word": "feeling",
-          "count": 11
+          "word": "fully",
+          "count": 12
         },
         {
-          "word": "modern",
-          "count": 11
-        },
-        {
-          "word": "freedom",
+          "word": "best",
           "count": 11
         },
         {
@@ -609,11 +589,19 @@
           "count": 11
         },
         {
-          "word": "wisdom",
+          "word": "discipline",
           "count": 11
         },
         {
-          "word": "different",
+          "word": "modern",
+          "count": 11
+        },
+        {
+          "word": "pleasure",
+          "count": 11
+        },
+        {
+          "word": "feeling",
           "count": 10
         },
         {
@@ -621,19 +609,27 @@
           "count": 10
         },
         {
-          "word": "truth",
+          "word": "practice",
           "count": 10
         },
         {
-          "word": "virtue",
+          "word": "later",
           "count": 10
         },
         {
-          "word": "best",
+          "word": "useful",
           "count": 10
         },
         {
-          "word": "whole",
+          "word": "old",
+          "count": 10
+        },
+        {
+          "word": "like",
+          "count": 10
+        },
+        {
+          "word": "becoming",
           "count": 10
         },
         {
@@ -641,19 +637,15 @@
           "count": 10
         },
         {
-          "word": "remain",
+          "word": "matter",
           "count": 9
         },
         {
-          "word": "begins",
+          "word": "loss",
           "count": 9
         },
         {
-          "word": "moral",
-          "count": 9
-        },
-        {
-          "word": "doing",
+          "word": "demand",
           "count": 9
         },
         {
@@ -665,7 +657,7 @@
           "count": 9
         },
         {
-          "word": "later",
+          "word": "honesty",
           "count": 9
         },
         {
@@ -673,11 +665,7 @@
           "count": 9
         },
         {
-          "word": "honesty",
-          "count": 9
-        },
-        {
-          "word": "loss",
+          "word": "truth",
           "count": 9
         },
         {
@@ -685,39 +673,15 @@
           "count": 9
         },
         {
-          "word": "useful",
+          "word": "whole",
           "count": 9
         },
         {
-          "word": "across",
-          "count": 8
+          "word": "virtue",
+          "count": 9
         },
         {
-          "word": "living",
-          "count": 8
-        },
-        {
-          "word": "confucius",
-          "count": 8
-        },
-        {
-          "word": "task",
-          "count": 8
-        },
-        {
-          "word": "alone",
-          "count": 8
-        },
-        {
-          "word": "acts",
-          "count": 8
-        },
-        {
-          "word": "formed",
-          "count": 8
-        },
-        {
-          "word": "speak",
+          "word": "almost",
           "count": 8
         },
         {
@@ -725,15 +689,51 @@
           "count": 8
         },
         {
+          "word": "systems",
+          "count": 8
+        },
+        {
+          "word": "asked",
+          "count": 8
+        },
+        {
+          "word": "private",
+          "count": 8
+        },
+        {
+          "word": "shape",
+          "count": 8
+        },
+        {
+          "word": "pain",
+          "count": 8
+        },
+        {
+          "word": "conduct",
+          "count": 8
+        },
+        {
+          "word": "trying",
+          "count": 8
+        },
+        {
+          "word": "inner",
+          "count": 8
+        },
+        {
+          "word": "respect",
+          "count": 8
+        },
+        {
           "word": "confucian",
           "count": 8
         },
         {
-          "word": "matter",
+          "word": "language",
           "count": 8
         },
         {
-          "word": "day",
+          "word": "begins",
           "count": 8
         }
       ]
@@ -1110,9 +1110,9 @@
       "model_id": "mistralai/mistral-large-2512",
       "provider": "Mistral AI",
       "via": "openrouter",
-      "avg_words": 1024,
+      "avg_words": 980,
       "word_counts": [
-        1193,
+        1113,
         893,
         964,
         1201,
@@ -1122,8 +1122,8 @@
         1158,
         1106,
         1011,
-        1263,
-        508
+        829,
+        504
       ],
       "top_entities": [
         {
@@ -1136,61 +1136,61 @@
         },
         {
           "name": "Marcus Aurelius",
-          "count": 18
+          "count": 16
         },
         {
           "name": "Buddha",
-          "count": 12
+          "count": 14
         },
         {
-          "name": "Confucius",
-          "count": 9
+          "name": "Confucianism",
+          "count": 10
         }
       ],
       "word_freq": [
         {
-          "word": "love",
-          "count": 56
+          "word": "way",
+          "count": 51
         },
         {
-          "word": "way",
-          "count": 52
+          "word": "love",
+          "count": 51
         },
         {
           "word": "life",
-          "count": 44
-        },
-        {
-          "word": "world",
-          "count": 40
-        },
-        {
-          "word": "work",
-          "count": 37
+          "count": 42
         },
         {
           "word": "suffering",
-          "count": 36
+          "count": 38
         },
         {
-          "word": "time",
-          "count": 32
+          "word": "work",
+          "count": 38
         },
         {
           "word": "people",
+          "count": 34
+        },
+        {
+          "word": "cannot",
+          "count": 31
+        },
+        {
+          "word": "time",
           "count": 30
         },
         {
-          "word": "like",
-          "count": 27
-        },
-        {
-          "word": "happiness",
-          "count": 27
+          "word": "world",
+          "count": 30
         },
         {
           "word": "self",
-          "count": 26
+          "count": 30
+        },
+        {
+          "word": "happiness",
+          "count": 28
         },
         {
           "word": "stoics",
@@ -1201,60 +1201,60 @@
           "count": 24
         },
         {
-          "word": "cannot",
-          "count": 24
-        },
-        {
-          "word": "meaning",
-          "count": 24
+          "word": "control",
+          "count": 23
         },
         {
           "word": "right",
           "count": 22
         },
         {
-          "word": "live",
-          "count": 21
+          "word": "like",
+          "count": 22
         },
         {
           "word": "moment",
           "count": 21
         },
         {
-          "word": "desire",
+          "word": "meet",
           "count": 20
         },
         {
-          "word": "truth",
+          "word": "wrote",
+          "count": 20
+        },
+        {
+          "word": "meaning",
           "count": 19
         },
         {
-          "word": "control",
+          "word": "truth",
           "count": 18
-        },
-        {
-          "word": "buddhists",
-          "count": 18
-        },
-        {
-          "word": "wrote",
-          "count": 17
-        },
-        {
-          "word": "meet",
-          "count": 16
         },
         {
           "word": "person",
+          "count": 18
+        },
+        {
+          "word": "desire",
+          "count": 18
+        },
+        {
+          "word": "mind",
+          "count": 17
+        },
+        {
+          "word": "live",
+          "count": 17
+        },
+        {
+          "word": "buddhists",
           "count": 16
         },
         {
           "word": "society",
           "count": 16
-        },
-        {
-          "word": "mind",
-          "count": 15
         },
         {
           "word": "fear",
@@ -1265,7 +1265,15 @@
           "count": 15
         },
         {
-          "word": "act",
+          "word": "day",
+          "count": 14
+        },
+        {
+          "word": "need",
+          "count": 14
+        },
+        {
+          "word": "matter",
           "count": 14
         },
         {
@@ -1274,66 +1282,38 @@
         },
         {
           "word": "human",
-          "count": 14
-        },
-        {
-          "word": "day",
           "count": 13
         },
         {
-          "word": "taught",
-          "count": 12
+          "word": "treat",
+          "count": 13
         },
         {
           "word": "real",
           "count": 12
         },
         {
-          "word": "shape",
-          "count": 12
-        },
-        {
-          "word": "matter",
-          "count": 12
-        },
-        {
-          "word": "power",
-          "count": 11
-        },
-        {
           "word": "speak",
-          "count": 11
+          "count": 12
         },
         {
-          "word": "need",
-          "count": 11
-        },
-        {
-          "word": "traditions",
-          "count": 11
+          "word": "spend",
+          "count": 12
         },
         {
           "word": "perfect",
           "count": 11
         },
         {
-          "word": "treat",
-          "count": 11
-        },
-        {
           "word": "yours",
-          "count": 11
-        },
-        {
-          "word": "care",
           "count": 10
         },
         {
-          "word": "practice",
+          "word": "matters",
           "count": 10
         },
         {
-          "word": "relationships",
+          "word": "forget",
           "count": 10
         },
         {
@@ -1341,43 +1321,15 @@
           "count": 10
         },
         {
-          "word": "true",
+          "word": "now",
           "count": 10
         },
         {
-          "word": "knowledge",
+          "word": "act",
           "count": 10
         },
         {
-          "word": "spend",
-          "count": 10
-        },
-        {
-          "word": "lose",
-          "count": 10
-        },
-        {
-          "word": "greatest",
-          "count": 9
-        },
-        {
-          "word": "marcus",
-          "count": 9
-        },
-        {
-          "word": "aurelius",
-          "count": 9
-        },
-        {
-          "word": "freedom",
-          "count": 9
-        },
-        {
-          "word": "confucius",
-          "count": 9
-        },
-        {
-          "word": "different",
+          "word": "shape",
           "count": 9
         },
         {
@@ -1385,11 +1337,47 @@
           "count": 9
         },
         {
+          "word": "questions",
+          "count": 9
+        },
+        {
+          "word": "epictetus",
+          "count": 9
+        },
+        {
+          "word": "understood",
+          "count": 9
+        },
+        {
+          "word": "wanting",
+          "count": 9
+        },
+        {
+          "word": "less",
+          "count": 9
+        },
+        {
+          "word": "confucius",
+          "count": 9
+        },
+        {
           "word": "heart",
           "count": 9
         },
         {
-          "word": "greeks",
+          "word": "practice",
+          "count": 9
+        },
+        {
+          "word": "knowledge",
+          "count": 9
+        },
+        {
+          "word": "attention",
+          "count": 9
+        },
+        {
+          "word": "trying",
           "count": 9
         },
         {
@@ -1397,27 +1385,35 @@
           "count": 9
         },
         {
-          "word": "story",
-          "count": 9
-        },
-        {
           "word": "years",
           "count": 9
         },
         {
-          "word": "now",
+          "word": "traditions",
           "count": 9
         },
         {
-          "word": "doing",
-          "count": 9
-        },
-        {
-          "word": "look",
+          "word": "spoke",
           "count": 8
         },
         {
-          "word": "epictetus",
+          "word": "weight",
+          "count": 8
+        },
+        {
+          "word": "asked",
+          "count": 8
+        },
+        {
+          "word": "marcus",
+          "count": 8
+        },
+        {
+          "word": "aurelius",
+          "count": 8
+        },
+        {
+          "word": "clinging",
           "count": 8
         },
         {
@@ -1425,31 +1421,19 @@
           "count": 8
         },
         {
-          "word": "pain",
+          "word": "study",
           "count": 8
         },
         {
-          "word": "problem",
+          "word": "alive",
           "count": 8
         },
         {
-          "word": "order",
+          "word": "task",
           "count": 8
         },
         {
-          "word": "trying",
-          "count": 8
-        },
-        {
-          "word": "integrity",
-          "count": 8
-        },
-        {
-          "word": "attention",
-          "count": 8
-        },
-        {
-          "word": "understood",
+          "word": "look",
           "count": 8
         },
         {
@@ -1457,15 +1441,31 @@
           "count": 8
         },
         {
-          "word": "choices",
+          "word": "greeks",
           "count": 8
         },
         {
-          "word": "matters",
+          "word": "wrong",
+          "count": 8
+        },
+        {
+          "word": "different",
+          "count": 8
+        },
+        {
+          "word": "choice",
+          "count": 8
+        },
+        {
+          "word": "small",
           "count": 8
         },
         {
           "word": "present",
+          "count": 8
+        },
+        {
+          "word": "relationships",
           "count": 8
         }
       ]
@@ -1477,9 +1477,9 @@
       "label": "Greatest Thinkers",
       "word_counts": {
         "Claude": 943,
-        "GPT-5": 1225,
+        "GPT-5": 1471,
         "Gemini": 953,
-        "Mistral": 1193
+        "Mistral": 1113
       }
     },
     {
@@ -1579,17 +1579,17 @@
         "Claude": 813,
         "GPT-5": 1012,
         "Gemini": 796,
-        "Mistral": 1263
+        "Mistral": 829
       }
     },
     {
       "slug": "letter-to-you",
       "label": "Letter to You",
       "word_counts": {
-        "Claude": 483,
+        "Claude": 478,
         "GPT-5": 554,
         "Gemini": 461,
-        "Mistral": 508
+        "Mistral": 504
       }
     }
   ]

@@ -48,6 +48,7 @@
       "via": "openrouter",
       "approved": true,
       "approved_date": "2026-04-15",
+      "max_tokens": 2000,
       "pricing": {
         "input_per_1m": 2.50,
         "output_per_1m": 15.00,
@@ -106,6 +107,7 @@
       "via": "openrouter",
       "approved": true,
       "approved_date": "2026-04-15",
+      "max_tokens": 2000,
       "pricing": {
         "input_per_1m": 0.50,
         "output_per_1m": 1.50,

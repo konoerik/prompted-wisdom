@@ -20,6 +20,8 @@ help:
 	@echo "  make estimate             Show projected cost for a full 48-chapter regeneration"
 	@echo "  make generate CHAPTER=x   Generate a chapter (all models)"
 	@echo "  make generate CHAPTER=x MODEL=y  Generate for a specific model"
+	@echo "  make format               Strip formatting violations; log to meta/format-log.json"
+	@echo "  make format-dry           Preview violations without modifying files"
 	@echo "  make freeze               Update requirements.txt from current venv"
 	@echo ""
 
@@ -63,6 +65,14 @@ ifndef CHAPTER
 	$(error CHAPTER is required — usage: make generate CHAPTER=knowing-yourself)
 endif
 	$(PYTHON) scripts/generate.py --chapter $(CHAPTER) $(if $(MODEL),--model $(MODEL),)
+
+.PHONY: format
+format:
+	$(PYTHON) scripts/format.py
+
+.PHONY: format-dry
+format-dry:
+	$(PYTHON) scripts/format.py --dry-run
 
 # ── Maintenance ───────────────────────────────────────────────────────
 .PHONY: freeze

@@ -6,15 +6,13 @@ model: anthropic/claude-sonnet-4-5
 model_display: Claude
 prompt_version: v1.3b
 generated_at: "2026-04-14T04:43:50Z"
-word_count: 452
+word_count: 447
 token_count_input: 337
 token_count_output: 541
 temperature: 0
 max_tokens: 1500
-sha256: "e771bbfc0e8c46e6fb02f9d057c4898d9d8452aeb3c4ca62a50c2a3524a21615"
+sha256: "e0a043b8c2b819ff5f4d1eeb00ca15e8d6f84ed76ccef6f535c2150aa76797e9"
 ---
-
-# A Letter to You
 
 I have written this for you because I believe you already know most of what matters, but the noise makes it hard to hear. What I have tried to do here is clear some space, to say plainly what the best minds across centuries kept returning to, and what I have found to be true when tested against the actual texture of living. If any of it helps, use it. If it doesn't, set it down.
 

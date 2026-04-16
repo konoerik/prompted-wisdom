@@ -11,7 +11,7 @@ token_count_input: 429
 token_count_output: 1037
 temperature: 0
 max_tokens: 1500
-sha256: "68581371f89934fded5bd5f9184e9efe4d287058cf1f4fccd70c6f6cd47229fc"
+sha256: "dbe2c7e57d2800c3850dad1df304502ae664531ddd5e3b86d2e5c2307cf958ec"
 ---
 
 There is a line from Aristotle that I return to more than almost any other. He said that the human being is by nature a social animal, and that anyone who cannot live in society is either a beast or a god. It is one of those observations so plainly true that you can spend a lifetime forgetting it. You did not choose to need other people. But you do, and everything follows from that.
@@ -28,7 +28,7 @@ Aristotle arrived at something remarkably close from a completely different dire
 
 What strikes me about this is how demanding it is. Real relationship, on Aristotle's account, is not a feeling. It is a practice sustained over years. Montaigne, writing about his friendship with Étienne de La Boétie, captured the mystery of it when he said, "If you press me to say why I loved him, I can say no more than because he was he, and I was I." That line has the quality of something irreducible. It points to the fact that the deepest bonds resist explanation. They are not transactions. They are recognitions.
 
-Romantic love adds another layer of difficulty. Plato, in the Symposium, gave us the image of love as a lack, a reaching toward what you do not have. There is truth in that too. Eros begins in want. But if it stays there, it consumes itself. The relationships that last seem to move from desire toward something more like what the Greeks called philia — a settled, knowing affection that does noteli minate passion but gives it a place to live.
+Romantic love adds another layer of difficulty. Plato, in the Symposium, gave us the image of love as a lack, a reaching toward what you do not have. There is truth in that too. Eros begins in want. But if it stays there, it consumes itself. The relationships that last seem to move from desire toward something more like what the Greeks called philia — a settled, knowing affection that does not eliminate passion but gives it a place to live.
 
 I will say what I have come to believe. You will not find yourself alone. That is not because solitude lacks value — it has enormous value — but because the self is not a finished thing that then enters relationships. The self is shaped, corrected, and revealed by the people it loves. You learn who you are by discovering what you are willing to give, what you cannot forgive, what you will sacrifice, and for whom. The other person is not a mirror. They are more like a question you spend your life trying to answer honestly.
 

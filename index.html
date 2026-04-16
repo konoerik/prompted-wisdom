@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prompted Wisdom</title>
   <meta name="generator"
-    content="Claude (Anthropic), GPT-4o (OpenAI), Gemini 2.0 Flash (Google), Mistral Large (Mistral AI)">
+    content="Claude Opus 4.6 (Anthropic), GPT-5 (OpenAI), Gemini 2.5 Pro (Google), Mistral Large 3 (Mistral AI)">
   <meta name="description"
     content="The same philosophical prompt, given to four leading AI models. Twelve chapters on how to live — same conditions, four perspectives, compared side by side.">
   <meta name="robots" content="index, follow">
@@ -75,10 +75,10 @@
     <div class="model-selector">
       <div class="model-selector-label">Model</div>
       <div class="model-btns">
-        <button class="model-btn active" data-model="claude-sonnet-4">Claude</button>
-        <button class="model-btn" data-model="gpt-4o">GPT-4o</button>
-        <button class="model-btn" data-model="gemini-2-flash">Gemini</button>
-        <button class="model-btn" data-model="mistral-large">Mistral</button>
+        <button class="model-btn active" data-model="claude-opus-4-6">Claude</button>
+        <button class="model-btn" data-model="gpt-5">GPT-5</button>
+        <button class="model-btn" data-model="gemini-2-5-pro">Gemini</button>
+        <button class="model-btn" data-model="mistral-large-3">Mistral</button>
       </div>
     </div>
 
@@ -192,7 +192,7 @@
           asked several leading models to distill them, under identical conditions. Then compared the results.</p>
 
         <h2 class="about-heading">The methodology</h2>
-        <p>Same prompt, temperature zero, fixed token limits, no system prompts — one canonical run per model per
+        <p>Same prompt, temperature zero, per-model token limits, no system prompts — one canonical run per model per
           chapter, stored with full provenance. <a href="#methodology">Full methodology and prompt →</a></p>
 
         <h2 class="about-heading">Limitations and caveats</h2>
@@ -202,10 +202,10 @@
           <li>Temperature zero is not deterministic in practice. Running the same prompt twice produces different output
             across all four models via OpenRouter. Each chapter is a single canonical run; divergence between runs is a
             known property of the pipeline, not an anomaly.</li>
-          <li>Models do not follow instructions uniformly. Some use markdown despite being told not to. Some invent
-            specific scenes, locations, or named individuals that have no basis in the prompt. Some contain attributions
-            that cannot be verified. These are properties of the model, not editorial choices — and they cannot be
-            corrected without violating the single-run methodology.</li>
+          <li>Models do not follow instructions uniformly. Structural markdown violations (stray headings, bold
+            formatting) are stripped post-generation by a format script and logged in <code>meta/format-log.json</code>
+            for transparency. Content-level issues — invented scenes, locations, or named individuals, and attributions
+            that cannot be verified — are not corrected; they are properties of the model, not editorial choices.</li>
           <li>This project was built with Claude Code. That makes it an inherently partial instrument in one direction,
             which is worth naming even if it cannot be corrected for. The tool is invaluable; the bias is real.</li>
         </ul>

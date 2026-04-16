@@ -1,13 +1,13 @@
 // app.js — Prompted Wisdom
 
 const MODELS = [
-  { slug: 'claude-sonnet-4', display: 'Claude'  },
-  { slug: 'gpt-4o',          display: 'GPT-4o'  },
-  { slug: 'gemini-2-flash',  display: 'Gemini'  },
-  { slug: 'mistral-large',   display: 'Mistral' },
+  { slug: 'claude-opus-4-6',  display: 'Claude'  },
+  { slug: 'gpt-5',            display: 'GPT-5'   },
+  { slug: 'gemini-2-5-pro',   display: 'Gemini'  },
+  { slug: 'mistral-large-3',  display: 'Mistral' },
 ];
 
-let activeModel = 'claude-sonnet-4';
+let activeModel = 'claude-opus-4-6';
 let activeSlug  = null;
 
 const CHAPTERS = [
@@ -234,7 +234,7 @@ async function renderMethodologyPage() {
         <thead><tr><th>Parameter</th><th>Value</th></tr></thead>
         <tbody>
           <tr><td>Temperature</td><td>0</td></tr>
-          <tr><td>Max tokens</td><td>1,500</td></tr>
+          <tr><td>Max tokens</td><td>1,500 default; per-model overrides (GPT-5 and Mistral: 2,000; Gemini: 8,000 to clear thinking token budget)</td></tr>
           <tr><td>System prompt</td><td><span class="tooltip" data-tip="APIs allow a separate privileged instruction layer before the user message. Not using one means the full prompt is a single transparent user message — identical and verifiable across all models.">None</span></td></tr>
           <tr><td>Runs per chapter</td><td>1 canonical + 1 verification</td></tr>
           <tr><td>API routing</td><td>OpenRouter</td></tr>
@@ -266,6 +266,7 @@ async function renderMethodologyPage() {
     <ul class="about-method-list">
       <li>Every response stored with model version, generation timestamp, token counts, and a SHA-256 hash of the body</li>
       <li>Hash covers the body only — resources can be updated without invalidating the generation record</li>
+      <li>Structural markdown violations (stray headings, bold formatting) are stripped post-generation and every change is logged in <code>meta/format-log.json</code> with the original text preserved</li>
       <li>All prompts version-controlled in <code>PROMPT.md</code> — changes require a new version</li>
       <li>Source code and all content publicly available on <a href="https://github.com/konoerik/prompted-wisdom" target="_blank" rel="noopener">GitHub</a></li>
     </ul>
