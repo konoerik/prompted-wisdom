@@ -4,48 +4,12 @@
 <!-- Current sprint items. Keep this short — 5-10 items max.
      If it grows beyond that, move lower-priority items to Backlog. -->
 
-### Phase 2: Frontier model upgrade + full regeneration
+### Phase 2: Post-generation polish
 
-**Model decisions (locked ✓):**
-- Claude slot: Claude Opus 4.6 (`claude-opus-4-6`)
-- GPT slot: GPT-5.4 (`gpt-5`)
-- Gemini slot: Gemini 2.5 Pro (`gemini-2-5-pro`); max_tokens=8000 in models.json
-- Mistral slot: Mistral Large 3 (`mistral-large-3`)
-
-**Generation parameters (locked ✓):**
-- Prompt: v1.4 (chapter list; no further changes for this run)
-- Temperature: 0 for all models including Gemini 2.5 Pro
-- Word targets: 900 / 700 / 450 (unchanged from v1.3b)
-- Max tokens: 1500 default; 8000 for Gemini 2.5 Pro
-
-**Recurring issues documented from v1.3b/v1.4 testing:**
-- Gemini 2.0 Flash: deterministic opening pattern ("X. It's a..."), near-identical structure across chapters, short word count, no improvement with chapter list
-- GPT-4o: default textbook-survey shape ("common thread emerges"), chapter list had marginal effect, quotes used as decoration not argument
-- Mistral Large 2411: verbose, Frankl/meaning bled into unrelated chapters, excess word count
-- All resolved or significantly improved in frontier model versions
-
-**Regeneration tasks:**
-- Run `make estimate` first — confirm cost and that account has sufficient funds
-- Regenerate all 48 chapters (12 × 4 models) with v1.4 prompt
-- Update Commentary v1.4 with per-model notes after reading output
-- Re-run stats.py and update stats.json
-- Tag v1.4 content in git
-
-**Pricing reference (OpenRouter, per 1M tokens):**
-
-| Model | In $/1M | Out $/1M | 12 chapters |
-|---|---|---|---|
-| Claude Sonnet 4.5 (current) | $3.00 | $15.00 | $0.098 |
-| Claude Sonnet 4.6 | $3.00 | $15.00 | $0.098 |
-| Claude Opus 4.6 | $5.00 | $25.00 | $0.176 |
-| GPT-4o (current) | $2.50 | $10.00 | $0.065 |
-| GPT-5.4 | $2.50 | $15.00 | $0.098 |
-| Gemini 2.0 Flash (current) | $0.10 | $0.40 | $0.002 |
-| Gemini 2.5 Pro | $1.25 | $10.00 | $0.258 |
-| Mistral Large 2411 (current) | $2.00 | $6.00 | $0.055 |
-| Mistral Large 3 | $0.50 | $1.50 | $0.012 |
-
-Full frontier run (Sonnet 4.6): ~$0.47 · Full frontier run (Opus 4.6): ~$0.54
+**Remaining tasks:**
+- Update Commentary v1.4 with per-model notes after reading content
+- Tag v1.4 in git
+- Editorial review pass: mark up meta/review-notes.md ([x]/[~]/[!]), then hand back for corrections (Task #4)
 
 ## Backlog
 <!-- Accepted but not yet active. Load this section only when planning or prioritizing. -->
@@ -59,6 +23,8 @@ Full frontier run (Sonnet 4.6): ~$0.47 · Full frontier run (Opus 4.6): ~$0.54
 ## Done
 <!-- Completed items land here temporarily.
      The stop hook archives these to .claude/archive/YYYY-MM.md and clears this section. -->
+- Word cloud frequencies normalized by total word count per model (client-side in app.js)
+- Phase 2 full delivery: 48 chapters regenerated with frontier models; 3 truncated chapters fixed (max_tokens raised to 2000 for gpt-5/mistral-large-3); sidebar updated to new slugs; static pages audited and updated; scripts/format.py built (strips violations, logs to format-log.json); chapter metadata panel added (collapsible prompt/stats/scorecard, after nav, low-profile — ADR-7); meta/review-notes.md generated (32 flagged attribution passages); published to GitHub Pages
 - Phase 2 infrastructure: models.json updated (4 frontier models approved, 4 retired); generate.py per-model max_tokens override; Commentary v1.4 experiment block added; ADR-6 recorded; all generation parameters locked
 - v1.4 prompt experiment: chapter list added to core persona; 4 test chapters × 7 model candidates evaluated; frontier models selected (ADR-6)
 - Commentary page — built card layout, version block template, per-version notes for all four models across v1.3b; v1.3a block added; "Author's Commentary" heading; CSS card styling

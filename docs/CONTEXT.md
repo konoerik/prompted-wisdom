@@ -1,8 +1,8 @@
 # Context
 <!-- Updated by /wrap at session end. Edit manually if needed. Keep it under 8 lines. -->
 
-**Current focus:** Phase 2 — regenerate all 48 chapters with frontier models (Opus 4.6, GPT-5.4, Gemini 2.5 Pro, Mistral Large 3) using prompt v1.4. Infrastructure ready; prompt/params locked.
-**Last session:** Completed v1.4 experiment; evaluated 7 model candidates; decided on full frontier upgrade (ADR-6); wired models.json + generate.py; added Commentary v1.4 block; all pre-regeneration decisions locked (Opus 4.6, temp=0, 700 words, no prompt changes).
-**Blocking:** Nothing — ready to regenerate.
-**Next action:** Run `make generate` for all 12 chapters × 4 models, then update Commentary v1.4 per-model notes, re-run stats.py, tag v1.4 in git.
-<!-- wrapped: 2026-04-15 -->
+**Current focus:** Editorial review pass (Task #4, review-notes.md ready for markup); fill in v1.4 full generation Commentary block (stub added, content needed).
+**Last session:** Normalized word clouds by total word count; revised About page hero and foreword for clarity; restructured Commentary v1.4 into two entries (full gen stub + experiment) with an upgrade divider.
+**Blocking:** v1.4 full generation Commentary block needs author notes to fill. Editorial review requires human read-through of meta/review-notes.md (32 flagged passages).
+**Next action:** Fill in v1.4 full generation Commentary block with per-model observations from the Phase 2 run.
+<!-- wrapped: 2026-04-16 -->

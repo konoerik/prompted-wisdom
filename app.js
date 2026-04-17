@@ -112,7 +112,8 @@ function setActiveModel(slug) {
 
 // ── Prompt loading ───────────────────────────────────────────────────
 
-let promptMdCache = null;
+let promptMdCache  = null;
+let formatLogCache = null;
 
 async function fetchPromptMd() {
   if (promptMdCache) return promptMdCache;
@@ -123,6 +124,17 @@ async function fetchPromptMd() {
     promptMdCache = '';
   }
   return promptMdCache;
+}
+
+async function fetchFormatLog() {
+  if (formatLogCache) return formatLogCache;
+  try {
+    const res = await fetch('meta/format-log.json');
+    formatLogCache = res.ok ? await res.json() : [];
+  } catch (_) {
+    formatLogCache = [];
+  }
+  return formatLogCache;
 }
 
 function parsePromptBlock(text, slug) {
@@ -139,19 +151,20 @@ async function loadChapter(slug) {
   el.innerHTML = '<p style="padding:2rem;font-family:var(--font-ui);font-size:0.85rem;color:var(--text-secondary)">Loading\u2026</p>';
 
   try {
-    const [res, promptMd] = await Promise.all([
+    const [res, promptMd, formatLog] = await Promise.all([
       fetch(`content/${activeModel}/${slug}.md`),
       fetchPromptMd(),
+      fetchFormatLog(),
     ]);
     if (!res.ok) throw new Error(res.status);
     const raw = await res.text();
-    renderChapter(raw, slug, promptMd);
+    renderChapter(raw, slug, promptMd, formatLog);
   } catch (_) {
     renderNotAvailable(slug);
   }
 }
 
-function renderChapter(raw, slug, promptMd) {
+function renderChapter(raw, slug, promptMd, formatLog) {
   const fmMatch = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
   if (!fmMatch) { renderNotAvailable(slug); return; }
 
@@ -177,8 +190,8 @@ function renderChapter(raw, slug, promptMd) {
     </header>
     <div class="chapter-body">${paragraphs}</div>
     ${buildResourcesHtml(fm.resources)}
-    ${buildPromptHtml(slug, promptMd)}
     ${buildChapterNavHtml(slug)}
+    ${buildMetaPanel(slug, fm, body, promptMd, formatLog)}
   `;
 }
 
@@ -273,20 +286,76 @@ async function renderMethodologyPage() {
   `;
 }
 
-function buildPromptHtml(slug, promptMd) {
-  if (!promptMd) return '';
-  const chapter = parsePromptBlock(promptMd, slug);
-  if (!chapter) return '';
+const THINKER_LIST = [
+  'Aristotle','Plato','Socrates','Epictetus','Marcus Aurelius','Seneca',
+  'Confucius','Buddha','Lao Tzu','Zhuangzi','Montaigne','Epicurus',
+  'Nietzsche','Camus','Sartre','Frankl','Heidegger','Simone Weil',
+  'Thoreau','Hesiod','Aeschylus','Hume','William James','Augustine',
+  'Aquinas','Spinoza','Kant','Schopenhauer','Kierkegaard',
+];
+
+function detectThinkers(body) {
+  return THINKER_LIST.filter(name => {
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return new RegExp(`\\b${escaped}\\b`, 'i').test(body);
+  });
+}
+
+function buildMetaPanel(slug, fm, body, promptMd, formatLog) {
+  // ── Full prompt ──
+  const core        = promptMd ? parsePromptBlock(promptMd, 'core') : null;
+  const instruction = promptMd ? parsePromptBlock(promptMd, slug)   : null;
+  const promptHtml  = (core && instruction) ? `
+    <div class="meta-prompt-block">
+      <div class="meta-prompt-label">Core persona</div>
+      <p class="meta-prompt-text">${escapeHtml(core)}</p>
+    </div>
+    <div class="meta-prompt-block" style="margin-top:0.75rem">
+      <div class="meta-prompt-label">Chapter instruction</div>
+      <p class="meta-prompt-text">${escapeHtml(instruction)}</p>
+    </div>` : '<p class="meta-dim">Prompt unavailable.</p>';
+
+  // ── Statistics ──
+  const thinkers   = detectThinkers(body);
+  const genDate    = fm.generated_at ? formatDate(fm.generated_at) : '—';
+  const statsHtml  = `
+    <table class="meta-stats-table">
+      <tr><td>Words</td><td>${fm.word_count ?? '—'}</td></tr>
+      <tr><td>Tokens in / out</td><td>${fm.token_count_input ?? '—'} / ${fm.token_count_output ?? '—'}</td></tr>
+      <tr><td>Model</td><td>${escapeHtml(fm.model ?? '—')}</td></tr>
+      <tr><td>Generated</td><td>${genDate}</td></tr>
+      <tr><td>Temperature</td><td>${fm.temperature ?? '—'}</td></tr>
+      <tr><td>Max tokens</td><td>${fm.max_tokens ?? '—'}</td></tr>
+      <tr><td>Prompt version</td><td>${escapeHtml(fm.prompt_version ?? '—')}</td></tr>
+      <tr><td>SHA-256</td><td class="meta-hash">${escapeHtml((fm.sha256 ?? '').slice(0, 16))}…</td></tr>
+    </table>
+    ${thinkers.length ? `<p class="meta-thinkers"><span class="meta-dim">Thinkers mentioned:</span> ${escapeHtml(thinkers.join(', '))}</p>` : ''}`;
+
+  // ── Scorecard ──
+  const modelSlug  = activeModel;
+  const entries    = (formatLog || []).filter(e => e.model === modelSlug && e.chapter === slug);
+  const scorecardHtml = entries.length
+    ? entries.map(e => `<div class="meta-scorecard-item meta-scorecard-item--warn">
+        <span class="meta-scorecard-type">${escapeHtml(e.violation)}</span>
+        <span class="meta-dim">line ${e.line} — </span>${escapeHtml(e.original)}
+      </div>`).join('')
+    : '<div class="meta-scorecard-item meta-scorecard-item--ok">No issues logged.</div>';
 
   return `
-    <details class="prompt-disclosure">
-      <summary>View prompt</summary>
-      <div class="prompt-block">
-        <div class="prompt-block-label">Chapter instruction</div>
-        <p class="prompt-block-text">${escapeHtml(chapter)}</p>
-      </div>
-      <p class="prompt-disclosure-note">The core persona sent before this instruction is on the <a href="#methodology">Methodology page</a>.</p>
-    </details>`;
+    <div class="chapter-meta-panel">
+      <details class="meta-section">
+        <summary class="meta-summary">prompt</summary>
+        <div class="meta-content">${promptHtml}</div>
+      </details>
+      <details class="meta-section">
+        <summary class="meta-summary">statistics</summary>
+        <div class="meta-content">${statsHtml}</div>
+      </details>
+      <details class="meta-section">
+        <summary class="meta-summary">scorecard</summary>
+        <div class="meta-content">${scorecardHtml}</div>
+      </details>
+    </div>`;
 }
 
 function buildChapterNavHtml(slug) {
@@ -417,8 +486,9 @@ async function initCharts() {
     const w       = canvas.parentElement.clientWidth - 40;
     canvas.width  = w;
     canvas.height = 240;
+    const totalWords = m.word_counts.reduce((s, n) => s + n, 0) || 1;
     WordCloud(canvas, {
-      list:            m.word_freq.map(({ word, count }) => [word, count]),
+      list:            m.word_freq.map(({ word, count }) => [word, count / totalWords * 10000]),
       gridSize:        8,
       weightFactor:    w / 480,
       fontFamily:      'Inter, system-ui, sans-serif',

@@ -203,6 +203,24 @@ body {
   opacity: 0.6;
   margin-left: 0.4em;
 }
+.commentary-upgrade-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.25rem 0 1.75rem;
+  color: var(--text-secondary);
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.commentary-upgrade-divider::before,
+.commentary-upgrade-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
 
 /* ── Prompt version label ───────────────────────────────── */
 .prompt-version-label {
@@ -1003,6 +1021,150 @@ body {
   font-size: 0.82rem;
   color: var(--text);
   line-height: 1.4;
+}
+
+/* ── Chapter metadata panel ─────────────────────────────── */
+.chapter-meta-panel {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  opacity: 0.6;
+  transition: opacity 0.15s ease;
+}
+
+.chapter-meta-panel:hover {
+  opacity: 1;
+}
+
+.meta-section {
+  border-bottom: 1px solid var(--border);
+}
+
+.meta-section:last-child {
+  border-bottom: none;
+}
+
+.meta-summary {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  padding: 0.55rem 0;
+  display: block;
+}
+
+.meta-summary::-webkit-details-marker { display: none; }
+
+.meta-summary::after {
+  content: ' ›';
+  font-weight: 400;
+}
+
+.meta-section[open] .meta-summary::after {
+  content: ' ‹';
+}
+
+.meta-content {
+  padding: 0.5rem 0 1rem;
+}
+
+.meta-stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+.meta-stats-table td {
+  padding: 0.2rem 0;
+  vertical-align: top;
+}
+
+.meta-stats-table td:first-child {
+  width: 9rem;
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.meta-stats-table td:last-child {
+  color: var(--text);
+}
+
+.meta-hash {
+  font-family: monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+}
+
+.meta-thinkers {
+  margin-top: 0.6rem;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.meta-dim {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.meta-prompt-block {
+  background: var(--bg-resources);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+}
+
+.meta-prompt-label {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+}
+
+.meta-prompt-text {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--text);
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+.meta-scorecard-item {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  padding: 0.25rem 0;
+}
+
+.meta-scorecard-item--ok {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.meta-scorecard-item--warn {
+  color: var(--text);
+}
+
+.meta-scorecard-type {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin-right: 0.4rem;
 }
 
 /* ── Scrollbar ───────────────────────────────────────────── */
