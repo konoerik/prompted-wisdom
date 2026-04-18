@@ -5,7 +5,7 @@
 **Entry point:** `index.html`
 **Styles:** `style.css`
 **Logic:** `app.js`
-**Libraries:** Chart.js 4.x (CDN), js-yaml 4.x (CDN)
+**Libraries:** Chart.js 4.x (CDN), js-yaml 4.x (CDN), wordcloud2.js 1.x (CDN)
 **Scripts:** `scripts/generate.py` (content generation), `scripts/stats.py` (aggregates stats.json from content files)
 **Data:** `meta/stats.json` fetched at runtime by `app.js`; `content/<model-slug>/<chapter-slug>.md` fetched on chapter navigation; `meta/models.json` read by Python scripts only
 **Dev tooling:** `Makefile` (install, serve, stats, estimate, generate, freeze targets); `requirements.txt` (pinned Python deps for scripts)

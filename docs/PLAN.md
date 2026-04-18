@@ -7,6 +7,7 @@
 ### Phase 2: Post-generation polish
 
 **Remaining tasks:**
+- Audit "compare" framing across all pages — ensure language sets the right expectation (pick a version, not diff-style comparison) (Task #6)
 - Update Commentary v1.4 with per-model notes after reading content
 - Tag v1.4 in git
 - Editorial review pass: mark up meta/review-notes.md ([x]/[~]/[!]), then hand back for corrections (Task #4)
@@ -23,6 +24,7 @@
 ## Done
 <!-- Completed items land here temporarily.
      The stop hook archives these to .claude/archive/YYYY-MM.md and clears this section. -->
+- Sidebar nav restructured into three sections (intro / chapters / extras); Welcome page "Where to go next" nav added with all six destinations
 - Word cloud frequencies normalized by total word count per model (client-side in app.js)
 - Phase 2 full delivery: 48 chapters regenerated with frontier models; 3 truncated chapters fixed (max_tokens raised to 2000 for gpt-5/mistral-large-3); sidebar updated to new slugs; static pages audited and updated; scripts/format.py built (strips violations, logs to format-log.json); chapter metadata panel added (collapsible prompt/stats/scorecard, after nav, low-profile — ADR-7); meta/review-notes.md generated (32 flagged attribution passages); published to GitHub Pages
 - Phase 2 infrastructure: models.json updated (4 frontier models approved, 4 retired); generate.py per-model max_tokens override; Commentary v1.4 experiment block added; ADR-6 recorded; all generation parameters locked

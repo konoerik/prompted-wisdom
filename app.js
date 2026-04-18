@@ -1,28 +1,28 @@
 // app.js — Prompted Wisdom
 
 const MODELS = [
-  { slug: 'claude-opus-4-6',  display: 'Claude'  },
-  { slug: 'gpt-5',            display: 'GPT-5'   },
-  { slug: 'gemini-2-5-pro',   display: 'Gemini'  },
-  { slug: 'mistral-large-3',  display: 'Mistral' },
+  { slug: 'claude-opus-4-6', display: 'Claude' },
+  { slug: 'gpt-5', display: 'GPT-5' },
+  { slug: 'gemini-2-5-pro', display: 'Gemini' },
+  { slug: 'mistral-large-3', display: 'Mistral' },
 ];
 
 let activeModel = 'claude-opus-4-6';
-let activeSlug  = null;
+let activeSlug = null;
 
 const CHAPTERS = [
-  { slug: 'greatest-thinkers',        title: 'What the Greatest Thinkers Taught Us', n: 1  },
-  { slug: 'knowing-yourself',         title: 'On Knowing Yourself',                   n: 2  },
-  { slug: 'virtue-and-character',     title: 'On Virtue and Character',               n: 3  },
-  { slug: 'relationships-and-love',   title: 'On Relationships and Love',             n: 4  },
-  { slug: 'work-and-purpose',         title: 'On Work and Purpose',                   n: 5  },
-  { slug: 'desire-and-attachment',    title: 'On Desire and Attachment',              n: 6  },
-  { slug: 'suffering-and-resilience', title: 'On Suffering and Resilience',           n: 7  },
-  { slug: 'time-and-mortality',       title: 'On Time and Mortality',                 n: 8  },
-  { slug: 'society-and-place',        title: 'On Society and Your Place in It',       n: 9  },
-  { slug: 'happiness',                title: 'On Happiness',                          n: 10 },
-  { slug: 'meaning',                  title: 'On Meaning',                            n: 11 },
-  { slug: 'letter-to-you',            title: 'A Letter to You',                       n: 12 },
+  { slug: 'greatest-thinkers', title: 'What the Greatest Thinkers Taught Us', n: 1 },
+  { slug: 'knowing-yourself', title: 'On Knowing Yourself', n: 2 },
+  { slug: 'virtue-and-character', title: 'On Virtue and Character', n: 3 },
+  { slug: 'relationships-and-love', title: 'On Relationships and Love', n: 4 },
+  { slug: 'work-and-purpose', title: 'On Work and Purpose', n: 5 },
+  { slug: 'desire-and-attachment', title: 'On Desire and Attachment', n: 6 },
+  { slug: 'suffering-and-resilience', title: 'On Suffering and Resilience', n: 7 },
+  { slug: 'time-and-mortality', title: 'On Time and Mortality', n: 8 },
+  { slug: 'society-and-place', title: 'On Society and Your Place in It', n: 9 },
+  { slug: 'happiness', title: 'On Happiness', n: 10 },
+  { slug: 'meaning', title: 'On Meaning', n: 11 },
+  { slug: 'letter-to-you', title: 'A Letter to You', n: 12 },
 ];
 
 let chartsReady = false;
@@ -30,25 +30,25 @@ let chartsReady = false;
 // ── Router ──────────────────────────────────────────────────────────
 
 function route() {
-  const hash  = location.hash || '#welcome';
+  const hash = location.hash || '#welcome';
   const parts = hash.replace(/^#/, '').split('/');
-  const view  = parts[0] || 'welcome';
+  const view = parts[0] || 'welcome';
 
   switch (view) {
     case 'welcome': showStatic('welcome'); break;
-    case 'about':   showStatic('about');   break;
+    case 'about': showStatic('about'); break;
     case 'stats':
       showStatic('stats');
       if (!chartsReady) { initCharts(); chartsReady = true; }
       break;
-    case 'resources':    showStatic('resources');    break;
-    case 'commentary':   showStatic('commentary');   break;
+    case 'resources': showStatic('resources'); break;
+    case 'commentary': showStatic('commentary'); break;
     case 'methodology':
       showStatic('methodology');
       renderMethodologyPage();
       break;
     case 'chapter': {
-      const slug      = parts[1];
+      const slug = parts[1];
       const modelSlug = parts[2];
 
       // Normalize old-format URLs (no model slug) → redirect
@@ -112,7 +112,7 @@ function setActiveModel(slug) {
 
 // ── Prompt loading ───────────────────────────────────────────────────
 
-let promptMdCache  = null;
+let promptMdCache = null;
 let formatLogCache = null;
 
 async function fetchPromptMd() {
@@ -168,7 +168,7 @@ function renderChapter(raw, slug, promptMd, formatLog) {
   const fmMatch = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
   if (!fmMatch) { renderNotAvailable(slug); return; }
 
-  const fm      = jsyaml.load(fmMatch[1]);
+  const fm = jsyaml.load(fmMatch[1]);
   const chapter = CHAPTERS.find(c => c.slug === slug);
 
   // Strip leading title line some models emit (markdown h1 or plain text matching chapter title)
@@ -197,7 +197,7 @@ function renderChapter(raw, slug, promptMd, formatLog) {
 
 function renderNotAvailable(slug) {
   const chapter = CHAPTERS.find(c => c.slug === slug);
-  const title   = chapter ? chapter.title : slug;
+  const title = chapter ? chapter.title : slug;
   document.getElementById('view-chapter').innerHTML = `
     <header class="chapter-header">
       <h1 class="chapter-title">${escapeHtml(title)}</h1>
@@ -221,7 +221,7 @@ async function renderMethodologyPage() {
 
   // Build chapter table rows — extract word target from each block
   const chapterRows = CHAPTERS.map(c => {
-    const text  = parsePromptBlock(promptMd, c.slug) || '';
+    const text = parsePromptBlock(promptMd, c.slug) || '';
     const match = text.match(/Aim for approximately (\d+) words/);
     const words = match ? `~${match[1]}` : '—';
     return `<tr>
@@ -287,11 +287,11 @@ async function renderMethodologyPage() {
 }
 
 const THINKER_LIST = [
-  'Aristotle','Plato','Socrates','Epictetus','Marcus Aurelius','Seneca',
-  'Confucius','Buddha','Lao Tzu','Zhuangzi','Montaigne','Epicurus',
-  'Nietzsche','Camus','Sartre','Frankl','Heidegger','Simone Weil',
-  'Thoreau','Hesiod','Aeschylus','Hume','William James','Augustine',
-  'Aquinas','Spinoza','Kant','Schopenhauer','Kierkegaard',
+  'Aristotle', 'Plato', 'Socrates', 'Epictetus', 'Marcus Aurelius', 'Seneca',
+  'Confucius', 'Buddha', 'Lao Tzu', 'Zhuangzi', 'Montaigne', 'Epicurus',
+  'Nietzsche', 'Camus', 'Sartre', 'Frankl', 'Heidegger', 'Simone Weil',
+  'Thoreau', 'Hesiod', 'Aeschylus', 'Hume', 'William James', 'Augustine',
+  'Aquinas', 'Spinoza', 'Kant', 'Schopenhauer', 'Kierkegaard',
 ];
 
 function detectThinkers(body) {
@@ -303,9 +303,9 @@ function detectThinkers(body) {
 
 function buildMetaPanel(slug, fm, body, promptMd, formatLog) {
   // ── Full prompt ──
-  const core        = promptMd ? parsePromptBlock(promptMd, 'core') : null;
-  const instruction = promptMd ? parsePromptBlock(promptMd, slug)   : null;
-  const promptHtml  = (core && instruction) ? `
+  const core = promptMd ? parsePromptBlock(promptMd, 'core') : null;
+  const instruction = promptMd ? parsePromptBlock(promptMd, slug) : null;
+  const promptHtml = (core && instruction) ? `
     <div class="meta-prompt-block">
       <div class="meta-prompt-label">Core persona</div>
       <p class="meta-prompt-text">${escapeHtml(core)}</p>
@@ -316,9 +316,9 @@ function buildMetaPanel(slug, fm, body, promptMd, formatLog) {
     </div>` : '<p class="meta-dim">Prompt unavailable.</p>';
 
   // ── Statistics ──
-  const thinkers   = detectThinkers(body);
-  const genDate    = fm.generated_at ? formatDate(fm.generated_at) : '—';
-  const statsHtml  = `
+  const thinkers = detectThinkers(body);
+  const genDate = fm.generated_at ? formatDate(fm.generated_at) : '—';
+  const statsHtml = `
     <table class="meta-stats-table">
       <tr><td>Words</td><td>${fm.word_count ?? '—'}</td></tr>
       <tr><td>Tokens in / out</td><td>${fm.token_count_input ?? '—'} / ${fm.token_count_output ?? '—'}</td></tr>
@@ -332,8 +332,8 @@ function buildMetaPanel(slug, fm, body, promptMd, formatLog) {
     ${thinkers.length ? `<p class="meta-thinkers"><span class="meta-dim">Thinkers mentioned:</span> ${escapeHtml(thinkers.join(', '))}</p>` : ''}`;
 
   // ── Scorecard ──
-  const modelSlug  = activeModel;
-  const entries    = (formatLog || []).filter(e => e.model === modelSlug && e.chapter === slug);
+  const modelSlug = activeModel;
+  const entries = (formatLog || []).filter(e => e.model === modelSlug && e.chapter === slug);
   const scorecardHtml = entries.length
     ? entries.map(e => `<div class="meta-scorecard-item meta-scorecard-item--warn">
         <span class="meta-scorecard-type">${escapeHtml(e.violation)}</span>
@@ -359,7 +359,7 @@ function buildMetaPanel(slug, fm, body, promptMd, formatLog) {
 }
 
 function buildChapterNavHtml(slug) {
-  const idx  = CHAPTERS.findIndex(c => c.slug === slug);
+  const idx = CHAPTERS.findIndex(c => c.slug === slug);
   const prev = CHAPTERS[idx - 1];
   const next = CHAPTERS[idx + 1];
 
@@ -385,8 +385,8 @@ function buildChapterNavHtml(slug) {
 function buildResourcesHtml(resources) {
   if (!resources) return '';
   const groups = [
-    { key: 'read',      label: 'Read' },
-    { key: 'listen',    label: 'Listen' },
+    { key: 'read', label: 'Read' },
+    { key: 'listen', label: 'Listen' },
     { key: 'reference', label: 'Essays &amp; References' },
   ];
 
@@ -397,9 +397,9 @@ function buildResourcesHtml(resources) {
         <div class="resource-group-label">${g.label}</div>
         <ul class="resource-list">
           ${resources[g.key].map(r =>
-            `<li><a href="${r.url}" target="_blank" rel="noopener">${escapeHtml(r.title)}</a>` +
-            `<span class="resource-source">${escapeHtml(r.source)}</span></li>`
-          ).join('')}
+      `<li><a href="${r.url}" target="_blank" rel="noopener">${escapeHtml(r.title)}</a>` +
+      `<span class="resource-source">${escapeHtml(r.source)}</span></li>`
+    ).join('')}
         </ul>
       </div>
     `).join('');
@@ -435,14 +435,14 @@ function toggleTheme() {
 // ── Charts (statistics page) ─────────────────────────────────────────
 
 const MODEL_COLORS = {
-  'Claude':  '#2563eb',
-  'GPT-4o':  '#7c3aed',
-  'Gemini':  '#0891b2',
+  'Claude': '#2563eb',
+  'GPT-4o': '#7c3aed',
+  'Gemini': '#0891b2',
   'Mistral': '#059669',
 };
 
 async function initCharts() {
-  const res   = await fetch('meta/stats.json');
+  const res = await fetch('meta/stats.json');
   const stats = await res.json();
 
   // Populate model registry table
@@ -457,18 +457,18 @@ async function initCharts() {
   `).join('');
 
   // Populate summary cards
-  document.getElementById('stat-models').textContent   = stats.summary.models;
+  document.getElementById('stat-models').textContent = stats.summary.models;
   document.getElementById('stat-chapters').textContent = stats.summary.chapters;
-  document.getElementById('stat-tokens').textContent   = stats.summary.total_output_tokens.toLocaleString();
+  document.getElementById('stat-tokens').textContent = stats.summary.total_output_tokens.toLocaleString();
   document.getElementById('stat-avg-words').textContent = stats.summary.avg_words_per_chapter;
 
-  const isDark     = document.documentElement.dataset.theme === 'dark';
-  const gridColor  = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)';
+  const isDark = document.documentElement.dataset.theme === 'dark';
+  const gridColor = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)';
   const labelColor = isDark ? '#8a8a80' : '#6b6b63';
 
   Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
-  Chart.defaults.font.size   = 12;
-  Chart.defaults.color       = labelColor;
+  Chart.defaults.font.size = 12;
+  Chart.defaults.color = labelColor;
 
   // Word clouds
   const wcGrid = document.getElementById('wordcloud-grid');
@@ -483,18 +483,18 @@ async function initCharts() {
   stats.by_model.forEach(m => {
     const canvas = wcGrid.querySelector(`canvas[data-model="${m.slug}"]`);
     if (!canvas || !m.word_freq?.length) return;
-    const w       = canvas.parentElement.clientWidth - 40;
-    canvas.width  = w;
+    const w = canvas.parentElement.clientWidth - 40;
+    canvas.width = w;
     canvas.height = 240;
     const totalWords = m.word_counts.reduce((s, n) => s + n, 0) || 1;
     WordCloud(canvas, {
-      list:            m.word_freq.map(({ word, count }) => [word, count / totalWords * 10000]),
-      gridSize:        8,
-      weightFactor:    w / 480,
-      fontFamily:      'Inter, system-ui, sans-serif',
-      color:           wcIsDark ? 'random-light' : 'random-dark',
-      rotateRatio:     0.3,
-      rotationSteps:   2,
+      list: m.word_freq.map(({ word, count }) => [word, count / totalWords * 10000]),
+      gridSize: 8,
+      weightFactor: w / 480,
+      fontFamily: 'Inter, system-ui, sans-serif',
+      color: wcIsDark ? 'random-light' : 'random-dark',
+      rotateRatio: 0.3,
+      rotationSteps: 2,
       backgroundColor: 'transparent',
     });
   });
@@ -520,7 +520,7 @@ async function initCharts() {
     data: {
       labels: stats.by_model.map(m => m.display),
       datasets: [{
-        data:            stats.by_model.map(m => m.avg_words),
+        data: stats.by_model.map(m => m.avg_words),
         backgroundColor: stats.by_model.map(m => MODEL_COLORS[m.display] || '#94a3b8'),
         borderRadius: 4,
         borderSkipped: false,
@@ -531,8 +531,10 @@ async function initCharts() {
       plugins: { legend: { display: false } },
       scales: {
         x: { grid: { display: false } },
-        y: { beginAtZero: true, grid: { color: gridColor },
-             ticks: { callback: v => v + ' w' } }
+        y: {
+          beginAtZero: true, grid: { color: gridColor },
+          ticks: { callback: v => v + ' w' }
+        }
       }
     }
   });
@@ -543,8 +545,8 @@ async function initCharts() {
     data: {
       labels: stats.chapters.map(c => c.label),
       datasets: stats.by_model.map(m => ({
-        label:           m.display,
-        data:            stats.chapters.map(c => c.word_counts[m.display] ?? 0),
+        label: m.display,
+        data: stats.chapters.map(c => c.word_counts[m.display] ?? 0),
         backgroundColor: MODEL_COLORS[m.display] || '#94a3b8',
         borderRadius: 2,
         borderSkipped: false,
@@ -556,12 +558,16 @@ async function initCharts() {
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
-        legend: { position: 'top', align: 'start',
-                  labels: { boxWidth: 10, boxHeight: 10, padding: 16 } }
+        legend: {
+          position: 'top', align: 'start',
+          labels: { boxWidth: 10, boxHeight: 10, padding: 16 }
+        }
       },
       scales: {
-        x: { beginAtZero: true, grid: { color: gridColor },
-             ticks: { callback: v => v + ' w' } },
+        x: {
+          beginAtZero: true, grid: { color: gridColor },
+          ticks: { callback: v => v + ' w' }
+        },
         y: { grid: { display: false } }
       }
     }
@@ -593,7 +599,7 @@ function init() {
 
   document.querySelector('.theme-toggle').addEventListener('click', toggleTheme);
 
-  const sidebar   = document.querySelector('.sidebar');
+  const sidebar = document.querySelector('.sidebar');
   const navToggle = document.querySelector('.nav-toggle');
   navToggle.addEventListener('click', () => {
     const open = sidebar.classList.toggle('sidebar--open');
@@ -621,7 +627,7 @@ function init() {
       const label = document.querySelector('.prompt-version-label');
       if (label && site.prompt_version) label.textContent = 'prompt ' + site.prompt_version;
     })
-    .catch(() => {});
+    .catch(() => { });
 
   window.addEventListener('hashchange', route);
   route();

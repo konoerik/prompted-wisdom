@@ -816,23 +816,32 @@ body {
   letter-spacing: -0.01em;
 }
 
-.welcome-method {
-  margin-bottom: 1rem;
+.welcome-nav {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
 }
-
-.welcome-method p {
+.welcome-nav-label {
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   color: var(--text-secondary);
-  line-height: 1.6;
+  width: 100%;
+  margin-bottom: 0.5rem;
 }
-
-.welcome-method a {
+.welcome-nav-link {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
   color: var(--accent);
   text-decoration: none;
 }
-
-.welcome-method a:hover {
+.welcome-nav-link:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
