@@ -12,6 +12,7 @@ token_count_output: 1826
 temperature: 0
 max_tokens: 2000
 sha256: "b16c344aa912ec538cfb4b1842e76edb85f8166fbc51c90a32c32142c297a825"
+markdown_issues: 0
 ---
 
 If you read long enough across centuries and civilizations, one thing becomes hard to ignore: the greatest thinkers disagreed about almost everything except the things that matter most. They disagreed about God, the soul, the structure of nature, the best political order, whether history has a direction, whether reason is sovereign, whether desire should be disciplined or fulfilled, whether the self is something deep to be discovered or a temporary arrangement to be seen through. But again and again they returned to a few persistent claims. Your life is shaped less by outward fortune than by the use you make of it. You do not become good by accident. Most of what you chase will not hold. You are easier to deceive than you think. You need other people, and yet no one can live your life for you. Death is not a mistake in the story but part of the condition under which any life becomes serious.

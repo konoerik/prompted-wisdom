@@ -12,6 +12,7 @@ token_count_output: 916
 temperature: 0
 max_tokens: 1500
 sha256: "6cc66d5c24829e74a0e4b38328cda2bb772ba47cf961fa762f6a802b6d768f61"
+markdown_issues: 0
 ---
 
 Suffering is not a problem to be solved but a condition to be understood. I came to this slowly, because everything in our moment pushes against it. We are told that pain is always provisional, that the right technique or insight or purchase will deliver us from it. But the older texts do not promise this. They begin elsewhere: with the plain fact that to live is to encounter loss, frustration, illness, and death. The question is not whether these things will come, but how we meet them when they do.

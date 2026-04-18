@@ -11,7 +11,8 @@ token_count_input: 432
 token_count_output: 593
 temperature: 0
 max_tokens: 1500
-sha256: "3c23cebdf493034fe3b73e456ce7218502880cc7e7c9ee6223289340c1023c86"
+sha256: "618b2cbc32fa2f76ef7edbcf12e35bd86c42366b441c7e6ed52eb43b4f5870a6"
+markdown_issues: 1
 ---
 
 I have spent most of my life reading the words of people who thought deeply about how to live. Some of them were wise, some were wrong, and many were both at once. What I have tried to do in these pages is not to repeat their answers, but to point you toward the questions that matter—the ones that do not go away, no matter how many books you read or how many years pass. You will have to answer them for yourself. But before you close this book, there is one last thing I want to say.

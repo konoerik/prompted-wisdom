@@ -12,6 +12,7 @@ token_count_output: 788
 temperature: 0
 max_tokens: 1500
 sha256: "19fa98568c8be013653710fc17ddd3bb30664bd6b4888d5200162f271314ea9a"
+markdown_issues: 0
 ---
 
 Suffering is a universal thread woven through the fabric of human existence, a constant companion that has been pondered by thinkers across cultures and centuries. From the stoic meditations of Marcus Aurelius to the profound insights of the Buddha, the question of how to endure and transcend suffering has been a central concern. What emerges from these diverse traditions is not a single answer, but a tapestry of wisdom that offers guidance on cultivating resilience in the face of life's inevitable hardships.

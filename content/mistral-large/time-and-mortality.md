@@ -12,6 +12,7 @@ token_count_output: 1026
 temperature: 0
 max_tokens: 1500
 sha256: "a7ff299c72c0a25b2926913a0bfb3873ef5f96d87973f2ffa68e40cceb0d9ce8"
+markdown_issues: 0
 ---
 
 In the quiet moments, when the noise of the day has faded, you might find yourself wondering about time. It's a common enough experience, this wrestling with the slippery nature of hours and days, the relentless march forward that seems to defy our grasp. It was as present in the ancient world as it is now. Heraclitus, the weeping philosopher, saw time as a river, famously declaring that you cannot step into the same river twice. The water flows on, and so does time. Yet we persist in trying to understand it, to grasp it, as if by doing so, we might also comprehend our own mortality.

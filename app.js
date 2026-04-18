@@ -178,7 +178,7 @@ function renderChapter(raw, slug, promptMd, formatLog) {
 
   const paragraphs = body
     .split(/\n\n+/)
-    .map((p, i) => `<p${i === 0 ? ' class="lead"' : ''}>${escapeHtml(p.trim())}</p>`)
+    .map((p, i) => `<p${i === 0 ? ' class="lead"' : ''}>${escapeHtml(p.trim()).replace(/&lt;em&gt;(.+?)&lt;\/em&gt;/g, '<em>$1</em>')}</p>`)
     .join('\n');
 
   const el = document.getElementById('view-chapter');
@@ -337,9 +337,11 @@ function buildMetaPanel(slug, fm, body, promptMd, formatLog) {
   const scorecardHtml = entries.length
     ? entries.map(e => `<div class="meta-scorecard-item meta-scorecard-item--warn">
         <span class="meta-scorecard-type">${escapeHtml(e.violation)}</span>
-        <span class="meta-dim">line ${e.line} — </span>${escapeHtml(e.original)}
+        <span class="meta-dim">line ${e.line} — </span>${escapeHtml(e.matched ?? e.original ?? '')}
       </div>`).join('')
     : '<div class="meta-scorecard-item meta-scorecard-item--ok">No issues logged.</div>';
+  const issueCount = fm.markdown_issues ?? 0;
+  const scorecardLabel = issueCount > 0 ? `scorecard (${issueCount})` : 'scorecard';
 
   return `
     <div class="chapter-meta-panel">
@@ -352,7 +354,7 @@ function buildMetaPanel(slug, fm, body, promptMd, formatLog) {
         <div class="meta-content">${statsHtml}</div>
       </details>
       <details class="meta-section">
-        <summary class="meta-summary">scorecard</summary>
+        <summary class="meta-summary">${scorecardLabel}</summary>
         <div class="meta-content">${scorecardHtml}</div>
       </details>
     </div>`;

@@ -12,6 +12,7 @@ token_count_output: 1175
 temperature: 0
 max_tokens: 1500
 sha256: "5b64975e3c1f60ba93508087a42776f9026ec3fa8635f542a6f24da4d8a83315"
+markdown_issues: 0
 ---
 
 If you read long enough and widely enough, something strange happens. The voices start to rhyme. Not in their arguments — those differ sharply, and should — but in the territory they keep returning to, the way certain questions refuse to stay answered and certain answers refuse to stay dead. A Stoic in Rome and a Buddhist in India, separated by geography and centuries and everything that makes a culture a culture, will circle the same few problems as though drawn by gravity. That gravity is what I want to talk about.

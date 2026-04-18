@@ -12,11 +12,12 @@ token_count_output: 857
 temperature: 0
 max_tokens: 1500
 sha256: "019874683d6aaaeb01e2827a48f37ae46792044a349cfcce75c64cba97d8e523"
+markdown_issues: 1
 ---
 
 You want things. This is not a problem to be solved. The difficulty begins when wanting becomes a kind of suffering—when you cannot have what you want, or when having it fails to deliver what you imagined, or when the wanting itself becomes so consuming that it crowds out everything else. Every tradition I have read takes this seriously, though they do not all say the same thing about it.
 
-The Buddhist texts are the most direct. They tell you that craving is the root of suffering, that attachment binds you to a wheel of dissatisfaction. The word they use—*tanha*, thirst—suggests something desperate and unquenchable. You drink and you are not satisfied. You drink again. The solution they offer is not to want less intensely but to see through the wanting itself, to recognize that the self doing the wanting is not as solid as it feels. When you look closely at desire, they say, you find it is made of the same insubstantial stuff as everything else. This is not easy to do. It asks you to dismantle something that feels like the foundation of your life.
+The Buddhist texts are the most direct. They tell you that craving is the root of suffering, that attachment binds you to a wheel of dissatisfaction. The word they use—<em>tanha</em>, thirst—suggests something desperate and unquenchable. You drink and you are not satisfied. You drink again. The solution they offer is not to want less intensely but to see through the wanting itself, to recognize that the self doing the wanting is not as solid as it feels. When you look closely at desire, they say, you find it is made of the same insubstantial stuff as everything else. This is not easy to do. It asks you to dismantle something that feels like the foundation of your life.
 
 The Stoics come at it differently. Epictetus tells you to distinguish between what is up to you and what is not. You can control your own judgments, your responses, your character. You cannot control whether you get the job, whether someone loves you back, whether your body stays healthy. Desire becomes suffering when you attach it to things outside your control. The Stoic does not try to eliminate desire but to redirect it—toward virtue, toward what you can actually accomplish through your own efforts. This is more pragmatic than the Buddhist approach, and in some ways more forgiving. It does not ask you to see through the self. It asks you to be more careful about where you place your hopes.
 

@@ -12,6 +12,7 @@ token_count_output: 664
 temperature: 0
 max_tokens: 1500
 sha256: "1d95476c931ceeb4c1303ce4c8ec25e0b957b2965e52112c74c046c2e02e3704"
+markdown_issues: 0
 ---
 
 If I could leave you with only one thing, it would not be a rule. Rules are useful, and then life changes. It would not be a system, because systems are too clean for the kind of days most people actually live. I would leave you with a way of standing in the world: awake, a little humbler than your pride prefers, a little braver than your fear permits, and resolved to keep faith with what you know to be good even when it costs you something. That, more than cleverness, more than success, more than any argument you can win, is what seems to endure.

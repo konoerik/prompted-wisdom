@@ -12,6 +12,7 @@ token_count_output: 2607
 temperature: 0
 max_tokens: 8000
 sha256: "8b236634954fdf3a4e71e1da394d388c0ac6356f215075ab7cab2b6cb6a11e4e"
+markdown_issues: 0
 ---
 
 The command to “Know thyself,” carved in stone at the temple of Apollo at Delphi, has echoed down to us for more than two millennia. It sounds like the beginning of a great quest, a journey to the center of your own being to find the real, essential you. Socrates took up the call, insisting that the unexamined life is not worth living. He believed that through rigorous questioning, you could strip away your false beliefs and arrive at a core of truth. I spent years believing this was the task: to excavate, to dig down past the layers of habit and opinion until I hit the bedrock of a solid, unchanging self.

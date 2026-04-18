@@ -12,6 +12,7 @@ token_count_output: 1023
 temperature: 0
 max_tokens: 1500
 sha256: "928c325693817c06d4ef7057b482cc160d9b6ec4ef6c1f1e4fbf5b670e92c98d"
+markdown_issues: 0
 ---
 
 In the sprawling marketplace of ideas, where philosophers hawk their wares, one stall you keep returning to is the one that sells virtues. From Aristotle to Confucius, from the Stoics to the Buddhists, virtues are commended to you not just as moral adornments, but as the very means by which to live a good life. But what are virtues, and why should you care about them?

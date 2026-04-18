@@ -12,6 +12,7 @@ token_count_output: 1100
 temperature: 0
 max_tokens: 1500
 sha256: "5db416637afd801525ed68564499bf948f0906887beb21bfe1ff34d78c2091eb"
+markdown_issues: 0
 ---
 
 Knowing yourself is a challenge that has preoccupied thinkers for millennia, and for good reason. It is the foundation upon which all other knowledge and wisdom rest. The Oracle at Delphi counseled, "Know thyself," and this maxim has echoed through the ages, from Socrates to Freud, each offering their unique interpretation of what it means to truly understand oneself.

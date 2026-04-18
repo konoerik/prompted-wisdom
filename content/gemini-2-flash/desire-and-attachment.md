@@ -12,11 +12,12 @@ token_count_output: 787
 temperature: 0
 max_tokens: 1500
 sha256: "42d4eaed5d2ec7219c785530e8be931694d4b39d7e53b97ac220ed4c61f4c6ea"
+markdown_issues: 2
 ---
 
 Desire is a tricky thing. We are told, in many traditions, that it is the root of suffering. The Buddha said as much, and he wasn't alone. But to simply eliminate desire seems impossible, and perhaps even undesirable. A life without any longing, any striving, any reaching for something beyond the present moment – what would that be? A stone, perhaps, or a tree. Not a human life.
 
-The problem, as I see it, isn't desire itself, but attachment. Attachment is desire clinging, refusing to let go. It's the insistence that a particular object, a particular outcome, is essential to our happiness. It's the belief that without *this*, we cannot be whole.
+The problem, as I see it, isn't desire itself, but attachment. Attachment is desire clinging, refusing to let go. It's the insistence that a particular object, a particular outcome, is essential to our happiness. It's the belief that without <em>this</em>, we cannot be whole.
 
 Think of a child clutching a favorite toy. The toy itself isn't the problem. The problem is the child's conviction that their happiness depends on possessing it. When the toy is lost or broken, the child experiences profound distress, not because of the toy's intrinsic value, but because of the attachment.
 
@@ -24,7 +25,7 @@ Epictetus, the Stoic philosopher, understood this well. He distinguished between
 
 "Do not seek to have events happen as you want them to," Epictetus advised, "but instead want them to happen as they do happen, and your life will go well." This isn't passive resignation. It's a recognition of reality. It's an acceptance of the impermanence of all things.
 
-The Buddhist concept of *sunyata*, or emptiness, speaks to this same truth. It doesn't mean that nothing exists. It means that nothing has inherent, independent existence. Everything is interconnected, interdependent, constantly changing. To grasp this is to loosen the grip of attachment.
+The Buddhist concept of <em>sunyata</em>, or emptiness, speaks to this same truth. It doesn't mean that nothing exists. It means that nothing has inherent, independent existence. Everything is interconnected, interdependent, constantly changing. To grasp this is to loosen the grip of attachment.
 
 But how do we loosen that grip? It's not a matter of simply willing ourselves to be detached. Attachment is often deeply ingrained, woven into the fabric of our identities. It requires a conscious effort to observe our desires, to understand their roots, and to gradually release our hold on them.
 

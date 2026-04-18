@@ -12,6 +12,7 @@ token_count_output: 987
 temperature: 0
 max_tokens: 1500
 sha256: "18cfb79b85b0983430f9a791177e1528a2ad7441f4fc78c4648965e1eb3eca4b"
+markdown_issues: 0
 ---
 
 There is a line from Hesiod, among the oldest we have on the subject, that says the gods placed sweat before excellence. He meant it literally — he was talking about farming, about the back-breaking work of coaxing grain from rocky Greek soil. But the idea traveled far beyond his fields. It became one of the most persistent claims in human thought: that work is not merely necessary but somehow ennobling, that through effort we become what we are meant to be.

@@ -12,6 +12,7 @@ token_count_output: 959
 temperature: 0
 max_tokens: 1500
 sha256: "42868fbfd21526c390aabf8edfa809823471a956ba2d6ebaef527a82be5a6ec7"
+markdown_issues: 0
 ---
 
 The first thing you learn, reading across centuries, is that the questions don't change. What is the good life? How should we live? What does it mean to be human? These echo from Plato's Academy to the coffee houses of Paris, from the monasteries of Tibet to the gardens of Kyoto. The answers, of course, are as varied as the people who ask them. But the persistence of the questions themselves is a kind of answer. It suggests that certain fundamental anxieties and aspirations are woven into the fabric of our being.

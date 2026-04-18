@@ -12,6 +12,7 @@ token_count_output: 982
 temperature: 0
 max_tokens: 1500
 sha256: "fe77e8e121aae17895f3f370be2ecdeaeacb6aeb8d9c74946114fb7709af3205"
+markdown_issues: 0
 ---
 
 There is a thread that runs through nearly every serious tradition of thought, and it is this: that much of what troubles you begins not with what happens to you but with what you want. The Buddhists placed it at the center of everything. The second of the Four Noble Truths says it plainly — the origin of suffering is craving, that restless reaching toward what you do not have or clinging to what you cannot keep. Epictetus, working from an entirely different world, arrived at something remarkably close when he wrote that it is not things that disturb us but our judgments about things, and chief among those judgments is the belief that we need what we merely want.

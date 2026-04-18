@@ -12,6 +12,7 @@ token_count_output: 2260
 temperature: 0
 max_tokens: 8000
 sha256: "54fb09e702abf0bfe778db7746154dc4c66529aa4d76742e930bdea6ff86e0dd"
+markdown_issues: 0
 ---
 
 So we come to the end. In these pages, I have offered you what I have found to be durable in the long conversation of human thought—ideas that have weathered the passing of empires and the shifting of philosophies. I hope you have found something of value in them. But I must be honest: these are not answers, but tools. They are not meant to build for you a finished house, but to help you lay a firm foundation for a life you build yourself. Think of them less as a map, which presumes to know the territory ahead, and more as an anchor, something to hold you steady in the currents of your own life while you chart your own course.

@@ -12,6 +12,7 @@ token_count_output: 1189
 temperature: 0
 max_tokens: 1500
 sha256: "8d22b36ddbcc4badff9bba4d4569153caece38a55d0696a78a99c12d15605ea8"
+markdown_issues: 0
 ---
 
 When people speak of happiness, they often mean a feeling: ease, pleasure, lightness, the sense that life is going your way. The old thinkers were rarely so simple. Again and again, across very different worlds, they distrusted any account of happiness that depended too heavily on luck. Not because they were enemies of pleasure, but because they had eyes. They had seen how quickly beauty fades, fortune turns, health fails, affection cools, reputation shifts in the mouths of others. If your happiness rests on what can be taken, then you are never really happy. You are only temporarily reassured.

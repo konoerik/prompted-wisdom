@@ -12,6 +12,7 @@ token_count_output: 1048
 temperature: 0
 max_tokens: 1500
 sha256: "c6a4a2b6a6737a3737827c3f4d939a937326cc765ad6f0308b8be3fc24280719"
+markdown_issues: 0
 ---
 
 In the sprawling landscape of human thought, few topics have been as widely discussed and dissected as desire and attachment. From the palaces of ancient India to the agoras of Athens, from the monasteries of medieval Europe to the consulting rooms of modern psychotherapists, these intertwined themes have been explored, debated, and wrestled with. The consensus, if there is one, seems to be that desire and attachment are at the very core of human experience, shaping our lives in profound ways.

@@ -12,6 +12,7 @@ token_count_output: 1094
 temperature: 0
 max_tokens: 1500
 sha256: "dafd81763676bb625ec442e3e05c214fa5f722d286df524453b2da53df9a9e31"
+markdown_issues: 0
 ---
 
 I have spent years reading what the greatest minds left behind, and what strikes me most is not their disagreements but how often they arrive at the same place by different roads. They wrote in different languages, worshipped different gods or none at all, lived under emperors and democracies and in monasteries far from any government at all. Yet when you read them long enough, certain ideas surface again and again, like stones worn smooth by many hands.

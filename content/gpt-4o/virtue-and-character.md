@@ -12,6 +12,7 @@ token_count_output: 826
 temperature: 0
 max_tokens: 1500
 sha256: "3e37d67034c6797a71905ac7b6426833408e7753a9e1d9441a4cfed9920e24b2"
+markdown_issues: 0
 ---
 
 Virtue and character have been the twin pillars of philosophical inquiry across cultures and centuries, each tradition offering its own lens through which to view these enduring concepts. The Greeks, with their characteristic clarity, spoke of virtue as "arete," a kind of excellence that is not merely about moral goodness but about fulfilling one's potential. Aristotle, in particular, saw virtue as a habit, a disposition to act in ways that balance between deficiency and excess. He famously said, "We are what we repeatedly do. Excellence, then, is not an act, but a habit." This idea of virtue as a cultivated habit resonates deeply with the Confucian tradition, where the cultivation of character is a lifelong endeavor, a journey toward becoming a "junzi," or a person of noble character.

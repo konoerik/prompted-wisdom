@@ -48,6 +48,9 @@ def _check_violations(body_lines: "list[str]") -> "list[dict]":
             violations.append({"line": i, "type": "list-item", "original": stripped})
         elif re.match(r'^### .+', stripped):
             violations.append({"line": i, "type": "nested-heading", "original": stripped})
+        else:
+            for m in re.finditer(r'(?<!\*)\*(?!\*)([^*\n]+)(?<!\*)\*(?!\*)', stripped):
+                violations.append({"line": i, "type": "inline-italic", "original": stripped, "matched": m.group(1)})
     return violations
 
 
@@ -60,6 +63,8 @@ def _fix_line(line: str, violation_type: str) -> Optional[str]:
         return re.sub(r'\*\*([^*]+)\*\*', r'\1', stripped)
     elif violation_type == "list-item":
         return re.sub(r'^- ', '', stripped)
+    elif violation_type == "inline-italic":
+        return re.sub(r'(?<!\*)\*(?!\*)([^*\n]+)(?<!\*)\*(?!\*)', r'<em>\1</em>', stripped)
     return line
 
 
@@ -87,6 +92,16 @@ def _update_frontmatter_field(fm: str, key: str, value) -> str:
     return new_fm
 
 
+def _upsert_frontmatter_field(fm: str, key: str, value) -> str:
+    """Update a scalar field in YAML frontmatter, or insert it before the closing --- if absent."""
+    pattern = rf'^({re.escape(key)}:\s*).*$'
+    new_fm, n = re.subn(pattern, rf'\g<1>{value}', fm, count=1, flags=re.MULTILINE)
+    if n == 0:
+        close = fm.rfind('\n---')
+        new_fm = fm[:close] + f'\n{key}: {value}' + fm[close:]
+    return new_fm
+
+
 def _word_count(body: str) -> int:
     return len(body.split())
 
@@ -109,30 +124,43 @@ def process_file(path: Path, dry_run: bool) -> "Optional[list[dict]]":
     violations = _check_violations([l.rstrip('\n') for l in body_lines])
 
     if not violations:
+        if 'markdown_issues:' not in fm_block:
+            new_fm = _upsert_frontmatter_field(fm_block, 'markdown_issues', 0)
+            if not dry_run:
+                path.write_text(new_fm + body, encoding='utf-8')
         return None
 
     log_entries = []
     new_lines = list(body_lines)
+    italic_lines_fixed = set()
     # Process in reverse so line indices stay valid when removing lines
     for v in reversed(violations):
         i = v["line"]
         original_line = new_lines[i].rstrip('\n')
-        fixed = _fix_line(original_line, v["type"])
         entry = {
             "model": path.parent.name,
             "chapter": path.stem,
             "violation": v["type"],
             "line": i + 1,
-            "original": original_line,
-            "fixed": fixed if fixed is not None else "(removed)",
         }
-        log_entries.append(entry)
-        if fixed is None:
-            del new_lines[i]
+        if v["type"] == "inline-italic":
+            entry["matched"] = v["matched"]
+            log_entries.append(entry)
+            if i not in italic_lines_fixed:
+                fixed = _fix_line(original_line, v["type"])
+                ending = '\n' if body_lines[i].endswith('\n') else ''
+                new_lines[i] = fixed + ending
+                italic_lines_fixed.add(i)
         else:
-            # preserve original line ending
-            ending = '\n' if body_lines[i].endswith('\n') else ''
-            new_lines[i] = fixed + ending
+            fixed = _fix_line(original_line, v["type"])
+            entry["original"] = original_line
+            entry["fixed"] = fixed if fixed is not None else "(removed)"
+            log_entries.append(entry)
+            if fixed is None:
+                del new_lines[i]
+            else:
+                ending = '\n' if body_lines[i].endswith('\n') else ''
+                new_lines[i] = fixed + ending
 
     # Collapse multiple blank lines left by removals
     cleaned_lines = []
@@ -147,12 +175,11 @@ def process_file(path: Path, dry_run: bool) -> "Optional[list[dict]]":
             cleaned_lines.append(line)
     new_body = ''.join(cleaned_lines)
 
-    # Update frontmatter
-    new_sha = _sha256(new_body)
+    # Update frontmatter — sha256 intentionally left unchanged (hash of original AI output)
     new_wc  = _word_count(new_body)
     new_fm  = fm_block
-    new_fm  = _update_frontmatter_field(new_fm, 'sha256', f'"{new_sha}"')
     new_fm  = _update_frontmatter_field(new_fm, 'word_count', new_wc)
+    new_fm  = _upsert_frontmatter_field(new_fm, 'markdown_issues', len(log_entries))
 
     if not dry_run:
         path.write_text(new_fm + new_body, encoding='utf-8')

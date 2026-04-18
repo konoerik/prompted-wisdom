@@ -12,6 +12,7 @@ token_count_output: 976
 temperature: 0
 max_tokens: 1500
 sha256: "5d0ed49542dd3e4ee28539e4cc02139fa91a8ba4e865fb593d8afcf829e0259a"
+markdown_issues: 0
 ---
 
 In the vast terrain of human experience, relationships and love are the ranges that have most consistently beguiled and befuddled us. From the earliest philosophical musings to the modern-day memoir, the question of how to love and be loved, how to connect and stay connected, has been a perennial theme. As you navigate this terrain yourself, there are some signposts from the past that might serve you well.

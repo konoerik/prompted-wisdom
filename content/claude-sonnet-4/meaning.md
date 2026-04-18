@@ -12,6 +12,7 @@ token_count_output: 868
 temperature: 0
 max_tokens: 1500
 sha256: "a6e803b2f8c193f0d082725828d6130b8b3be2ca0f15d29129527f16f7b0b4dd"
+markdown_issues: 0
 ---
 
 You will not find meaning. You will make it, or you will recognize it in what you are already doing. This is not wordplay. The difference matters.

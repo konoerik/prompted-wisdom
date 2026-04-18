@@ -12,13 +12,14 @@ token_count_output: 719
 temperature: 0
 max_tokens: 1500
 sha256: "ec5d0282df21e1084a60b067fe1eeff170a9a1c84370dc2e98ee7c0a5024e60a"
+markdown_issues: 3
 ---
 
 Happiness. Everyone wants it. But what is it? And how do you get it?
 
-The ancient Greeks, as usual, had a lot to say. Aristotle, in his *Nicomachean Ethics*, argued that happiness – *eudaimonia* – wasn't just a feeling, but a state of flourishing, of living well and doing well. It wasn't about pleasure, exactly, though pleasure might be a part of it. It was about fulfilling your potential, living a virtuous life, and engaging in activities that are intrinsically worthwhile.
+The ancient Greeks, as usual, had a lot to say. Aristotle, in his <em>Nicomachean Ethics</em>, argued that happiness – <em>eudaimonia</em> – wasn't just a feeling, but a state of flourishing, of living well and doing well. It wasn't about pleasure, exactly, though pleasure might be a part of it. It was about fulfilling your potential, living a virtuous life, and engaging in activities that are intrinsically worthwhile.
 
-That last part is key. Activities that are intrinsically worthwhile. Not things you do for some external reward, but things you do because they are good in themselves. Think of creating something beautiful, helping someone in need, or pursuing knowledge for its own sake. These are the things that, according to Aristotle, contribute to a life of *eudaimonia*.
+That last part is key. Activities that are intrinsically worthwhile. Not things you do for some external reward, but things you do because they are good in themselves. Think of creating something beautiful, helping someone in need, or pursuing knowledge for its own sake. These are the things that, according to Aristotle, contribute to a life of <em>eudaimonia</em>.
 
 The Stoics, like Epictetus and Marcus Aurelius, took a slightly different tack. They believed that happiness came not from external circumstances, but from internal control. You can't control what happens to you, they argued, but you can control how you react to it. "It is not things themselves that disturb men," Epictetus wrote, "but their judgments about these things."
 

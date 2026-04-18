@@ -12,6 +12,7 @@ token_count_output: 883
 temperature: 0
 max_tokens: 1500
 sha256: "2e9dd1ace79b2b91507e22d1a6da94015df2ac9c70a3d00795a1ab53265839a5"
+markdown_issues: 0
 ---
 
 You cannot know yourself by looking inward alone. This sounds wrong at first—after all, the Delphic oracle commanded "know thyself," and we have taken that to mean: examine your interior, your feelings, your authentic core. But the Greeks did not mean it that way. They meant something closer to: know your limits, know that you are mortal, know your place in the order of things. The self they wanted you to know was the self in relation—to the gods, to the city, to fate.

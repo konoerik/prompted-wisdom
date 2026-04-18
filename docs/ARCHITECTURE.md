@@ -26,6 +26,13 @@ Full 48-chapter run: **~$0.54** · Run `make estimate` before each regeneration 
 ## Decisions (ADRs)
 <!-- Append new ADRs with /log -->
 
+### ADR-8: SHA-256 provenance — original AI output hash, never rewritten by post-processing
+**Date:** 2026-04-18
+**Context:** `format.py` was recomputing `sha256` after every formatting fix (stripping structural markdown violations, converting `*italic*` to `<em>`), replacing the hash of the original AI output with a hash of the cleaned body. This broke the provenance guarantee: the `sha256` field is meant to let readers verify exactly what the model produced, not what the site chooses to display.
+**Decision:** `sha256` is set once by `generate.py` on the raw API response body (`.strip()`-trimmed) and is never touched again. `format.py` may edit the body for readability but must not update `sha256`. `word_count` is still updated by `format.py` (it is a convenience field, not a provenance claim). The generation-time sha256 for all v1.4 chapters is anchored at commit `ac65665` (or `23b8b02` for the three chapters regenerated due to truncation).
+**Alternatives considered:** Update sha256 to reflect the canonical/formatted body — rejected: conflates "what the AI said" with "what we chose to display", undermining the integrity proof. Add a parallel `sha256_canonical` field for the post-processed version — rejected: unnecessary complexity; the body in the file is the readable truth and the hash is the provenance proof, they serve different purposes and need not match.
+**Consequences:** The sha256 in a file will not match the current body byte-for-byte after formatting edits. Verification requires fetching the original body from git at the generation commit (`git show ac65665:content/<model>/<chapter>.md`). Any future post-processing script must be written with this constraint in mind — editing the body is permitted, updating sha256 is not.
+
 ### ADR-7: Chapter metadata panel — collapsible prompt, statistics, and scorecard
 **Date:** 2026-04-16
 **Context:** The existing chapter page had a single `<details>` element at the bottom showing only the chapter instruction, with a note pointing readers to the Methodology page for the core persona. This was incomplete and not self-contained: a reader curious about provenance had to navigate away. The phase 2 content also introduced `meta/format-log.json` (post-generation correction log) and an upcoming editorial review pass, making a structured per-chapter scorecard worth surfacing. The goal was to expose full provenance, generation statistics, and issue tracking without disrupting the reading experience.

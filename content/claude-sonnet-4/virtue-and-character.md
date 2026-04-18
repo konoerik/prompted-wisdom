@@ -12,13 +12,14 @@ token_count_output: 853
 temperature: 0
 max_tokens: 1500
 sha256: "82d333740c7f6008315dead5cc6a2e9ef766859d43fd5ec03f653073b6ca3431"
+markdown_issues: 2
 ---
 
 You cannot become good by accident. This is one of the few things nearly every tradition agrees on. Virtue requires intention, repetition, the slow work of shaping yourself through what you do. Aristotle said we become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts. The Confucians said something similar: the superior person is not a vessel, meaning not a thing with a fixed purpose, but someone who has cultivated themselves through practice until right action becomes natural. Even the Stoics, who believed virtue was knowledge, insisted that knowledge had to be trained into you through daily exercise, through what Marcus Aurelius called "the art of living."
 
 What they all saw was that character is not what you believe or intend but what you reliably do. It is the shape your soul takes from repeated action. You are building something whether you mean to or not. The question is only whether you are building it deliberately.
 
-The Greeks had a word for this, *arete*, which gets translated as virtue but meant something closer to excellence, the quality of fulfilling your nature well. A knife has *arete* when it cuts cleanly. A person has it when they act as a person should. But what should a person do? Here the traditions begin to diverge, though not as much as you might think.
+The Greeks had a word for this, <em>arete</em>, which gets translated as virtue but meant something closer to excellence, the quality of fulfilling your nature well. A knife has <em>arete</em> when it cuts cleanly. A person has it when they act as a person should. But what should a person do? Here the traditions begin to diverge, though not as much as you might think.
 
 For Aristotle, virtue lay in the mean between extremes. Courage is neither cowardice nor recklessness. Generosity is neither stinginess nor wastefulness. This sounds like moderation, but it is not quite that. It is more like precision, finding the right response to the situation in front of you. The mean is not a fixed point but something you have to judge each time, and judgment comes only from practice and experience. You learn it the way you learn to play an instrument, through years of getting it wrong.
 

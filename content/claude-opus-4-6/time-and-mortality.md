@@ -12,6 +12,7 @@ token_count_output: 972
 temperature: 0
 max_tokens: 1500
 sha256: "2a89488ae56af7956b3b17fe75c5dc4b166ae1fb14b80a98a5bf3b15b9a1756b"
+markdown_issues: 0
 ---
 
 There is a line from Marcus Aurelius that I have never been able to set aside. He wrote it to himself, probably in a tent, probably tired: "Even if you were to live three thousand years, or thirty thousand, remember that no one loses any life other than the one being lived, and no one lives any other life than the one being lost." He was saying something precise. The past is gone. The future does not exist. What you have is this present moment, and it is the same size for everyone — the person who dies at thirty and the person who dies at ninety. Each of them can only lose now.

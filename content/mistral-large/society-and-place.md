@@ -12,6 +12,7 @@ token_count_output: 978
 temperature: 0
 max_tokens: 1500
 sha256: "5aa668246b719210e02a0d1fd00761c94792ec5b3f050949947f16bfe9b6ac5f"
+markdown_issues: 0
 ---
 
 In the sprawling narrative of human thought, one question has persisted like a steady drumbeat: how ought we to live with one another? Society, that vast and complex organism, is not a choice but a fact. We are born into it, and from the moment we draw our first breath, we are enmeshed in a web of relations, expectations, and duties. But what is our place in this intricate dance, and how should we move within it?

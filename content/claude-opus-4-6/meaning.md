@@ -12,6 +12,7 @@ token_count_output: 998
 temperature: 0
 max_tokens: 1500
 sha256: "2abc849583ebb841e960122c8ca4b1e297ccb82e5129ecdae0c66ab3c6dc5e0a"
+markdown_issues: 0
 ---
 
 There is a question that sits beneath all the others, and most people feel it before they can name it. It is not quite "What should I do?" and not quite "What makes me happy?" It is something closer to: does any of this matter? And if so, why? That is the question of meaning, and it is the one question that philosophy has never been able to settle — not because thinkers have failed, but because the answer, if there is one, cannot be handed from one person to another like a coin. It has to be minted fresh each time.

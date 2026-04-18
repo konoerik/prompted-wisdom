@@ -12,6 +12,7 @@ token_count_output: 1161
 temperature: 0
 max_tokens: 1500
 sha256: "e0083117b825db8f2de040915a169e09a6f9dec5c52dfc0389d89e1370675011"
+markdown_issues: 0
 ---
 
 No serious tradition of thought has promised you a life without suffering. The optimistic systems are optimistic only by comparison. Even those who believed the world was ordered by reason, or providence, or moral law did not think this spared you grief. They thought, at most, that grief need not be meaningless. That is a smaller claim, but it is the only one that survives contact with life.

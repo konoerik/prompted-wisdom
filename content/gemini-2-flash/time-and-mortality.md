@@ -12,15 +12,16 @@ token_count_output: 772
 temperature: 0
 max_tokens: 1500
 sha256: "a0b6fe6239e9bbc00fc80a00c344eb08db589e2099435e2fdb4e3b28f10edf88"
+markdown_issues: 2
 ---
 
 Time is the loom on which we weave our lives. It stretches before us, seemingly endless in youth, then gathers speed, the shuttle flying faster and faster until the pattern is complete. Or, perhaps, incomplete. That is the terror, isn't it? That the pattern will be broken, the thread snapped before the design is realized.
 
 The ancients knew this terror well. Seneca, that Roman stoic, wrote, "It is not that we have a short time to live, but that we waste a good deal of it." He understood that time, unlike money, cannot be saved. It can only be spent. And the tragedy is that we often spend it poorly, chasing fleeting pleasures, worrying about things beyond our control, postponing the things that truly matter.
 
-The Buddhist tradition offers a similar perspective, though framed in different terms. Impermanence, *anicca*, is a fundamental truth. Everything is in flux, constantly changing. Clinging to things, to people, to moments, is a source of suffering because they will inevitably pass. This isn't a cause for despair, but a call to awareness. To appreciate the present moment, to savor the fleeting beauty of a flower, the warmth of a friend's hand, because these things are precious precisely because they are transient.
+The Buddhist tradition offers a similar perspective, though framed in different terms. Impermanence, <em>anicca</em>, is a fundamental truth. Everything is in flux, constantly changing. Clinging to things, to people, to moments, is a source of suffering because they will inevitably pass. This isn't a cause for despair, but a call to awareness. To appreciate the present moment, to savor the fleeting beauty of a flower, the warmth of a friend's hand, because these things are precious precisely because they are transient.
 
-Confucius, in his pragmatic way, emphasized the importance of living in accordance with *dao*, the Way. This involves understanding your place in the world, fulfilling your responsibilities, and striving for self-cultivation. Time, in this context, is not something to be feared, but a resource to be used wisely in the pursuit of virtue and harmony.
+Confucius, in his pragmatic way, emphasized the importance of living in accordance with <em>dao</em>, the Way. This involves understanding your place in the world, fulfilling your responsibilities, and striving for self-cultivation. Time, in this context, is not something to be feared, but a resource to be used wisely in the pursuit of virtue and harmony.
 
 These traditions, though distinct, converge on a central point: the awareness of mortality is not a morbid obsession, but a catalyst for living a more meaningful life. It is the shadow that gives depth to the picture. Without it, we would drift aimlessly, taking everything for granted.
 

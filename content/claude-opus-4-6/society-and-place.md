@@ -12,6 +12,7 @@ token_count_output: 1031
 temperature: 0
 max_tokens: 1500
 sha256: "3aef1b7daca8fe5c002549cd197bcd4f8966dd9392b9ed775c2c6a383e125c53"
+markdown_issues: 0
 ---
 
 You did not choose to be born into the particular arrangement of people and customs and laws that surrounds you, and yet here you are, shaped by it in ways you will spend a lifetime only partly understanding. This is the starting condition. Every serious thinker about society has had to begin here — with the fact that we are, as Aristotle put it, political animals, creatures whose nature is completed only in community, and yet who are also, each of us, something irreducibly singular, capable of standing apart from the group and asking whether it deserves our loyalty.

@@ -12,9 +12,10 @@ token_count_output: 2619
 temperature: 0
 max_tokens: 8000
 sha256: "d1c3c86570be1adb9e1c3595dafede2cf116762cca6179983500e107f8269420"
+markdown_issues: 1
 ---
 
-You will spend a third of your life at it, perhaps more. It is the thing you do when you are not sleeping or eating or with those you love. And so the question of what your work is for becomes tangled up with the question of what your *life* is for. Our age has a particular anxiety about this. We are told to find our passion, to discover our calling, as if it were a treasure buried in a field, and that if we do not find it, we have somehow failed. I have found this to be a thin and often cruel philosophy. It sets a standard so high that most will fall short, and it mistakes a feeling for a foundation.
+You will spend a third of your life at it, perhaps more. It is the thing you do when you are not sleeping or eating or with those you love. And so the question of what your work is for becomes tangled up with the question of what your <em>life</em> is for. Our age has a particular anxiety about this. We are told to find our passion, to discover our calling, as if it were a treasure buried in a field, and that if we do not find it, we have somehow failed. I have found this to be a thin and often cruel philosophy. It sets a standard so high that most will fall short, and it mistakes a feeling for a foundation.
 
 The older thinkers began from a different place. They did not ask what work would make you feel fulfilled. They asked, what is your function? What is your duty? For the Stoics, this was a cosmic question. Marcus Aurelius put it to himself in the dark of a cold morning: “At dawn, when you have trouble getting out of bed, tell yourself: ‘I have to go to work — as a human being. What do I have to complain of, if I’m going to do what I was born for — the things I was brought into the world to do? Or is this what I was created for? To huddle under the blankets and stay warm?’” He saw the bee at its honey, the spider at its web, the ant at its task. Your work, in this view, is your part in the vast machinery of the world. It is not about you. It is about your contribution to the whole, however small. The purpose is simply to do it, and to do it well.
 

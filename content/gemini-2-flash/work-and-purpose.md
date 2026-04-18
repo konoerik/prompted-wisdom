@@ -12,13 +12,14 @@ token_count_output: 719
 temperature: 0
 max_tokens: 1500
 sha256: "4b3c05a6120f42d58421b14a6dd25afcac3bf11e8c91c827467307cdb3a84a72"
+markdown_issues: 9
 ---
 
 Work. It fills our days, defines our worth, and often leaves us feeling empty. We chase promotions, accumulate possessions, and yet, a nagging question persists: is this all there is? The ancient thinkers, separated by oceans and centuries, grappled with this same unease. Their answers, though varied, offer a compass for navigating the modern labyrinth of labor.
 
-The Greeks, ever practical, saw work as a necessity, a means to an end. Aristotle, in his *Nicomachean Ethics*, distinguished between *poiesis* and *praxis*. *Poiesis* is productive activity, making something external to the maker. A carpenter builds a table, a potter shapes clay. *Praxis*, on the other hand, is action done for its own sake, its value inherent in the doing. Think of playing music, engaging in political debate, or simply contemplating the good. For Aristotle, true happiness, *eudaimonia*, lay in *praxis*, in cultivating virtue and living a life of reason. Work, in the sense of *poiesis*, was merely a tool to enable that higher purpose.
+The Greeks, ever practical, saw work as a necessity, a means to an end. Aristotle, in his <em>Nicomachean Ethics</em>, distinguished between <em>poiesis</em> and <em>praxis</em>. <em>Poiesis</em> is productive activity, making something external to the maker. A carpenter builds a table, a potter shapes clay. <em>Praxis</em>, on the other hand, is action done for its own sake, its value inherent in the doing. Think of playing music, engaging in political debate, or simply contemplating the good. For Aristotle, true happiness, <em>eudaimonia</em>, lay in <em>praxis</em>, in cultivating virtue and living a life of reason. Work, in the sense of <em>poiesis</em>, was merely a tool to enable that higher purpose.
 
-Confucius, too, emphasized the importance of purpose beyond mere productivity. He believed that work should be aligned with one's moral development, contributing to the harmony of society. The ideal was the *junzi*, the cultivated person, who served the state not for personal gain but out of a sense of duty and benevolence. Work, in this context, became a vehicle for self-cultivation and social responsibility.
+Confucius, too, emphasized the importance of purpose beyond mere productivity. He believed that work should be aligned with one's moral development, contributing to the harmony of society. The ideal was the <em>junzi</em>, the cultivated person, who served the state not for personal gain but out of a sense of duty and benevolence. Work, in this context, became a vehicle for self-cultivation and social responsibility.
 
 The Buddhist perspective offers a different, yet complementary, angle. The Buddha taught that suffering arises from attachment, from clinging to desires and expectations. Work, often driven by the desire for wealth, status, or recognition, can become a source of immense suffering. The path to liberation, therefore, involves detaching from these worldly pursuits, finding contentment in the present moment, and engaging in work that is ethical and compassionate. This doesn't mean abandoning work altogether, but rather transforming our relationship to it.
 

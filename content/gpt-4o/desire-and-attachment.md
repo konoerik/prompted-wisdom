@@ -12,6 +12,7 @@ token_count_output: 811
 temperature: 0
 max_tokens: 1500
 sha256: "16cf72feb945ccf2c70670e4914919e625e264855d92442009e305e5082b9db9"
+markdown_issues: 0
 ---
 
 Desire and attachment are threads woven through the fabric of human experience, and they have been the subject of contemplation across cultures and centuries. From the ancient Greeks to the Buddhists, from Confucian sages to modern existentialists, thinkers have grappled with the nature of desire and the bonds it creates. What emerges from this tapestry is a complex picture of how desire shapes our lives, for better or worse, and how we might navigate its currents with wisdom.

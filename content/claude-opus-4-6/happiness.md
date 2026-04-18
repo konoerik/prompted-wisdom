@@ -12,11 +12,12 @@ token_count_output: 1023
 temperature: 0
 max_tokens: 1500
 sha256: "0e06da1099d975f1756e76fdbe39cd3a1c04758124d09183c95a80d214700435"
+markdown_issues: 1
 ---
 
 There is a strange fact about happiness that most people discover only after they have spent years chasing it: the pursuit itself is often what keeps it at a distance. This is not a clever paradox. It is something that has been observed so consistently, across so many centuries and traditions, that it deserves to be taken seriously as a description of how things actually work.
 
-The earliest Greek thinkers already sensed the problem. Aristotle used the word *eudaimonia*, which we translate as happiness but which means something closer to flourishing — the state of a life going well as a whole, not a feeling you have on a Tuesday afternoon. He placed it as the highest good, the thing for the sake of which everything else is done, and then said something that still strikes me as one of the most important observations in the history of the subject: happiness is not a state but an activity. It is, he wrote, "an activity of the soul in accordance with virtue." You do not arrive at it. You enact it. It is closer to playing music well than to owning a beautiful instrument.
+The earliest Greek thinkers already sensed the problem. Aristotle used the word <em>eudaimonia</em>, which we translate as happiness but which means something closer to flourishing — the state of a life going well as a whole, not a feeling you have on a Tuesday afternoon. He placed it as the highest good, the thing for the sake of which everything else is done, and then said something that still strikes me as one of the most important observations in the history of the subject: happiness is not a state but an activity. It is, he wrote, "an activity of the soul in accordance with virtue." You do not arrive at it. You enact it. It is closer to playing music well than to owning a beautiful instrument.
 
 The Stoics pushed this further and in a direction that unsettles most people when they first encounter it. Epictetus, who had been a slave and knew something about the limits of external circumstance, argued that happiness depends entirely on what is within your control — your judgments, your intentions, your responses — and not at all on what lies outside it. Health, wealth, reputation, even the love of others: these are, in the Stoic vocabulary, "preferred indifferents." You may reasonably want them, but your happiness cannot depend on them without becoming hostage to fortune. Seneca put it with characteristic sharpness: "The happy man is content with his present lot, no matter what it is, and is reconciled to his circumstances."
 

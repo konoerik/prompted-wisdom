@@ -12,6 +12,7 @@ token_count_output: 798
 temperature: 0
 max_tokens: 1500
 sha256: "00de58f0d735826cf17706be678c38e0442bc785845a7afb8ed0e9d6f1236a98"
+markdown_issues: 0
 ---
 
 In the vast tapestry of human thought, the question of work and purpose has been a persistent thread, woven through the philosophies of East and West, ancient and modern. It is a question that touches the core of our existence, for to work is to engage with the world, to leave a mark, however small, upon the fabric of life. Yet, what is the purpose of this labor? Is it merely to sustain ourselves, or is there something deeper, something that speaks to the essence of what it means to be human?

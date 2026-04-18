@@ -12,6 +12,7 @@ token_count_output: 1237
 temperature: 0
 max_tokens: 1500
 sha256: "6017863a31d80cbd6efc912039317cdceabaad2098e263837f9d653090601b22"
+markdown_issues: 0
 ---
 
 When people speak now about character, they often mean reputation, or style, or the set of traits that make someone effective. The older writers meant something harder. They meant the shape of a soul under pressure. They meant what you do when no audience is present, when advantage points one way and conscience another, when habit has become stronger than intention. Character, in their sense, is not what you think of yourself, and not what others say about you. It is what your repeated choices have made of you.

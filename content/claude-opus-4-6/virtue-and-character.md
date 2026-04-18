@@ -12,6 +12,7 @@ token_count_output: 970
 temperature: 0
 max_tokens: 1500
 sha256: "dab3800015f47608202f13dc8ba17fddd4cdcd5047a0296e77b64d3a3d431b2c"
+markdown_issues: 0
 ---
 
 There is a question that runs through nearly every tradition of serious thought, and it is not what should I do but what kind of person should I be. The distinction matters more than it first appears. Rules tell you how to act in a situation you have already encountered. Character determines what you do in the situation no one warned you about.

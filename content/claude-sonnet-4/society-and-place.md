@@ -12,13 +12,14 @@ token_count_output: 864
 temperature: 0
 max_tokens: 1500
 sha256: "fff37bd6174a3106e72544a98fe62093e55bdedf6bea69d785e68d71300b338c"
+markdown_issues: 1
 ---
 
 You live among others, and this fact shapes everything. The question is not whether society will form you, but how you will meet that forming—whether you will be merely its product or something more.
 
 The Stoics understood this tension clearly. Epictetus said you are like an actor given a role: you did not choose the play, the part, or the other players, but how you perform is entirely yours. Marcus Aurelius, writing to himself as emperor, returned again and again to the same thought: we are made for cooperation, like feet or hands or eyelids. To work against one another is unnatural, he said, like teeth grinding against themselves.
 
-This idea—that we are built for each other—appears everywhere you look. Confucius placed it at the center of his teaching. He spoke of *ren*, often translated as humaneness or benevolence, but the character itself shows a person standing beside another person. You become fully human, he believed, not in isolation but in right relationship: as child to parent, friend to friend, citizen to community. The self is not a fortress to be defended but a set of connections to be honored.
+This idea—that we are built for each other—appears everywhere you look. Confucius placed it at the center of his teaching. He spoke of <em>ren</em>, often translated as humaneness or benevolence, but the character itself shows a person standing beside another person. You become fully human, he believed, not in isolation but in right relationship: as child to parent, friend to friend, citizen to community. The self is not a fortress to be defended but a set of connections to be honored.
 
 And yet something in us resists. We feel the weight of expectation, the pressure to conform, the way groups flatten what is particular in us. Thoreau went to the woods partly to escape this. "The greater part of what my neighbors call good," he wrote, "I believe in my soul to be bad." He saw society as a conspiracy against the individual, each person surrendering their own perception to the collective opinion.
 

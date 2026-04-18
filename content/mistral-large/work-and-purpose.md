@@ -12,6 +12,7 @@ token_count_output: 1093
 temperature: 0
 max_tokens: 1500
 sha256: "7c539d58c6077393a7d18c28acee62788ab9e0ed78468afc8ab9c6db114131f3"
+markdown_issues: 0
 ---
 
 In the quiet moments, when the din of daily life recedes, a question often emerges: what is the purpose of all this work? The existential weight of this query has been felt across centuries and cultures, and while answers vary widely, there are common threads that bind them.

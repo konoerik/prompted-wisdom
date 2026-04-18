@@ -12,6 +12,7 @@ token_count_output: 1181
 temperature: 0
 max_tokens: 1500
 sha256: "0b007bc415ae935febd09736e175a192d13e77343a23f626c62039d50eacb619"
+markdown_issues: 0
 ---
 
 If you read long enough across the old books, one thing becomes plain: almost no serious thinker believed that a human being can be understood alone. However much they praised self-command, contemplation, detachment, or inner freedom, they knew that your life is shaped in company. You become who you are among other people, and nowhere is this more obvious than in love.

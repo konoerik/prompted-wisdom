@@ -12,6 +12,7 @@ token_count_output: 1078
 temperature: 0
 max_tokens: 1500
 sha256: "c9a2b679b7fd0993be111fee1ba6dad45403232e163825dd819a783b018a1b99"
+markdown_issues: 0
 ---
 
 Nearly every tradition worth reading begins, sooner or later, by turning you back toward yourself. The Greeks carved it into stone: know yourself. The Buddhists asked you to observe the mind with such patience that the self you took for granted begins to look less solid than you thought. Confucian writers, more practical and social, asked not what hidden essence lies within, but whether you have become the sort of person who can be trusted in conduct, speech, and feeling. Across these differences, one thing persists: a human being who does not understand himself is easily ruled—by vanity, fear, appetite, imitation, and the opinions of others.

@@ -12,6 +12,7 @@ token_count_output: 1139
 temperature: 0
 max_tokens: 1500
 sha256: "16338cfa3602897501250e2e35cb5bddb4807a412e0b95bc4fc2db72e24357f8"
+markdown_issues: 0
 ---
 
 In the vast landscape of human thought, certain ideas have emerged time and again, like persistent flowers blooming through the cracks of history. These are not mere intellectual curiosities, but insights that have proven their worth against the unpredictable currents of life. From the ancient wisdom of the Greeks to the contemplative traditions of the East, from the Renaissance to the existential musings of the twentieth century, a common thread weaves through the tapestry of philosophical inquiry: the pursuit of understanding and the search for a meaningful life.

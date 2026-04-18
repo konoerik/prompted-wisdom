@@ -12,6 +12,7 @@ token_count_output: 864
 temperature: 0
 max_tokens: 1500
 sha256: "5f950f41c8e7e47a5bf45dfda7e645ad9b9c521e8691fde2ad8f3a94980b2cc3"
+markdown_issues: 1
 ---
 
 You will spend most of your waking life working. This is not a complaint or a celebration, just arithmetic. The question is not whether work will shape you, but how.
@@ -20,7 +21,7 @@ The Stoics understood this plainly. Epictetus was a slave before he was a philos
 
 This is the first thing that holds up: the quality you bring to work matters more than the work's external status. I do not mean this as consolation for bad jobs, though it can be that. I mean it as a description of how meaning actually gets made. You have probably felt this yourself—the difference between doing something carelessly and doing it with attention, even when no one is watching. That difference is not trivial. It is the difference between being half-alive and fully present.
 
-But presence alone is not enough. The Confucians saw this. They believed that work should serve something beyond yourself, that you are embedded in a web of relationships and obligations. Your work, whatever it is, either strengthens or weakens that web. A good carpenter does not just make a chair; he makes something that will hold someone safely, that will last, that will perhaps be passed down. The work extends outward. Confucius called this *ren*—a kind of humaneness that shows itself in action, in how carefully you do what you do.
+But presence alone is not enough. The Confucians saw this. They believed that work should serve something beyond yourself, that you are embedded in a web of relationships and obligations. Your work, whatever it is, either strengthens or weakens that web. A good carpenter does not just make a chair; he makes something that will hold someone safely, that will last, that will perhaps be passed down. The work extends outward. Confucius called this <em>ren</em>—a kind of humaneness that shows itself in action, in how carefully you do what you do.
 
 I have found this to be true, but incomplete. There are times when the web itself is rotten, when the relationships you are embedded in demand things you cannot give without losing yourself. The Buddhist tradition offers something here that Confucianism does not: the possibility of stepping back, of asking whether the whole structure of striving and obligation is built on confusion. What if the purpose you are chasing is itself the problem? What if the restlessness that drives you from task to task is not something to be satisfied but something to be understood?
 

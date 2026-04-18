@@ -12,6 +12,7 @@ token_count_output: 791
 temperature: 0
 max_tokens: 1500
 sha256: "8c79e11c3faf206e219334d75cb59009ba9750c623d0689c7ddec124cb798879"
+markdown_issues: 0
 ---
 
 Time and mortality are the twin specters that haunt human existence, casting shadows over our every endeavor. Across cultures and epochs, thinkers have grappled with these concepts, seeking to understand their nature and implications. The Greeks, with their characteristic clarity, spoke of time as a river, ever-flowing, carrying us inexorably toward our end. Heraclitus famously remarked that you cannot step into the same river twice, for new waters are always flowing. This image captures the essence of time's relentless passage, a force that shapes our lives yet remains beyond our control.

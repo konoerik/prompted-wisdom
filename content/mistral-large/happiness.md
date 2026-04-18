@@ -12,6 +12,7 @@ token_count_output: 1074
 temperature: 0
 max_tokens: 1500
 sha256: "a640be22a3a0a9f8937ba00ed7856fc4b30b205920d1333602b051de817f81ff"
+markdown_issues: 0
 ---
 
 In the journey through life, the question of happiness is perhaps the most pressing and universal. It is the ghost that haunts every action, every desire, and every hope. But what is happiness, and how can it be attained? The answers, scattered across millennia of thought, are as varied as the stars, yet they often align in constellations that guide us through the night.

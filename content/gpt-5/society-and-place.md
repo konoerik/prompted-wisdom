@@ -12,6 +12,7 @@ token_count_output: 1184
 temperature: 0
 max_tokens: 1500
 sha256: "7c00f29f868069be8765c95f008537c10d0257374188e1dbad8e55a743e82aeb"
+markdown_issues: 0
 ---
 
 You do not begin life alone, and you do not finish it alone, even if at times you feel solitary. Before you can choose anything, you are already among others: spoken to, handled, judged, taught, ignored, loved badly or well. Society is not something outside you, like weather passing over a house. It has entered your language, your posture, your expectations of what can be said aloud and what must be hidden. If you want to understand your place in it, you must begin there: not with an abstract “individual” on one side and “the world” on the other, but with a life already formed in company.

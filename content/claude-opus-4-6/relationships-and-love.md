@@ -11,7 +11,8 @@ token_count_input: 429
 token_count_output: 1037
 temperature: 0
 max_tokens: 1500
-sha256: "dbe2c7e57d2800c3850dad1df304502ae664531ddd5e3b86d2e5c2307cf958ec"
+sha256: "68581371f89934fded5bd5f9184e9efe4d287058cf1f4fccd70c6f6cd47229fc"
+markdown_issues: 1
 ---
 
 There is a line from Aristotle that I return to more than almost any other. He said that the human being is by nature a social animal, and that anyone who cannot live in society is either a beast or a god. It is one of those observations so plainly true that you can spend a lifetime forgetting it. You did not choose to need other people. But you do, and everything follows from that.

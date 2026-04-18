@@ -12,11 +12,12 @@ token_count_output: 703
 temperature: 0
 max_tokens: 1500
 sha256: "cd630afee3fc2085a158fd7fb839c378c19306b3754a582c3e1c2fc00787e8dd"
+markdown_issues: 2
 ---
 
 Suffering is the bedrock. It is the one universal experience, the common ground on which every human life is built. The Buddha saw this clearly: life is suffering. Not just pain, but the inherent dissatisfaction, the clinging, the constant striving that marks our days. This isn't pessimism; it's a starting point. To deny suffering is to deny reality, to build a house on sand.
 
-The Stoics, too, understood this. Epictetus, born a slave, knew suffering intimately. He didn't advocate for its elimination, but for its mastery. "Men are disturbed not by things, but by the views which they take of them." The power lies not in controlling the world, which is impossible, but in controlling our reactions to it. A broken leg is a broken leg; suffering comes from the judgment that it *shouldn't* be.
+The Stoics, too, understood this. Epictetus, born a slave, knew suffering intimately. He didn't advocate for its elimination, but for its mastery. "Men are disturbed not by things, but by the views which they take of them." The power lies not in controlling the world, which is impossible, but in controlling our reactions to it. A broken leg is a broken leg; suffering comes from the judgment that it <em>shouldn't</em> be.
 
 This isn't about suppressing emotion. It's about recognizing the difference between pain and suffering. Pain is inevitable; suffering is a choice. It's the story we tell ourselves about the pain, the meaning we attach to it, that determines its power over us.
 
@@ -26,7 +27,7 @@ The question, then, isn't how to avoid suffering, but how to meet it. How to cul
 
 I have found that the most effective approach is a combination of acceptance and action. Acceptance of what is, without judgment. Action to change what can be changed, without attachment to the outcome. This is easier said than done, of course. It requires constant vigilance, a willingness to examine our own thoughts and beliefs, to challenge the stories we tell ourselves.
 
-Marcus Aurelius, the Roman emperor, wrote in his *Meditations*: "You have power over your mind – not outside events. Realize this, and you will find strength." This is the core of resilience: the recognition that our inner world is the one place where we have true control.
+Marcus Aurelius, the Roman emperor, wrote in his <em>Meditations</em>: "You have power over your mind – not outside events. Realize this, and you will find strength." This is the core of resilience: the recognition that our inner world is the one place where we have true control.
 
 But resilience isn't just about individual strength. It's also about connection. We are social creatures, and we need each other. Suffering is often isolating, but it doesn't have to be. Sharing our burdens, seeking support, offering compassion – these are all essential components of resilience.
 

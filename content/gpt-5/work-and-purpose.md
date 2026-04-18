@@ -12,6 +12,7 @@ token_count_output: 1269
 temperature: 0
 max_tokens: 1500
 sha256: "87f5153de3aa7353beedeb9611783b6268158b5cfd44b114c6902e64eedc99bb"
+markdown_issues: 0
 ---
 
 Most of what has been said about work is either too grand or too small. It is made into a sacred calling, as if every occupation were a hidden priesthood, or else reduced to necessity, mere rent paid for the right to go on living. For most people, it is neither. Work is the regular expenditure of life. You give your hours, your attention, your strength, your patience. The real question is not whether work is noble in itself. It is what your work is making of you while you do it.

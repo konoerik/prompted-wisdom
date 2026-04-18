@@ -12,6 +12,7 @@ token_count_output: 504
 temperature: 0
 max_tokens: 1500
 sha256: "3539f8445d5728a5f6d23ad8ab04b9ce2ea8eb44e5fd16584f16e2f95aa72a7f"
+markdown_issues: 0
 ---
 
 So, here we are. After all this reading, all this thinking, all this wrestling with the words of others and the stubborn facts of life, what remains? What can I offer you, not as a system or a solution, but as a companion for the road? It is this: cultivate a quiet, persistent attention to the present moment. Not as an escape, but as a foundation.

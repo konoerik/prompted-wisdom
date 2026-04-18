@@ -9,7 +9,6 @@
 **Remaining tasks:**
 - Audit "compare" framing across all pages — ensure language sets the right expectation (pick a version, not diff-style comparison) (Task #6)
 - Update Commentary v1.4 with per-model notes after reading content
-- Tag v1.4 in git
 - Editorial review pass: mark up meta/review-notes.md ([x]/[~]/[!]), then hand back for corrections (Task #4)
 
 ## Backlog

@@ -12,6 +12,7 @@ token_count_output: 1134
 temperature: 0
 max_tokens: 1500
 sha256: "aaf48a645196fea86148f4433ebb53557b7d2bee0c03e785b4e46ca0ebca57d5"
+markdown_issues: 0
 ---
 
 Desire is one of the oldest subjects because it is one of the oldest troubles. You do not need a philosopher to tell you that wanting can disturb the mind; you learn that early. But the philosophers and religious teachers saw more clearly than most of us do how deep the trouble goes. It is not only that you fail to get what you want and suffer disappointment. It is that getting what you want often does not cure the wanting. Desire shifts, multiplies, disguises itself, returns. You call one wish reasonable, another necessary, another noble, but the mechanism underneath is often the same: a mind leaning forward, saying, not this, something more.

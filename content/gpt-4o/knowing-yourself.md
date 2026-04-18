@@ -12,6 +12,7 @@ token_count_output: 772
 temperature: 0
 max_tokens: 1500
 sha256: "983a1a06a0898ba0d7f49b22e5f227cc8354c8735ceda6d6bd9e3effa891bfaf"
+markdown_issues: 0
 ---
 
 In the vast tapestry of human thought, the quest to know oneself is a thread that weaves through every tradition, every era. It is a pursuit that has captivated philosophers, mystics, and seekers of truth across cultures. From the Delphic maxim "Know thyself" to the introspective meditations of the East, the journey inward has been deemed essential for understanding the world outward. Yet, what does it truly mean to know yourself, and why is it so universally revered?

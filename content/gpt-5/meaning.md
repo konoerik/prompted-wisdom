@@ -12,6 +12,7 @@ token_count_output: 1221
 temperature: 0
 max_tokens: 1500
 sha256: "5c77a964f276ad6d965be03f1f5ed84451eb639dc219e43b8af89ef65b8f5f36"
+markdown_issues: 0
 ---
 
 When people ask about the meaning of life, they often ask as if meaning were a hidden object: something buried under the surface, waiting to be uncovered by the right doctrine, the right revelation, the right argument. Much of what I have read has made me distrust that picture. Meaning does not seem to lie in wait like treasure. It seems, rather, to arise in the meeting between a human being and a way of living.
