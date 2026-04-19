@@ -8,11 +8,11 @@
 
 **Remaining tasks:**
 - Audit "compare" framing across all pages — ensure language sets the right expectation (pick a version, not diff-style comparison) (Task #6)
-- Update Commentary v1.4 with per-model notes after reading content
 - Editorial review pass: mark up meta/review-notes.md ([x]/[~]/[!]), then hand back for corrections (Task #4)
 
 ## Backlog
 <!-- Accepted but not yet active. Load this section only when planning or prioritizing. -->
+- **v1.5 prompt rethink:** revise the output instruction to specify desired markup explicitly (e.g. allow `*italic*` for emphasis, reconsider `##` heading stripping) so format.py post-processing is no longer needed or is scoped only to genuine structural violations
 - Visual exploration of thinkers and ideas — format TBD: geographic map, timeline, or chart showing relationships/progression across traditions; would complement the chapter content as an at-a-glance reference
 - Community insights page — readers post thoughts via GitHub (issue or discussion), author curates and adds them to a page; no backend needed; format TBD
 - Methodology page: add "Decisions and trade-offs" section covering — no system prompt (transparency + verifiability), separate prompts per chapter not one session (equal treatment per theme, continuity via shared persona), frontier models only (open-source would dilute framing), single canonical run (no editorial selection between runs), temperature zero (minimise within-model variation), OpenRouter (single interface across models, adds one indirection layer noted in caveats)
@@ -23,6 +23,7 @@
 ## Done
 <!-- Completed items land here temporarily.
      The stop hook archives these to .claude/archive/YYYY-MM.md and clears this section. -->
+- Commentary v1.4 per-model notes written, fact-checked, and formatted (seven-candidate count corrected, typos fixed)
 - Sidebar nav restructured into three sections (intro / chapters / extras); Welcome page "Where to go next" nav added with all six destinations
 - Word cloud frequencies normalized by total word count per model (client-side in app.js)
 - Phase 2 full delivery: 48 chapters regenerated with frontier models; 3 truncated chapters fixed (max_tokens raised to 2000 for gpt-5/mistral-large-3); sidebar updated to new slugs; static pages audited and updated; scripts/format.py built (strips violations, logs to format-log.json); chapter metadata panel added (collapsible prompt/stats/scorecard, after nav, low-profile — ADR-7); meta/review-notes.md generated (32 flagged attribution passages); published to GitHub Pages

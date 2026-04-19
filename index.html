@@ -598,22 +598,39 @@
         -->
 
         <div class="commentary-version-block">
-          <h2 class="commentary-version-heading">Prompt v1.4 <span class="commentary-version-tag">full generation</span></h2>
-          <p>ONE SENTENCE: what this version was trying to fix or explore.</p>
+          <h2 class="commentary-version-heading">Prompt v1.4 <span class="commentary-version-tag">full generation</span>
+          </h2>
+          <p>Full generation run with the upgraded model lineup. The prompt change from the experiment block below
+            carries forward — see that block for the rationale.</p>
           <p>Changes:</p>
           <ul>
-            <li>...</li>
+            <li>Core persona extended with the full chapter list (same as experiment block). Frontier model lineup
+              applied for the first time across all 48 chapters.</li>
           </ul>
           <p>Outcome:</p>
           <ul>
-            <li>...</li>
+            <li>Cross-chapter repetition reduced substantially. Models do not reach for the same thinkers chapter after
+              chapter as they did before.</li>
+            <li>Writing quality is noticeably higher — though this is almost certainly the model upgrade more than the
+              prompt change.</li>
+            <li>A structural tension surfaced in this iteration: the prompt asks for no markdown, but there is no other
+              way for a model to express emphasis or italics in plain text. Markdown or pseudo-markdown is the only
+              option. This is a contradiction that needs to be resolved in the next prompt version.
+            </li>
           </ul>
           <p>Notes:</p>
           <ul>
-            <li>Claude: ...</li>
-            <li>GPT: ...</li>
-            <li>Gemini: ...</li>
-            <li>Mistral: ...</li>
+            <li>Claude: Great content overall. One noticeable artifact is the "I want to be careful here" or "I want to
+              be honest here" — not a big deal, but it stood out stylistically. Another pattern is referring to this
+              as a book a few times. The next prompt should clarify the setting (a collection of essays on a
+              website).</li>
+            <li>GPT: Interestingly added Christian traditions and teachings to the mix. Christian philosophy was
+              heavily influenced by Stoicism — the dominant school in the Roman world at the time — so the connection
+              is plausible.</li>
+            <li>Gemini: On point and closer to the word limit set. Includes Epicurus in several passages which other
+              models don't.</li>
+            <li>Mistral: Continues to produce longer texts, but is also the one with the most varied resources and more
+              in depth text.</li>
           </ul>
         </div>
 
@@ -636,15 +653,18 @@
               and better chapter separation. Effect was marginal for GPT-4o and Gemini 2.0 Flash — the structural
               problems in those models proved resistant to prompt-level fixes.</li>
             <li>The test surfaced that GPT-4o and Gemini 2.0 Flash had reached their ceiling with the current prompt.
-              This prompted a full evaluation of frontier model alternatives across seven candidates (Claude Sonnet 4.6,
-              Claude Opus 4.6, GPT-5.4, Gemini 2.5 Pro, Mistral Large 3, and the existing models).</li>
+              This prompted a full evaluation across seven candidates: four frontier models (Claude Opus 4.6, GPT-5.4,
+              Gemini 2.5 Pro, Mistral Large 3) and the three underperforming existing models (GPT-4o, Gemini 2.0 Flash,
+              Mistral Large 2411). Claude Sonnet 4.5 was excluded — it was performing adequately and the upgrade to
+              Opus 4.6 was straightforward.</li>
             <li>Decision: retire all four current models and regenerate with frontier equivalents. See ADR-6.</li>
           </ul>
           <p>Notes:</p>
           <ul>
             <li>Claude (Sonnet 4.5 → Opus 4.6): Opus produced the sharpest conceptual distinctions — "Happiness is a
               state. Meaning is a direction." and "Suffering is not redeemed by meaning. But meaning can be built from
-              suffering, the way a wall can be built from broken stone." Chapter separation was clean across all pairs.</li>
+              suffering, the way a wall can be built from broken stone." Chapter separation was clean across all pairs.
+            </li>
             <li>GPT-4o → GPT-5.4: GPT-4o's default textbook-survey shape ("a common thread emerges") persisted despite
               the chapter list. GPT-5.4 broke this pattern entirely — real theses, earned quotes, distinct closers per
               chapter.</li>
@@ -657,7 +677,8 @@
         </div>
 
         <div class="commentary-version-block">
-          <h2 class="commentary-version-heading">Prompt v1.3b <span class="commentary-version-tag">full generation</span></h2>
+          <h2 class="commentary-version-heading">Prompt v1.3b <span class="commentary-version-tag">full
+              generation</span></h2>
           <p>Two prompts were tried in sequence — v1.3a and then v1.3b — with the main goal of improving the content
             while removing the fabricated personal accounts.</p>
           <p>Changes:</p>
@@ -751,7 +772,7 @@
             two main ideas: 1. Be inclusive in the thinkers, ideas, and schools of thought that have left their mark,
             and 2. Use the "walking philosopher" angle behind a journalist persona to give it a practical angle and a
             warm tone as opposed to an academic account. This was largely inspired by the book <em>A Philosophy of
-            Walking</em> by Frédéric Gros.</p>
+              Walking</em> by Frédéric Gros.</p>
           <p>What worked:</p>
           <ul>
             <li>Coherent outputs for all models — hence the decision to publish.</li>

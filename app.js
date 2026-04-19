@@ -333,14 +333,14 @@ function buildMetaPanel(slug, fm, body, promptMd, formatLog) {
 
   // ── Scorecard ──
   const modelSlug = activeModel;
-  const entries = (formatLog || []).filter(e => e.model === modelSlug && e.chapter === slug);
+  const entries = (formatLog || []).filter(e => e.model === modelSlug && e.chapter === slug && e.violation !== 'inline-italic');
   const scorecardHtml = entries.length
     ? entries.map(e => `<div class="meta-scorecard-item meta-scorecard-item--warn">
         <span class="meta-scorecard-type">${escapeHtml(e.violation)}</span>
         <span class="meta-dim">line ${e.line} — </span>${escapeHtml(e.matched ?? e.original ?? '')}
       </div>`).join('')
     : '<div class="meta-scorecard-item meta-scorecard-item--ok">No issues logged.</div>';
-  const issueCount = fm.markdown_issues ?? 0;
+  const issueCount = entries.length;
   const scorecardLabel = issueCount > 0 ? `scorecard (${issueCount})` : 'scorecard';
 
   return `

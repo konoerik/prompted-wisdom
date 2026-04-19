@@ -1,8 +1,8 @@
 # Context
 <!-- Updated by /wrap at session end. Edit manually if needed. Keep it under 8 lines. -->
 
-**Current focus:** Editorial review pass (Task #4, review-notes.md ready for markup); fill in v1.4 Commentary block.
-**Last session:** Added inline-italic detection to format.py (`*text*` → `<em>text</em>`); per-match scoring in scorecard; restored original sha256 provenance (generate.py hash, never overwritten by format.py); 162 individual matches fixed across 39 files; ADR-8 recorded.
-**Blocking:** v1.4 Commentary block needs author notes. Editorial review requires human read-through of meta/review-notes.md (32 flagged passages).
-**Next action:** Commit today's work, then fill in v1.4 Commentary block.
-<!-- wrapped: 2026-04-18 -->
+**Current focus:** v1.5 prompt rethink (markdown/italic contradiction); editorial review pass (Task #4); audit "compare" framing (Task #6).
+**Last session:** Excluded inline-italic from scorecard (app.js filters it, count derived from remaining entries); Commentary v1.4 written, fact-checked, and formatted (seven-candidate count corrected, typos fixed).
+**Blocking:** v1.5 prompt scope decision (italic only vs broader markdown allowances) needed before format.py can be revised.
+**Next action:** Begin v1.5 prompt revision — clarify markup expectations so post-processing is no longer needed for italics.
+<!-- wrapped: 2026-04-19 -->
