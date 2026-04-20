@@ -83,23 +83,59 @@ def extract_word_freq(body, top_n=80):
 
 # Curated entity list: (canonical display name, list of forms to match)
 ENTITIES = [
-    ("Epictetus",      ["epictetus"]),
-    ("Marcus Aurelius",["marcus aurelius", "aurelius"]),
-    ("Seneca",         ["seneca"]),
-    ("Plato",          ["plato"]),
-    ("Aristotle",      ["aristotle"]),
-    ("Socrates",       ["socrates"]),
-    ("Confucius",      ["confucius"]),
-    ("Buddha",         ["buddha", "the buddha"]),
-    ("Laozi",          ["laozi", "lao tzu", "lao-tzu"]),
-    ("Montaigne",      ["montaigne"]),
-    ("Spinoza",        ["spinoza"]),
-    ("Nietzsche",      ["nietzsche"]),
-    ("Frankl",         ["frankl"]),
-    ("Stoicism",       ["stoic", "stoics", "stoicism"]),
-    ("Buddhism",       ["buddhist", "buddhists", "buddhism"]),
-    ("Confucianism",   ["confucian", "confucians", "confucianism"]),
-    ("Taoism",         ["taoist", "taoists", "taoism", "daoist"]),
+    # Greek & Roman
+    ("Socrates",        ["socrates"]),
+    ("Plato",           ["plato"]),
+    ("Aristotle",       ["aristotle"]),
+    ("Epicurus",        ["epicurus", "epicurean", "epicureans", "epicureanism"]),
+    ("Heraclitus",      ["heraclitus"]),
+    ("Diogenes",        ["diogenes"]),
+    ("Cicero",          ["cicero"]),
+    ("Seneca",          ["seneca"]),
+    ("Epictetus",       ["epictetus"]),
+    ("Marcus Aurelius", ["marcus aurelius", "aurelius"]),
+    # Asian traditions
+    ("Confucius",       ["confucius"]),
+    ("Mencius",         ["mencius"]),
+    ("Laozi",           ["laozi", "lao tzu", "lao-tzu"]),
+    ("Zhuangzi",        ["zhuangzi", "chuang tzu"]),
+    ("Buddha",          ["buddha", "the buddha"]),
+    ("Thich Nhat Hanh", ["thich nhat hanh", "nhat hanh"]),
+    ("Dogen",           ["dogen"]),
+    # Medieval & early modern
+    ("Augustine",       ["augustine"]),
+    ("Montaigne",       ["montaigne"]),
+    ("Spinoza",         ["spinoza"]),
+    ("Pascal",          ["pascal"]),
+    ("Rousseau",        ["rousseau"]),
+    # Modern European
+    ("Kant",            ["kant"]),
+    ("Hegel",           ["hegel"]),
+    ("Schopenhauer",    ["schopenhauer"]),
+    ("Nietzsche",       ["nietzsche"]),
+    ("Kierkegaard",     ["kierkegaard"]),
+    ("Heidegger",       ["heidegger"]),
+    ("Sartre",          ["sartre"]),
+    ("Camus",           ["camus"]),
+    ("de Beauvoir",     ["de beauvoir", "beauvoir"]),
+    ("Simone Weil",     ["simone weil"]),
+    # Anglophone
+    ("Mill",            ["mill", "john stuart mill"]),
+    ("Locke",           ["locke"]),
+    ("Thoreau",         ["thoreau"]),
+    ("William James",   ["william james"]),
+    # Other
+    ("Rumi",            ["rumi"]),
+    ("Frankl",          ["frankl"]),
+    ("Jung",            ["jung"]),
+    ("Fromm",           ["fromm"]),
+    # Traditions
+    ("Stoicism",        ["stoic", "stoics", "stoicism"]),
+    ("Buddhism",        ["buddhist", "buddhists", "buddhism"]),
+    ("Confucianism",    ["confucian", "confucians", "confucianism"]),
+    ("Taoism",          ["taoist", "taoists", "taoism", "daoist", "daoism"]),
+    ("Existentialism",  ["existentialist", "existentialists", "existentialism"]),
+    ("Zen",             ["zen"]),
 ]
 
 def count_entities(text):
@@ -169,7 +205,7 @@ def main():
             for entity, count in count_entities(body).items():
                 entity_totals[entity] = entity_totals.get(entity, 0) + count
 
-        top_entities = sorted(entity_totals.items(), key=lambda x: x[1], reverse=True)[:5]
+        top_entities = sorted(entity_totals.items(), key=lambda x: x[1], reverse=True)
         present = [w for w in model_words if w is not None]
         by_model.append({
             "slug":        m["slug"],

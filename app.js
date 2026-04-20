@@ -178,7 +178,7 @@ function renderChapter(raw, slug, promptMd, formatLog) {
 
   const paragraphs = body
     .split(/\n\n+/)
-    .map((p, i) => `<p${i === 0 ? ' class="lead"' : ''}>${escapeHtml(p.trim()).replace(/&lt;em&gt;(.+?)&lt;\/em&gt;/g, '<em>$1</em>')}</p>`)
+    .map((p, i) => `<p${i === 0 ? ' class="lead"' : ''}>${escapeHtml(p.trim()).replace(/\*([^*\n]+)\*/g, '<em>$1</em>')}</p>`)
     .join('\n');
 
   const el = document.getElementById('view-chapter');
@@ -333,14 +333,30 @@ function buildMetaPanel(slug, fm, body, promptMd, formatLog) {
 
   // ── Scorecard ──
   const modelSlug = activeModel;
-  const entries = (formatLog || []).filter(e => e.model === modelSlug && e.chapter === slug && e.violation !== 'inline-italic');
-  const scorecardHtml = entries.length
-    ? entries.map(e => `<div class="meta-scorecard-item meta-scorecard-item--warn">
-        <span class="meta-scorecard-type">${escapeHtml(e.violation)}</span>
+  const generatedAt = fm.generated_at ?? '';
+  const relevantEntries = (formatLog || []).filter(e =>
+    e.model === modelSlug && e.chapter === slug && e.timestamp >= generatedAt
+  );
+  // Deduplicate across multiple format.py runs — keep latest entry per (type, line)
+  const seen = new Map();
+  for (const e of relevantEntries) {
+    const key = `${e.type ?? e.violation}:${e.line}`;
+    if (!seen.has(key) || e.timestamp > seen.get(key).timestamp) seen.set(key, e);
+  }
+  const violationEntries = [...seen.values()].filter(e => (e.type ?? e.violation) !== 'inline-italic');
+  const italicCount = fm.italic_count ?? 0;
+  const violationHtml = violationEntries.length
+    ? violationEntries.map(e => `<div class="meta-scorecard-item meta-scorecard-item--warn">
+        <span class="meta-scorecard-type">${escapeHtml(e.type ?? e.violation)}</span>
         <span class="meta-dim">line ${e.line} — </span>${escapeHtml(e.matched ?? e.original ?? '')}
       </div>`).join('')
-    : '<div class="meta-scorecard-item meta-scorecard-item--ok">No issues logged.</div>';
-  const issueCount = entries.length;
+    : '<div class="meta-scorecard-item meta-scorecard-item--ok">No violations logged.</div>';
+  const italicHtml = `<div class="meta-scorecard-item">
+      <span class="meta-scorecard-type">italics</span>
+      <span class="meta-dim">${italicCount} instance${italicCount !== 1 ? 's' : ''}</span>
+    </div>`;
+  const scorecardHtml = violationHtml + italicHtml;
+  const issueCount = violationEntries.length;
   const scorecardLabel = issueCount > 0 ? `scorecard (${issueCount})` : 'scorecard';
 
   return `
@@ -506,13 +522,13 @@ async function initCharts() {
     <div class="entities-col">
       <div class="entities-model">${escapeHtml(m.display)}</div>
       <ol class="entities-list">
-        ${m.top_entities.map(e => `
+        ${m.top_entities.slice(0, 5).map(e => `
           <li class="entities-item">
             <span class="entities-name">${escapeHtml(e.name)}</span>
             <span class="entities-count">${e.count}</span>
-          </li>
-        `).join('')}
+          </li>`).join('')}
       </ol>
+      <div class="entities-unique">${m.top_entities.length} thinkers &amp; traditions referenced</div>
     </div>
   `).join('');
 

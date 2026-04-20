@@ -1330,5 +1330,5587 @@
     "line": 4,
     "matched": "Meditations",
     "timestamp": "2026-04-18T09:27:00Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 16,
+    "matched": "hold them lightly",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "pu",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "Dhammapada",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "adiaphoron",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "li",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "hexis",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "essayer",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 16,
+    "matched": "in order to",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "Autobiography",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "tanha",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "vita beata",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "eudaimonia",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 14,
+    "matched": "Essays",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "anattā",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "letter-to-you",
+    "type": "top-level-heading",
+    "line": 2,
+    "original": "# A Letter to You",
+    "fixed": "(removed)",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "The Myth of Sisyphus",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "mettā",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "attachment",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "ren",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "Ethics",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "Social Contract",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "ren",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "zoon politikon",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 16,
+    "matched": "kintsugi",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "how",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "why",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "Man's Search for Meaning",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "amor fati",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "for",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "Agamemnon",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "pathei mathos",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "knowing",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "Sein-zum-Tode",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "anicca",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "On the Shortness of Life",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 14,
+    "matched": "paramitas",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "only",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "junzi",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "Analects",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "ren",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "phronesis",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "hexis",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "Nicomachean Ethics",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 14,
+    "matched": "through",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 14,
+    "matched": "in",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "Bhagavad Gita",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "ren",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "Analects",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "why",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "wisdom",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "depend",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "tanha",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "If only I had that, if only this would happen, if only things were different.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "practice",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "li",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "hexis",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "think",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "apatheia",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "felt",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "felt",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "did",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "eudaimonia",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "then",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "Essays",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "anattā",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "about",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "Gnōthi seauton",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "letter-to-you",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "Letters to a Young Poet",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "kosmos",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "discovered",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "What is this all for?",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "being",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "possess",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "Metta",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "metta",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "philia",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "to",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "were",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "polis",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "politikon zōon",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "Yes. All of it.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "embrace",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "amor fati",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "is",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "is",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "fear",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "anicca",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "On the Shortness of Life",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "li",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "ren",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "junzi",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "become",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "aretē",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "aretē",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "aretē",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "virtue",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "what",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "how",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "The Myth of Sisyphus",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "how",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "schole",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "Analects",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "Nicomachean Ethics",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "Confessions",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "letter-to-you",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "Analects",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "ren",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 14,
+    "matched": "cosmopolis",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 16,
+    "matched": "Confessions",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "anicca",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "someday",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 18,
+    "matched": "need",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 16,
+    "matched": "\"Carpe diem, quam minimum credula postero\"",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 16,
+    "matched": "\"Carpe diem\"",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "amor fati",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "are",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "having",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "how",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "in",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "desire",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "Bhagavad Gita",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "wu wei",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "pleonexia",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "The wise man does not value life, nor does he despise death.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "You could leave life right now. Let that determine what you do and say and think.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "because as long as we exist, death is not here. And when it does come, we no longer exist.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "Death does not concern us,",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "Love your neighbor as yourself.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "a single soul dwelling in two bodies.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "He who knows he has enough is rich.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "Do not seek to have everything go as you wish, but wish for everything to go as it does.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "Perform your duty, but do not seek its fruit.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "Virtue is the root; wealth is the branches.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "hexis",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "Nicomachean Ethics",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "I examine my entire day and go back over what I’ve done and said, hiding nothing from myself, passing nothing by.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "The man who knows his own mind is not easily deceived by others.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "gnōthi seauton",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "mono no aware",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "aequam memento rebus in arduis servare mentem",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "carpe diem",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "eudaimonia",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 20,
+    "matched": "what am I doing right now?",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 20,
+    "matched": "who am I?",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 18,
+    "matched": "meden agan",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 18,
+    "matched": "gnōthi seauton",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 14,
+    "matched": "avidyā",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "personae",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "chose",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "letter-to-you",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "unlearn",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "letter-to-you",
+    "type": "bold-only-line",
+    "line": 2,
+    "original": "**A Letter to You**",
+    "fixed": "(removed)",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 16,
+    "matched": "This matters, even if nothing else does.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "The struggle itself toward the heights is enough to fill a man’s heart.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "To study the Way is to study the self. To study the self is to forget the self.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "You are not your body, not your possessions, not your reputation. You are your capacity to choose.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "how",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "what",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "why",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 16,
+    "matched": "The Reasons of Love",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 14,
+    "matched": "caritas",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "ren",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "ren",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "ren",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "to",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "gnothi seauton",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 14,
+    "matched": "kintsugi",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "matched": "The wound is the place where the light enters you.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "This is here. What will I do with it?",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "equanimity",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "amor fati",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "What now?",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "Why me?",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "tanha",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "The impediment to action advances action. What stands in the way becomes the way.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "use",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "bear",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "You have power over your mind—not outside events. Realize this, and you will find strength.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 14,
+    "matched": "maranasati",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "Carpe diem",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "anicca",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "You are a little soul carrying around a corpse,",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "I was nothing, I became, I am no more.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "Memento mori",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 24,
+    "matched": "Bhagavad Gita",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "matched": "Dhammapada",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "Nicomachean Ethics",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "arete",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "Mahabharata",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "Analects",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 14,
+    "matched": "What we do now echoes in eternity.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "but you are not entitled to the fruits of your actions.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "You have a right to perform your prescribed duties,",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "moksha",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "matched": "dharma",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "the gentleman works at what he does not yet know.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 6,
+    "matched": "follow our passion",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "it is not the work that enslaves us, but our judgment of it.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "human flourishing",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "happiness",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "matched": "eudaimonia",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "I am raising a cathedral.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "I am building a wall.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 2,
+    "matched": "I am cutting stone.",
+    "timestamp": "2026-04-20T04:54:53Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "hold them lightly",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "pu",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "Dhammapada",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "adiaphoron",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "li",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "hexis",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "essayer",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "in order to",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Autobiography",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "tanha",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "vita beata",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "eudaimonia",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "Essays",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "anattā",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "The Myth of Sisyphus",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "mettā",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "attachment",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "Ethics",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Social Contract",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "zoon politikon",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "kintsugi",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "how",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "why",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Man's Search for Meaning",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "amor fati",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "for",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "Agamemnon",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "pathei mathos",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "knowing",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Sein-zum-Tode",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "anicca",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "On the Shortness of Life",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "paramitas",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "only",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "junzi",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Analects",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "phronesis",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "hexis",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "Nicomachean Ethics",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "through",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "in",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Bhagavad Gita",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Analects",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "why",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "wisdom",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "depend",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "tanha",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "If only I had that, if only this would happen, if only things were different.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "practice",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "li",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "hexis",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "think",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "apatheia",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "felt",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "felt",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "did",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "eudaimonia",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "then",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Essays",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "anattā",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "about",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "Gnōthi seauton",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "letter-to-you",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Letters to a Young Poet",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "kosmos",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "discovered",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "What is this all for?",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "being",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "possess",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Metta",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "metta",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "philia",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "to",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "were",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "polis",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "politikon zōon",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Yes. All of it.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "embrace",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "amor fati",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "is",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "is",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "fear",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "anicca",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "On the Shortness of Life",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "li",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "junzi",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "become",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "aretē",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "aretē",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "aretē",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "virtue",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "what",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "how",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "The Myth of Sisyphus",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "how",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "schole",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Analects",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "Nicomachean Ethics",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Confessions",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "letter-to-you",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Analects",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "cosmopolis",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "Confessions",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "anicca",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "someday",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 18,
+    "prompt_version": "v1.5b",
+    "matched": "need",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "\"Carpe diem, quam minimum credula postero\"",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "\"Carpe diem\"",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "amor fati",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "are",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "having",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "how",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "in",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "desire",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "Bhagavad Gita",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "wu wei",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "pleonexia",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "The wise man does not value life, nor does he despise death.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "You could leave life right now. Let that determine what you do and say and think.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "because as long as we exist, death is not here. And when it does come, we no longer exist.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Death does not concern us,",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Love your neighbor as yourself.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "a single soul dwelling in two bodies.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "He who knows he has enough is rich.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Do not seek to have everything go as you wish, but wish for everything to go as it does.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Perform your duty, but do not seek its fruit.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Virtue is the root; wealth is the branches.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "hexis",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Nicomachean Ethics",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "I examine my entire day and go back over what I’ve done and said, hiding nothing from myself, passing nothing by.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "The man who knows his own mind is not easily deceived by others.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "gnōthi seauton",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "mono no aware",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "aequam memento rebus in arduis servare mentem",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "carpe diem",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "eudaimonia",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 20,
+    "prompt_version": "v1.5b",
+    "matched": "what am I doing right now?",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 20,
+    "prompt_version": "v1.5b",
+    "matched": "who am I?",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 18,
+    "prompt_version": "v1.5b",
+    "matched": "meden agan",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 18,
+    "prompt_version": "v1.5b",
+    "matched": "gnōthi seauton",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "avidyā",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "personae",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "chose",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "letter-to-you",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "unlearn",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "This matters, even if nothing else does.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "The struggle itself toward the heights is enough to fill a man’s heart.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "To study the Way is to study the self. To study the self is to forget the self.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "You are not your body, not your possessions, not your reputation. You are your capacity to choose.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "how",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "what",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "why",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "The Reasons of Love",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "caritas",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "to",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "gnothi seauton",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "kintsugi",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "The wound is the place where the light enters you.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "This is here. What will I do with it?",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "equanimity",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "amor fati",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "What now?",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Why me?",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "tanha",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "The impediment to action advances action. What stands in the way becomes the way.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "use",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "bear",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "You have power over your mind—not outside events. Realize this, and you will find strength.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "maranasati",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Carpe diem",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "anicca",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "You are a little soul carrying around a corpse,",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "I was nothing, I became, I am no more.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "Memento mori",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 24,
+    "prompt_version": "v1.5b",
+    "matched": "Bhagavad Gita",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Dhammapada",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Nicomachean Ethics",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "arete",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "Mahabharata",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "Analects",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "What we do now echoes in eternity.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "but you are not entitled to the fruits of your actions.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "You have a right to perform your prescribed duties,",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "moksha",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "dharma",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "the gentleman works at what he does not yet know.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "follow our passion",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "it is not the work that enslaves us, but our judgment of it.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "human flourishing",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "happiness",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "eudaimonia",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "I am raising a cathedral.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "I am building a wall.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "I am cutting stone.",
+    "timestamp": "2026-04-20T05:08:23Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "hold them lightly",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "pu",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "Dhammapada",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "adiaphoron",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "li",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "hexis",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "essayer",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "in order to",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Autobiography",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "tanha",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "vita beata",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "eudaimonia",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "Essays",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "anattā",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "The Myth of Sisyphus",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "mettā",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "attachment",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "Ethics",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Social Contract",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "zoon politikon",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "kintsugi",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "how",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "why",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Man's Search for Meaning",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "amor fati",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "for",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "Agamemnon",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "pathei mathos",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "knowing",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Sein-zum-Tode",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "anicca",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "On the Shortness of Life",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "paramitas",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "only",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "junzi",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Analects",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "phronesis",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "hexis",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "Nicomachean Ethics",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "through",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "in",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Bhagavad Gita",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Analects",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "why",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "wisdom",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "depend",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "tanha",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "If only I had that, if only this would happen, if only things were different.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "practice",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "li",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "hexis",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "think",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "apatheia",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "felt",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "felt",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "did",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "eudaimonia",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "then",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Essays",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "anattā",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "about",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "Gnōthi seauton",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "letter-to-you",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Letters to a Young Poet",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "kosmos",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "discovered",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "What is this all for?",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "being",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "possess",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Metta",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "metta",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "philia",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "to",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "were",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "polis",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "politikon zōon",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Yes. All of it.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "embrace",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "amor fati",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "is",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "is",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "fear",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "anicca",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "On the Shortness of Life",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "li",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "junzi",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "become",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "aretē",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "aretē",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "aretē",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "virtue",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "what",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "how",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "The Myth of Sisyphus",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "how",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "schole",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Analects",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "Nicomachean Ethics",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Confessions",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "letter-to-you",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Analects",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "society-and-place",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "cosmopolis",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "Confessions",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "anicca",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "gpt-5",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "someday",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 18,
+    "prompt_version": "v1.5b",
+    "matched": "need",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "\"Carpe diem, quam minimum credula postero\"",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "\"Carpe diem\"",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "amor fati",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "are",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "having",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "how",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "in",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "desire",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "Bhagavad Gita",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "wu wei",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "desire-and-attachment",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "pleonexia",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "The wise man does not value life, nor does he despise death.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "You could leave life right now. Let that determine what you do and say and think.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Meditations",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "because as long as we exist, death is not here. And when it does come, we no longer exist.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "Death does not concern us,",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Love your neighbor as yourself.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "a single soul dwelling in two bodies.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "He who knows he has enough is rich.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Do not seek to have everything go as you wish, but wish for everything to go as it does.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "dukkha",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Perform your duty, but do not seek its fruit.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Virtue is the root; wealth is the branches.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "hexis",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Nicomachean Ethics",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "I examine my entire day and go back over what I’ve done and said, hiding nothing from myself, passing nothing by.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "The man who knows his own mind is not easily deceived by others.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "greatest-thinkers",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "gnōthi seauton",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "mono no aware",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "aequam memento rebus in arduis servare mentem",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "carpe diem",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "happiness",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "eudaimonia",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 20,
+    "prompt_version": "v1.5b",
+    "matched": "what am I doing right now?",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 20,
+    "prompt_version": "v1.5b",
+    "matched": "who am I?",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 18,
+    "prompt_version": "v1.5b",
+    "matched": "meden agan",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 18,
+    "prompt_version": "v1.5b",
+    "matched": "gnōthi seauton",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "avidyā",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "personae",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "knowing-yourself",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "chose",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "letter-to-you",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "unlearn",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "This matters, even if nothing else does.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "The struggle itself toward the heights is enough to fill a man’s heart.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "To study the Way is to study the self. To study the self is to forget the self.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "You are not your body, not your possessions, not your reputation. You are your capacity to choose.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "how",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "what",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "meaning",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "why",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 16,
+    "prompt_version": "v1.5b",
+    "matched": "The Reasons of Love",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "caritas",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "ren",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "to",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "relationships-and-love",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "gnothi seauton",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "kintsugi",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 12,
+    "prompt_version": "v1.5b",
+    "matched": "The wound is the place where the light enters you.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "This is here. What will I do with it?",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "equanimity",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "amor fati",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "What now?",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Why me?",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "tanha",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "The impediment to action advances action. What stands in the way becomes the way.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "use",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "bear",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "suffering-and-resilience",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "You have power over your mind—not outside events. Realize this, and you will find strength.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "maranasati",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "Carpe diem",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "anicca",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "You are a little soul carrying around a corpse,",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "I was nothing, I became, I am no more.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "time-and-mortality",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "Memento mori",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 24,
+    "prompt_version": "v1.5b",
+    "matched": "Bhagavad Gita",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 10,
+    "prompt_version": "v1.5b",
+    "matched": "Dhammapada",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "Nicomachean Ethics",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "arete",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "Mahabharata",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "virtue-and-character",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "Analects",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 14,
+    "prompt_version": "v1.5b",
+    "matched": "What we do now echoes in eternity.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "but you are not entitled to the fruits of your actions.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "You have a right to perform your prescribed duties,",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "moksha",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 8,
+    "prompt_version": "v1.5b",
+    "matched": "dharma",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "the gentleman works at what he does not yet know.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 6,
+    "prompt_version": "v1.5b",
+    "matched": "follow our passion",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "it is not the work that enslaves us, but our judgment of it.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "human flourishing",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "happiness",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 4,
+    "prompt_version": "v1.5b",
+    "matched": "eudaimonia",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "I am raising a cathedral.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "I am building a wall.",
+    "timestamp": "2026-04-20T16:17:05Z"
+  },
+  {
+    "model": "mistral-large-3",
+    "chapter": "work-and-purpose",
+    "type": "inline-italic",
+    "line": 2,
+    "prompt_version": "v1.5b",
+    "matched": "I am cutting stone.",
+    "timestamp": "2026-04-20T16:17:05Z"
   }
 ]

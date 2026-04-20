@@ -8,11 +8,11 @@
 
 **Remaining tasks:**
 - Audit "compare" framing across all pages — ensure language sets the right expectation (pick a version, not diff-style comparison) (Task #6)
-- Editorial review pass: mark up meta/review-notes.md ([x]/[~]/[!]), then hand back for corrections (Task #4)
 
 ## Backlog
 <!-- Accepted but not yet active. Load this section only when planning or prioritizing. -->
-- **v1.5 prompt rethink:** revise the output instruction to specify desired markup explicitly (e.g. allow `*italic*` for emphasis, reconsider `##` heading stripping) so format.py post-processing is no longer needed or is scoped only to genuine structural violations
+- **v1.5 prompt rethink:** revise the output instruction to specify desired markup explicitly (e.g. allow `*italic*` for emphasis, reconsider `##` heading stripping) so format.py post-processing is no longer needed or is scoped only to genuine structural violations — **resolved in v1.5b**
+- **Fabricated quotes:** models occasionally invent plausible-sounding but unverifiable direct quotations. Options explored: softening the persona's quotation invitation, adding a self-policing instruction ("quote only if certain, otherwise paraphrase"). Risk of overcorrection — defer until post-generation review reveals true frequency.
 - Visual exploration of thinkers and ideas — format TBD: geographic map, timeline, or chart showing relationships/progression across traditions; would complement the chapter content as an at-a-glance reference
 - Community insights page — readers post thoughts via GitHub (issue or discussion), author curates and adds them to a page; no backend needed; format TBD
 - Methodology page: add "Decisions and trade-offs" section covering — no system prompt (transparency + verifiability), separate prompts per chapter not one session (equal treatment per theme, continuity via shared persona), frontier models only (open-source would dilute framing), single canonical run (no editorial selection between runs), temperature zero (minimise within-model variation), OpenRouter (single interface across models, adds one indirection layer noted in caveats)
@@ -23,6 +23,11 @@
 ## Done
 <!-- Completed items land here temporarily.
      The stop hook archives these to .claude/archive/YYYY-MM.md and clears this section. -->
+- v1.5a + v1.5b prompt shipped; all 48 chapters regenerated with frontier models
+- format.py extended: numbered-list, book-reference, cross-chapter-reference detection; italic_count separated from markdown_issues
+- Scorecard fixed: generated_at filter + deduplication across format runs
+- Entity list expanded (Sartre, Camus, Existentialism, etc.); unique entity count added to stats
+- meta/review-notes.md scrapped — violation tracking consolidated into format-log.json
 - Commentary v1.4 per-model notes written, fact-checked, and formatted (seven-candidate count corrected, typos fixed)
 - Sidebar nav restructured into three sections (intro / chapters / extras); Welcome page "Where to go next" nav added with all six destinations
 - Word cloud frequencies normalized by total word count per model (client-side in app.js)

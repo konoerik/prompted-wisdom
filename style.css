@@ -611,6 +611,15 @@ body {
   flex-shrink: 0;
 }
 
+.entities-unique {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+
 /* ── Model registry table ────────────────────────────────── */
 .model-table-wrap {
   overflow-x: auto;

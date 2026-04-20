@@ -26,6 +26,13 @@ Full 48-chapter run: **~$0.54** · Run `make estimate` before each regeneration 
 ## Decisions (ADRs)
 <!-- Append new ADRs with /log -->
 
+### ADR-9: Italic rendering split — format.py detects, app.js converts
+**Date:** 2026-04-20
+**Context:** v1.5b permitted `*italic*` in model output for titles, foreign terms, and light emphasis. The existing pipeline had format.py converting `*italic*` → `<em>italic</em>` and writing that HTML back into the `.md` files, with app.js un-escaping it at render time. This stored HTML fragments inside markdown files, conflating post-processing with the content storage format and making the files harder to read as plain text.
+**Decision:** format.py detects italic instances and logs them (counted as `italic_count` in frontmatter, recorded in `format-log.json`) but leaves `.md` files untouched. app.js converts `*italic*` → `<em>italic</em>` at render time via a single regex. Content files remain pure markdown throughout the pipeline.
+**Alternatives considered:** Keep format.py converting to `<em>` and storing HTML in `.md` files — rejected: conflates storage format with display concerns, files no longer readable as plain markdown. Use `marked.js` (CDN markdown renderer) in app.js — rejected: would render all markdown including disallowed elements (headings, lists, bold), undermining format.py's structural violation guard. Move conversion to a separate build step — rejected: project has no build step by design (ADR-2).
+**Consequences:** SHA-256 hashes remain valid against the stored body since format.py no longer modifies italic lines. format.py's role is cleanly split: fix structural violations, detect-but-preserve permitted elements. Any future permitted markdown element should follow the same pattern — detect and count in format.py, render in app.js. The `italic_count` frontmatter field is separate from `markdown_issues` to reflect this distinction.
+
 ### ADR-8: SHA-256 provenance — original AI output hash, never rewritten by post-processing
 **Date:** 2026-04-18
 **Context:** `format.py` was recomputing `sha256` after every formatting fix (stripping structural markdown violations, converting `*italic*` to `<em>`), replacing the hash of the original AI output with a hash of the cleaned body. This broke the provenance guarantee: the `sha256` field is meant to let readers verify exactly what the model produced, not what the site chooses to display.

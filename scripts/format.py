@@ -6,16 +6,23 @@ Fixes disallowed markdown in chapter bodies (per ADR-2):
   - Top-level headings (# heading) — removed entirely
   - Bold-only lines (**text**) — removed entirely
   - Inline bold (**text** within prose) — markers stripped, text kept
-  - List items (- item) — dash prefix stripped, line kept as prose
+  - List items (- item or 1. item) — prefix stripped, line kept as prose
   - Nested headings (### heading) — removed entirely
 
-For each modified file:
-  - Recomputes sha256 (body only, UTF-8)
-  - Recounts words
-  - Updates word_count and sha256 in frontmatter
-  - Appends a log entry to meta/format-log.json
+Flags but does not modify (counted in markdown_issues, needs manual review):
+  - book-reference — "this book/guide/chapter" in prose
+  - cross-chapter-reference — forward/backward essay references
 
-Run via: .venv/bin/python3 scripts/format.py [--dry-run] [--model SLUG]
+Detects but does not modify (counted separately as italic_count):
+  - Inline italic (*text*) — allowed per v1.5b; rendered by app.js
+
+For each modified file:
+  - Recomputes word count
+  - Updates word_count, markdown_issues, and italic_count in frontmatter
+  - Appends a log entry to meta/format-log.json
+  - sha256 is intentionally left unchanged (hash of original AI output)
+
+Run via: python3 scripts/format.py [--dry-run] [--model SLUG]
 """
 
 import argparse
@@ -33,6 +40,19 @@ FORMAT_LOG  = ROOT / "meta" / "format-log.json"
 
 # ── Violation rules ────────────────────────────────────────────────────────────
 
+BOOK_REF_RE = re.compile(
+    r'\b(this book|this chapter|these chapters)\b',
+    re.IGNORECASE,
+)
+
+CROSS_REF_RE = re.compile(
+    r'\b(as I mentioned|as mentioned earlier|in the next essay|in another essay|'
+    r'in a later essay|as we\'ll explore|as we explore|earlier in this|'
+    r'later in this|the previous essay|the next chapter|in another chapter)\b',
+    re.IGNORECASE,
+)
+
+
 def _check_violations(body_lines: "list[str]") -> "list[dict]":
     """Return a list of violations found in body_lines."""
     violations = []
@@ -46,9 +66,17 @@ def _check_violations(body_lines: "list[str]") -> "list[dict]":
             violations.append({"line": i, "type": "inline-bold", "original": stripped})
         elif re.match(r'^- .+', stripped):
             violations.append({"line": i, "type": "list-item", "original": stripped})
+        elif re.match(r'^\d+\. .+', stripped):
+            violations.append({"line": i, "type": "numbered-list", "original": stripped})
         elif re.match(r'^### .+', stripped):
             violations.append({"line": i, "type": "nested-heading", "original": stripped})
         else:
+            m = BOOK_REF_RE.search(stripped)
+            if m:
+                violations.append({"line": i, "type": "book-reference", "original": stripped, "matched": m.group(0)})
+            m = CROSS_REF_RE.search(stripped)
+            if m:
+                violations.append({"line": i, "type": "cross-chapter-reference", "original": stripped, "matched": m.group(0)})
             for m in re.finditer(r'(?<!\*)\*(?!\*)([^*\n]+)(?<!\*)\*(?!\*)', stripped):
                 violations.append({"line": i, "type": "inline-italic", "original": stripped, "matched": m.group(1)})
     return violations
@@ -63,8 +91,10 @@ def _fix_line(line: str, violation_type: str) -> Optional[str]:
         return re.sub(r'\*\*([^*]+)\*\*', r'\1', stripped)
     elif violation_type == "list-item":
         return re.sub(r'^- ', '', stripped)
-    elif violation_type == "inline-italic":
-        return re.sub(r'(?<!\*)\*(?!\*)([^*\n]+)(?<!\*)\*(?!\*)', r'<em>\1</em>', stripped)
+    elif violation_type == "numbered-list":
+        return re.sub(r'^\d+\. ', '', stripped)
+    elif violation_type in ("inline-italic", "book-reference", "cross-chapter-reference"):
+        return line  # detected and logged but not modified — needs manual review
     return line
 
 
@@ -120,19 +150,29 @@ def process_file(path: Path, dry_run: bool) -> "Optional[list[dict]]":
     text = path.read_text(encoding='utf-8')
     fm_block, body = _split_frontmatter(text)
 
+    fm_data = {}
+    for line in fm_block.splitlines():
+        if ':' in line and not line.startswith('---'):
+            k, _, v = line.partition(':')
+            fm_data[k.strip()] = v.strip().strip('"')
+    prompt_version = fm_data.get('prompt_version', '')
+
     body_lines = body.splitlines(keepends=True)
     violations = _check_violations([l.rstrip('\n') for l in body_lines])
 
-    if not violations:
+    italic_entries   = [v for v in violations if v["type"] == "inline-italic"]
+    violation_entries = [v for v in violations if v["type"] != "inline-italic"]
+
+    if not violation_entries and not italic_entries:
         if 'markdown_issues:' not in fm_block:
             new_fm = _upsert_frontmatter_field(fm_block, 'markdown_issues', 0)
+            new_fm = _upsert_frontmatter_field(new_fm, 'italic_count', 0)
             if not dry_run:
                 path.write_text(new_fm + body, encoding='utf-8')
         return None
 
     log_entries = []
     new_lines = list(body_lines)
-    italic_lines_fixed = set()
     # Process in reverse so line indices stay valid when removing lines
     for v in reversed(violations):
         i = v["line"]
@@ -140,17 +180,20 @@ def process_file(path: Path, dry_run: bool) -> "Optional[list[dict]]":
         entry = {
             "model": path.parent.name,
             "chapter": path.stem,
-            "violation": v["type"],
+            "type": v["type"],
             "line": i + 1,
+            "prompt_version": prompt_version,
         }
         if v["type"] == "inline-italic":
             entry["matched"] = v["matched"]
             log_entries.append(entry)
-            if i not in italic_lines_fixed:
-                fixed = _fix_line(original_line, v["type"])
-                ending = '\n' if body_lines[i].endswith('\n') else ''
-                new_lines[i] = fixed + ending
-                italic_lines_fixed.add(i)
+            # no fix applied — italics are allowed, detected for statistics only
+        elif v["type"] in ("book-reference", "cross-chapter-reference"):
+            entry["matched"] = v["matched"]
+            entry["original"] = original_line
+            entry["fixed"] = "(flagged — manual review)"
+            log_entries.append(entry)
+            # no fix applied — mid-sentence, needs manual correction
         else:
             fixed = _fix_line(original_line, v["type"])
             entry["original"] = original_line
@@ -175,11 +218,15 @@ def process_file(path: Path, dry_run: bool) -> "Optional[list[dict]]":
             cleaned_lines.append(line)
     new_body = ''.join(cleaned_lines)
 
+    n_violations = len([e for e in log_entries if e["type"] != "inline-italic"])
+    n_italics    = len([e for e in log_entries if e["type"] == "inline-italic"])
+
     # Update frontmatter — sha256 intentionally left unchanged (hash of original AI output)
     new_wc  = _word_count(new_body)
     new_fm  = fm_block
     new_fm  = _update_frontmatter_field(new_fm, 'word_count', new_wc)
-    new_fm  = _upsert_frontmatter_field(new_fm, 'markdown_issues', len(log_entries))
+    new_fm  = _upsert_frontmatter_field(new_fm, 'markdown_issues', n_violations)
+    new_fm  = _upsert_frontmatter_field(new_fm, 'italic_count', n_italics)
 
     if not dry_run:
         path.write_text(new_fm + new_body, encoding='utf-8')
@@ -228,19 +275,30 @@ def main():
                 all_entries.extend(entries)
                 label = "[DRY RUN] " if args.dry_run else ""
                 for e in entries:
-                    action = "would remove" if e["fixed"] == "(removed)" else "would fix"
-                    verb   = action if args.dry_run else action.replace("would ", "")
-                    print(f"  {label}{e['model']}/{e['chapter']}: {verb} {e['violation']}")
-                    print(f"    original: {e['original']}")
-                    if e["fixed"] != "(removed)":
-                        print(f"    fixed:    {e['fixed']}")
+                    if e["type"] == "inline-italic":
+                        print(f"  {label}{e['model']}/{e['chapter']}: italic — *{e['matched']}*")
+                    elif e["type"] in ("book-reference", "cross-chapter-reference"):
+                        print(f"  {label}{e['model']}/{e['chapter']}: {e['type']} — \"{e['matched']}\"")
+                        print(f"    context: {e['original'][:100]}")
+                    else:
+                        action = "would remove" if e.get("fixed") == "(removed)" else "would fix"
+                        verb   = action if args.dry_run else action.replace("would ", "")
+                        print(f"  {label}{e['model']}/{e['chapter']}: {verb} {e['type']}")
+                        print(f"    original: {e['original']}")
+                        if e.get("fixed") != "(removed)":
+                            print(f"    fixed:    {e['fixed']}")
+
+    n_violations = len([e for e in all_entries if e["type"] != "inline-italic"])
+    n_italics    = len([e for e in all_entries if e["type"] == "inline-italic"])
 
     print()
     print(f"  Files checked: {files_checked}")
     if args.dry_run:
-        print(f"  Violations found: {len(all_entries)} across {files_fixed} file(s)")
+        print(f"  Violations found: {n_violations} across {files_fixed} file(s)")
+        print(f"  Italics detected: {n_italics}")
     else:
-        print(f"  Files modified: {files_fixed} ({len(all_entries)} violation(s) fixed)")
+        print(f"  Files modified: {files_fixed} ({n_violations} violation(s) fixed)")
+        print(f"  Italics detected: {n_italics}")
         if all_entries:
             append_log(all_entries)
             print(f"  Log updated: meta/format-log.json")

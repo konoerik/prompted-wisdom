@@ -130,7 +130,7 @@
       <button class="theme-toggle" aria-label="Toggle dark mode">
         <span class="theme-toggle-icon">◑</span>
       </button>
-      <a href="#methodology" class="prompt-version-label">prompt v1.4</a>
+      <a href="#methodology" class="prompt-version-label">prompt v1.5b</a>
     </div>
   </nav>
 
@@ -596,6 +596,53 @@
         </div>
         ───────────────────────────────────────────────────────────────
         -->
+
+        <div class="commentary-version-block">
+          <h2 class="commentary-version-heading">Prompt v1.5b <span class="commentary-version-tag">experiment</span></h2>
+          <p>Replaced the blanket "no markdown" instruction with a scoped italic allowance — resolving the contradiction between asking for plain text and needing a way to express emphasis and foreign terms.</p>
+          <p>Changes:</p>
+          <ul>
+            <li>All chapter and test prompts: "no markdown" replaced with "Use italics only for titles of works, foreign terms, and occasional emphasis; no other markdown."</li>
+          </ul>
+          <p>Outcome (test chapter):</p>
+          <ul>
+            <li>All four models used italics correctly and sparingly — foreign terms (*anicca*, *panta rhei*, *mono no aware*), titles (*Meditations*, *Diamond Sutra*, *Tao Te Ching*), no decorative overuse.</li>
+            <li>No regression in tone, length, or content quality across any model.</li>
+            <li>Mistral's grandfather anecdote from v1.5a did not recur — opened with a book reference instead. Worth watching across more chapters before drawing conclusions.</li>
+          </ul>
+          <p>Outcome (full generation — 48 chapters):</p>
+          <ul>
+            <li>2 structural violations across 48 chapters: Opus added a heading in the Letter, Mistral added a bold title line. Both stripped by format.py.</li>
+            <li>214 italic instances detected total. Opus and GPT-5 used italics appropriately — foreign terms and titles. Gemini occasionally italicised single words for emphasis (*felt*, *then*, *about*) beyond the sanctioned uses.</li>
+            <li>Mistral used italics most heavily (roughly 60% of all instances) and beyond the three permitted uses — italicising full quoted sentences, single-word emphasis, and common English words (*happiness*, *desire*, *how*). Not a blocker, but a stylistic difference worth noting.</li>
+          </ul>
+          <p>Word count observations:</p>
+          <ul>
+            <li>Claude (avg 769) and Gemini (avg 789) stayed close to the ~700 word target. GPT-5 (avg 974) and Mistral (avg 1044) ran 40–50% over. The "approximately" framing in the prompt gives too much latitude for these two models. Worth tightening in a future version.</li>
+          </ul>
+          <p>Entity concentration observations:</p>
+          <ul>
+            <li>Mistral leans heavily on the Stoic tradition — Stoicism, Marcus Aurelius, Epictetus, and Seneca together account for a disproportionate share of its entity references compared to other models. This may reflect a training-data bias or a preference for the Stoic rhetorical register. Not corrected at the prompt level yet.</li>
+          </ul>
+        </div>
+
+        <div class="commentary-version-block">
+          <h2 class="commentary-version-heading">Prompt v1.5a <span class="commentary-version-tag">experiment</span></h2>
+          <p>Reframed the narrator's setting from "writing a guide" to "writing essays for a website" — removing the book/chapter cues that caused Opus to treat its output as an installment in a larger work.</p>
+          <p>Changes:</p>
+          <ul>
+            <li>Core persona para 2: "You are writing a guide" replaced with "You are writing a series of short essays to be published on a website." Added that each essay stands alone and that other AI models write independently on the same themes.</li>
+            <li>Core persona para 5: "This guide has twelve chapters" → "This series has twelve essays"; "chapter" replaced with "essay" throughout.</li>
+            <li>All chapter and test prompts: "write the chapter" → "write the essay."</li>
+          </ul>
+          <p>Outcome:</p>
+          <ul>
+            <li>Opus: book/chapter framing gone. Voice is clean, comparative, essayistic. No regression in tone or content quality.</li>
+            <li>GPT-5: no meaningful change — was not exhibiting the book framing issue. Voice and quality preserved.</li>
+            <li>Gemini: second-person opening preserved; italic markup present (anicca in italics) — expected, will be addressed in v1.5b.</li>
+            <li>Mistral: opened with a personal childhood memory (grandfather anecdote). Reads as the narrator's own recollection rather than fabricated testimony — "I" framing holds — but bears watching across more chapters.</li>
+          </ul>
+        </div>
 
         <div class="commentary-version-block">
           <h2 class="commentary-version-heading">Prompt v1.4 <span class="commentary-version-tag">full generation</span>
