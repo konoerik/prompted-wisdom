@@ -629,6 +629,10 @@
           <ul>
             <li>Mistral leans heavily on the Stoic tradition — Stoicism, Marcus Aurelius, Epictetus, and Seneca together account for a disproportionate share of its entity references compared to other models. This may reflect a training-data bias or a preference for the Stoic rhetorical register. Not corrected at the prompt level yet.</li>
           </ul>
+          <p>Quote attribution:</p>
+          <ul>
+            <li>All four frontier models are conservative with direct quotation — predominantly paraphrasing and attributing rather than quoting verbatim. No fabricated or unverifiable direct quotes detected across 48 chapters.</li>
+          </ul>
         </div>
 
         <div class="commentary-version-block">
@@ -754,13 +758,21 @@
             <li>Gemini: Overall better than GPT, with a more diverse writing style that doesn't feel scripted. A
               leaning towards Ancient Greece in many openings, Buddhism a close second. The use of "of course" and
               "as usual" makes it feel preferential — admirable as the Greeks are, this sits oddly in a world where
-              there are no absolutes.</li>
+              there are no absolutes. Two Marcus Aurelius quotes are likely paraphrases presented as direct quotes:
+              "Accept the things to which fate binds you, and love the people with whom fate brings you together,
+              but do so with all your heart" and "You have power over your mind — not outside events. Realize this,
+              and you will find strength." Both circulate widely online but do not correspond to verbatim passages
+              in the <em>Meditations</em>.</li>
             <li>Mistral: More in-depth content, sometimes spanning a couple of paragraphs on a single thinker before
               moving on, which gives it a continuity the others lack. On virtue it does an especially good job —
               nails Aristotle on the types of friendship and even provides a Buddhist analog. Some errors worth
               noting: "Confucius, in the Confucian tradition" (circular); and it placed the Stoics in the Himalayas,
               which is a clear hallucination. On the cardinal virtues, it credits the Greeks rather than the Stoics —
-              this is actually historically accurate, as Plato laid them out first and the Stoics inherited them.</li>
+              this is actually historically accurate, as Plato laid them out first and the Stoics inherited them.
+              Two direct quotes could not be verified and are likely fabricated: a Machiavelli quote ("Where the
+              willingness is great, the difficulties cannot be great") attributed to <em>The Discourses</em>, and a
+              Kierkegaard quote ("Love is not a feeling of an instant, but a history") which is plausible in style
+              but has no traceable source.</li>
           </ul>
         </div>
 
