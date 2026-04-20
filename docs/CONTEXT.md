@@ -1,8 +1,8 @@
 # Context
 <!-- Updated by /wrap at session end. Edit manually if needed. Keep it under 8 lines. -->
 
-**Current focus:** Spot-check v1.5b content before committing; audit "compare" framing (Task #6).
-**Last session:** v1.5a (framing: guide→website essays) and v1.5b (italic allowance) shipped; all 48 chapters regenerated; format.py extended with numbered-list, book-reference, cross-chapter-reference detection; scorecard fixed (generated_at filter); entity list expanded; review-notes.md scrapped in favour of format-log.json; ADR-9 recorded (italic rendering split).
-**Blocking:** Nothing. Content spot-check is user-side before commit.
-**Next action:** Complete spot-check, commit, then tackle Task #6 (compare framing audit).
+**Current focus:** Script consolidation under Makefile / admin.py (Task #1).
+**Last session:** Task #6 done ("compare" framing audited); chapter × entity heatmap added to Statistics page; manual quote scan completed (flagged fabricated quotes in retired models, frontier models clean); Commentary updated with quote attribution notes and v1.5b tagged as full generation; CLAUDE.md Makefile-first convention added.
+**Blocking:** Nothing.
+**Next action:** Execute Task #1 — wire generate-all into Makefile, dynamic prompt version, delete review.py, clean tests/ retired model dirs.
 <!-- wrapped: 2026-04-20 -->

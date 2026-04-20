@@ -7,7 +7,7 @@
 ### Phase 2: Post-generation polish
 
 **Remaining tasks:**
-- Audit "compare" framing across all pages — ensure language sets the right expectation (pick a version, not diff-style comparison) (Task #6)
+- Consolidate scripts under Makefile / admin.py — wire generate-all into Make, dynamic prompt version, delete orphaned review.py, clean tests/ retired models, add CLAUDE.md Makefile-first convention (Task #7)
 
 ## Backlog
 <!-- Accepted but not yet active. Load this section only when planning or prioritizing. -->
@@ -23,6 +23,10 @@
 ## Done
 <!-- Completed items land here temporarily.
      The stop hook archives these to .claude/archive/YYYY-MM.md and clears this section. -->
+- "Compare" framing audited across all pages — replaced "side by side" / "comparison" language with "four independent perspectives" framing
+- Chapter × entity heatmap added to Statistics page — stats.py extended with entity_by_chapter; CSS grid heatmap with model tabs
+- Manual quote scan across 48 chapters — fabricated quotes flagged in retired models (Gemini 2.0 Flash, Mistral Large); frontier models clean; Commentary updated with attribution notes; v1.5b tagged as full generation
+- CLAUDE.md Makefile-first convention added
 - v1.5a + v1.5b prompt shipped; all 48 chapters regenerated with frontier models
 - format.py extended: numbered-list, book-reference, cross-chapter-reference detection; italic_count separated from markdown_issues
 - Scorecard fixed: generated_at filter + deduplication across format runs

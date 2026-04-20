@@ -24,6 +24,11 @@ npx serve          # Node — no install needed
 python3 -m http.server  # Python alternative
 ```
 
+## Scripts and Automation
+- **Always check the Makefile first** before writing a new script or one-off command — if the operation exists, use it; if it's missing, add a target rather than reaching for a bare Python/shell script
+- The Makefile is the single entry point for all generation, formatting, and stats operations (`make regen`, `make generate`, `make format`, `make stats`, `make estimate`)
+- If a task outgrows Make (complex flags, multi-step orchestration, interactive prompts), consolidate into `scripts/admin.py` as a subcommand CLI — do not add more standalone wrapper scripts
+
 ## Behavior Rules
 - No build step — if a library isn't available via CDN, discuss before adding a bundler
 - When making a structural decision (adding a library, splitting into multiple pages), record it with `/log`
