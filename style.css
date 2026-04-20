@@ -885,6 +885,85 @@ body {
   width: 100%;
 }
 
+/* ── Heatmap ─────────────────────────────────────────────── */
+.heatmap-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.hm-tab {
+  padding: 5px 14px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-secondary);
+  border-radius: 4px;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.hm-tab--active {
+  background: var(--bg-sidebar);
+  color: var(--text);
+  border-color: var(--text-secondary);
+}
+
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: 130px repeat(12, minmax(28px, 1fr));
+  gap: 2px;
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+.hm-corner {
+  grid-column: 1;
+}
+
+.hm-head {
+  color: var(--text-secondary);
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  text-align: center;
+  padding: 2px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hm-label {
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  padding: 3px 6px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 26px;
+}
+
+.hm-cell {
+  border-radius: 3px;
+  background: var(--bg-resources);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  min-height: 26px;
+  font-variant-numeric: tabular-nums;
+  cursor: default;
+}
+
 /* ── Prompt disclosure ───────────────────────────────────── */
 .prompt-disclosure {
   margin-top: 2.5rem;

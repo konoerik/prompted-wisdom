@@ -590,6 +590,92 @@ async function initCharts() {
       }
     }
   });
+
+  renderHeatmap(stats);
+}
+
+function renderHeatmap(stats) {
+  const tabsEl = document.getElementById('heatmap-tabs');
+  const wrapEl = document.getElementById('heatmap-wrap');
+  if (!tabsEl || !wrapEl) return;
+
+  const CHAPTER_SHORT = {
+    'greatest-thinkers':        'Thinkers',
+    'knowing-yourself':         'Self',
+    'virtue-and-character':     'Virtue',
+    'relationships-and-love':   'Relationships',
+    'work-and-purpose':         'Work',
+    'desire-and-attachment':    'Desire',
+    'suffering-and-resilience': 'Suffering',
+    'time-and-mortality':       'Time',
+    'society-and-place':        'Society',
+    'happiness':                'Happiness',
+    'meaning':                  'Meaning',
+    'letter-to-you':            'Letter',
+  };
+
+  const chapters = stats.chapters.map(c => c.slug);
+
+  function hexToRgb(hex) {
+    return [
+      parseInt(hex.slice(1, 3), 16),
+      parseInt(hex.slice(3, 5), 16),
+      parseInt(hex.slice(5, 7), 16),
+    ];
+  }
+
+  function drawModel(m) {
+    const byChapter = m.entity_by_chapter || {};
+    const totals = {};
+    for (const counts of Object.values(byChapter)) {
+      for (const [entity, count] of Object.entries(counts)) {
+        totals[entity] = (totals[entity] || 0) + count;
+      }
+    }
+    const top = Object.entries(totals)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 15)
+      .map(([name]) => name);
+
+    const maxCount = Math.max(1, ...top.flatMap(entity =>
+      chapters.map(slug => byChapter[slug]?.[entity] || 0)
+    ));
+
+    const color = MODEL_COLORS[m.display] || '#94a3b8';
+    const [r, g, b] = hexToRgb(color);
+
+    const headerRow = `<div class="hm-corner"></div>` + chapters.map(slug =>
+      `<div class="hm-head">${escapeHtml(CHAPTER_SHORT[slug] || slug)}</div>`
+    ).join('');
+
+    const dataRows = top.map(entity => {
+      const cells = chapters.map(slug => {
+        const count = byChapter[slug]?.[entity] || 0;
+        const alpha = count === 0 ? 0 : 0.15 + (count / maxCount) * 0.75;
+        const bg = count > 0 ? `background:rgba(${r},${g},${b},${alpha})` : '';
+        const tip = count > 0 ? `${entity} · ${CHAPTER_SHORT[slug] || slug}: ${count}` : '';
+        return `<div class="hm-cell" style="${bg}" title="${escapeHtml(tip)}">${count > 0 ? count : ''}</div>`;
+      }).join('');
+      return `<div class="hm-label">${escapeHtml(entity)}</div>${cells}`;
+    }).join('');
+
+    wrapEl.innerHTML = `<div class="heatmap-grid">${headerRow}${dataRows}</div>`;
+  }
+
+  tabsEl.innerHTML = stats.by_model.map((m, i) =>
+    `<button class="hm-tab${i === 0 ? ' hm-tab--active' : ''}" data-slug="${escapeHtml(m.slug)}">${escapeHtml(m.display)}</button>`
+  ).join('');
+
+  tabsEl.addEventListener('click', e => {
+    const btn = e.target.closest('.hm-tab');
+    if (!btn) return;
+    tabsEl.querySelectorAll('.hm-tab').forEach(b => b.classList.remove('hm-tab--active'));
+    btn.classList.add('hm-tab--active');
+    const m = stats.by_model.find(x => x.slug === btn.dataset.slug);
+    if (m) drawModel(m);
+  });
+
+  if (stats.by_model[0]) drawModel(stats.by_model[0]);
 }
 
 // ── Helpers ──────────────────────────────────────────────────────────

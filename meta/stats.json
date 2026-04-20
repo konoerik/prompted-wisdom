@@ -137,6 +137,124 @@
           "count": 1
         }
       ],
+      "entity_by_chapter": {
+        "greatest-thinkers": {
+          "Socrates": 3,
+          "Aristotle": 1,
+          "Epictetus": 2,
+          "Marcus Aurelius": 2,
+          "Confucius": 2,
+          "Buddha": 4,
+          "Montaigne": 3,
+          "Kant": 1,
+          "Stoicism": 4,
+          "Buddhism": 2,
+          "Confucianism": 1
+        },
+        "knowing-yourself": {
+          "Socrates": 3,
+          "Epictetus": 1,
+          "Marcus Aurelius": 2,
+          "Confucius": 1,
+          "Montaigne": 1,
+          "Stoicism": 3,
+          "Buddhism": 2
+        },
+        "virtue-and-character": {
+          "Aristotle": 4,
+          "Epictetus": 1,
+          "Marcus Aurelius": 2,
+          "Confucius": 4,
+          "Stoicism": 2,
+          "Buddhism": 1
+        },
+        "relationships-and-love": {
+          "Aristotle": 3,
+          "Epictetus": 1,
+          "Confucius": 2,
+          "Montaigne": 1,
+          "Buddhism": 2
+        },
+        "work-and-purpose": {
+          "Epictetus": 1,
+          "Marcus Aurelius": 2,
+          "Confucius": 1,
+          "Montaigne": 1,
+          "Simone Weil": 1,
+          "Stoicism": 2,
+          "Buddhism": 2,
+          "Confucianism": 1
+        },
+        "desire-and-attachment": {
+          "Aristotle": 1,
+          "Seneca": 1,
+          "Epictetus": 1,
+          "Marcus Aurelius": 2,
+          "Laozi": 1,
+          "Buddha": 4,
+          "Stoicism": 2,
+          "Buddhism": 2,
+          "Taoism": 1
+        },
+        "suffering-and-resilience": {
+          "Seneca": 1,
+          "Epictetus": 1,
+          "Buddha": 2,
+          "Nietzsche": 2,
+          "Frankl": 2,
+          "Stoicism": 3,
+          "Buddhism": 2
+        },
+        "time-and-mortality": {
+          "Socrates": 1,
+          "Plato": 1,
+          "Cicero": 1,
+          "Seneca": 2,
+          "Marcus Aurelius": 2,
+          "Montaigne": 3,
+          "Heidegger": 1,
+          "Stoicism": 2,
+          "Buddhism": 4
+        },
+        "society-and-place": {
+          "Aristotle": 1,
+          "Epictetus": 1,
+          "Marcus Aurelius": 2,
+          "Confucius": 1,
+          "Laozi": 2,
+          "Zhuangzi": 2,
+          "Rousseau": 2,
+          "Stoicism": 2,
+          "Confucianism": 1,
+          "Taoism": 1
+        },
+        "happiness": {
+          "Aristotle": 1,
+          "Seneca": 1,
+          "Epictetus": 1,
+          "Confucius": 1,
+          "Zhuangzi": 1,
+          "Mill": 1,
+          "Stoicism": 1,
+          "Buddhism": 1,
+          "Taoism": 1
+        },
+        "meaning": {
+          "Confucius": 1,
+          "Nietzsche": 1,
+          "Kierkegaard": 1,
+          "Sartre": 1,
+          "Camus": 2,
+          "Frankl": 1,
+          "Existentialism": 1
+        },
+        "letter-to-you": {
+          "Aristotle": 1,
+          "Buddha": 2,
+          "Montaigne": 1,
+          "Stoicism": 1
+        }
+      },
       "word_freq": [
         {
           "word": "life",
@@ -571,6 +689,123 @@
           "count": 1
         }
       ],
+      "entity_by_chapter": {
+        "greatest-thinkers": {
+          "Socrates": 2,
+          "Aristotle": 2,
+          "Epictetus": 1,
+          "Marcus Aurelius": 2,
+          "Confucius": 3,
+          "Buddha": 4,
+          "Augustine": 1,
+          "Montaigne": 1,
+          "Spinoza": 1,
+          "Rousseau": 1,
+          "Schopenhauer": 1,
+          "Simone Weil": 1,
+          "Stoicism": 2,
+          "Buddhism": 4
+        },
+        "knowing-yourself": {
+          "Socrates": 2,
+          "Aristotle": 1,
+          "Confucius": 1,
+          "Augustine": 1,
+          "Nietzsche": 1,
+          "Buddhism": 2,
+          "Confucianism": 1
+        },
+        "virtue-and-character": {
+          "Aristotle": 2,
+          "Epictetus": 1,
+          "Confucius": 1,
+          "Stoicism": 2,
+          "Buddhism": 2,
+          "Confucianism": 1
+        },
+        "relationships-and-love": {
+          "Aristotle": 2,
+          "Simone Weil": 1,
+          "Buddhism": 1,
+          "Confucianism": 2
+        },
+        "work-and-purpose": {
+          "Aristotle": 1,
+          "Marcus Aurelius": 2,
+          "Buddha": 2,
+          "Simone Weil": 1,
+          "Stoicism": 1,
+          "Buddhism": 1,
+          "Confucianism": 1
+        },
+        "desire-and-attachment": {
+          "Aristotle": 2,
+          "Epictetus": 1,
+          "Stoicism": 2,
+          "Buddhism": 2,
+          "Confucianism": 1
+        },
+        "suffering-and-resilience": {
+          "Epictetus": 1,
+          "Marcus Aurelius": 2,
+          "Buddha": 2,
+          "Nietzsche": 1,
+          "Simone Weil": 1,
+          "Stoicism": 2,
+          "Buddhism": 1,
+          "Confucianism": 1
+        },
+        "time-and-mortality": {
+          "Seneca": 1,
+          "Marcus Aurelius": 2,
+          "Augustine": 1,
+          "Montaigne": 1,
+          "Stoicism": 2,
+          "Buddhism": 2,
+          "Confucianism": 1
+        },
+        "society-and-place": {
+          "Socrates": 1,
+          "Aristotle": 1,
+          "Epictetus": 1,
+          "Marcus Aurelius": 2,
+          "Confucius": 1,
+          "Buddha": 2,
+          "Rousseau": 1,
+          "Mill": 1,
+          "Stoicism": 2,
+          "Confucianism": 2
+        },
+        "happiness": {
+          "Aristotle": 3,
+          "Epictetus": 1,
+          "Confucius": 1,
+          "Montaigne": 1,
+          "Pascal": 1,
+          "Schopenhauer": 1,
+          "Stoicism": 3,
+          "Buddhism": 2,
+          "Confucianism": 1
+        },
+        "meaning": {
+          "Plato": 1,
+          "Aristotle": 1,
+          "Marcus Aurelius": 2,
+          "Confucius": 1,
+          "Mencius": 1,
+          "Augustine": 1,
+          "Pascal": 1,
+          "Schopenhauer": 1,
+          "Nietzsche": 1,
+          "Camus": 1,
+          "Stoicism": 1,
+          "Buddhism": 2,
+          "Confucianism": 1
+        },
+        "letter-to-you": {
+          "Epictetus": 1
+        }
+      },
       "word_freq": [
         {
           "word": "life",
@@ -997,6 +1232,105 @@
           "count": 1
         }
       ],
+      "entity_by_chapter": {
+        "greatest-thinkers": {
+          "Socrates": 1,
+          "Plato": 2,
+          "Aristotle": 1,
+          "Epictetus": 1,
+          "Marcus Aurelius": 4,
+          "Confucius": 1,
+          "Buddha": 6,
+          "Stoicism": 3,
+          "Confucianism": 1
+        },
+        "knowing-yourself": {
+          "Socrates": 1,
+          "Marcus Aurelius": 2,
+          "Buddha": 2,
+          "Montaigne": 2,
+          "Stoicism": 2,
+          "Buddhism": 2
+        },
+        "virtue-and-character": {
+          "Aristotle": 2,
+          "Epictetus": 1,
+          "Marcus Aurelius": 4,
+          "Confucius": 1,
+          "Stoicism": 1,
+          "Confucianism": 1
+        },
+        "relationships-and-love": {
+          "Aristotle": 2,
+          "Epictetus": 1,
+          "Simone Weil": 1,
+          "Stoicism": 3,
+          "Buddhism": 3
+        },
+        "work-and-purpose": {
+          "Seneca": 1,
+          "Confucius": 1,
+          "Buddha": 2,
+          "Camus": 2,
+          "Stoicism": 1,
+          "Buddhism": 1,
+          "Confucianism": 2,
+          "Existentialism": 1
+        },
+        "desire-and-attachment": {
+          "Epicurus": 2,
+          "Epictetus": 2,
+          "Buddha": 4,
+          "Stoicism": 2
+        },
+        "suffering-and-resilience": {
+          "Epictetus": 1,
+          "Marcus Aurelius": 2,
+          "Nietzsche": 2,
+          "Camus": 4,
+          "Stoicism": 2,
+          "Buddhism": 2
+        },
+        "time-and-mortality": {
+          "Epicurus": 1,
+          "Seneca": 1,
+          "Marcus Aurelius": 2,
+          "Montaigne": 1,
+          "Stoicism": 2,
+          "Buddhism": 2
+        },
+        "society-and-place": {
+          "Aristotle": 1,
+          "Marcus Aurelius": 2,
+          "Confucius": 1,
+          "Stoicism": 1,
+          "Existentialism": 1
+        },
+        "happiness": {
+          "Plato": 1,
+          "Aristotle": 2,
+          "Marcus Aurelius": 2,
+          "Buddha": 2,
+          "Mill": 2,
+          "Stoicism": 3,
+          "Buddhism": 1
+        },
+        "meaning": {
+          "Marcus Aurelius": 2,
+          "Sartre": 1,
+          "Camus": 3,
+          "Frankl": 4,
+          "Stoicism": 1,
+          "Buddhism": 1,
+          "Confucianism": 1,
+          "Existentialism": 1
+        },
+        "letter-to-you": {
+          "Plato": 1,
+          "Marcus Aurelius": 2,
+          "Buddha": 2
+        }
+      },
       "word_freq": [
         {
           "word": "life",
@@ -1435,6 +1769,113 @@
           "count": 1
         }
       ],
+      "entity_by_chapter": {
+        "greatest-thinkers": {
+          "Aristotle": 2,
+          "Epicurus": 2,
+          "Seneca": 1,
+          "Epictetus": 1,
+          "Marcus Aurelius": 2,
+          "Confucius": 1,
+          "Buddha": 2,
+          "Stoicism": 3,
+          "Confucianism": 2,
+          "Taoism": 2
+        },
+        "knowing-yourself": {
+          "Socrates": 5,
+          "Marcus Aurelius": 2,
+          "Montaigne": 2,
+          "Stoicism": 2,
+          "Buddhism": 2,
+          "Confucianism": 1
+        },
+        "virtue-and-character": {
+          "Aristotle": 3,
+          "Epictetus": 2,
+          "Marcus Aurelius": 2,
+          "Confucius": 4,
+          "Buddha": 2,
+          "Stoicism": 4,
+          "Buddhism": 1
+        },
+        "relationships-and-love": {
+          "Seneca": 1,
+          "Epictetus": 3,
+          "Confucius": 2,
+          "Buddha": 4,
+          "Thich Nhat Hanh": 2,
+          "Simone Weil": 1,
+          "Stoicism": 2,
+          "Buddhism": 1,
+          "Confucianism": 1
+        },
+        "work-and-purpose": {
+          "Aristotle": 1,
+          "Epictetus": 1,
+          "Marcus Aurelius": 2,
+          "Stoicism": 2,
+          "Buddhism": 1,
+          "Confucianism": 2
+        },
+        "desire-and-attachment": {
+          "Epictetus": 1,
+          "Buddha": 4,
+          "Stoicism": 3,
+          "Buddhism": 1,
+          "Taoism": 1
+        },
+        "suffering-and-resilience": {
+          "Marcus Aurelius": 2,
+          "Buddha": 2,
+          "Rumi": 1,
+          "Stoicism": 4,
+          "Buddhism": 4
+        },
+        "time-and-mortality": {
+          "Epictetus": 1,
+          "Marcus Aurelius": 2,
+          "Dogen": 1,
+          "Stoicism": 2,
+          "Buddhism": 2,
+          "Zen": 1
+        },
+        "society-and-place": {
+          "Diogenes": 1,
+          "Epictetus": 1,
+          "Marcus Aurelius": 2,
+          "Confucius": 3,
+          "Buddha": 2,
+          "Thich Nhat Hanh": 2,
+          "Hegel": 3,
+          "Stoicism": 7,
+          "Buddhism": 3,
+          "Confucianism": 2
+        },
+        "happiness": {
+          "Aristotle": 2,
+          "Epictetus": 1,
+          "Stoicism": 2,
+          "Buddhism": 2
+        },
+        "meaning": {
+          "Epictetus": 1,
+          "Confucius": 2,
+          "Buddha": 2,
+          "Dogen": 1,
+          "Sartre": 1,
+          "Camus": 1,
+          "Stoicism": 3,
+          "Buddhism": 2,
+          "Existentialism": 1,
+          "Zen": 1
+        },
+        "letter-to-you": {
+          "Marcus Aurelius": 2,
+          "Buddha": 2,
+          "Montaigne": 1
+        }
+      },
       "word_freq": [
         {
           "word": "way",

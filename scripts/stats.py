@@ -181,10 +181,11 @@ def main():
     chapters   = []
 
     for m in models:
-        model_words   = []
-        model_tokens  = 0
-        entity_totals = {}
-        model_text    = ""
+        model_words        = []
+        model_tokens       = 0
+        entity_totals      = {}
+        entity_by_chapter  = {}
+        model_text         = ""
 
         for slug, _ in CHAPTERS:
             path = CONTENT_DIR / m["slug"] / f"{slug}.md"
@@ -202,7 +203,9 @@ def main():
             total_words          += wc
             total_files          += 1
             model_text           += " " + body
-            for entity, count in count_entities(body).items():
+            ch_entities = count_entities(body)
+            entity_by_chapter[slug] = ch_entities
+            for entity, count in ch_entities.items():
                 entity_totals[entity] = entity_totals.get(entity, 0) + count
 
         top_entities = sorted(entity_totals.items(), key=lambda x: x[1], reverse=True)
@@ -215,8 +218,9 @@ def main():
             "via":         m.get("via", ""),
             "avg_words":   round(sum(present) / len(present)) if present else 0,
             "word_counts": model_words,
-            "top_entities": [{"name": name, "count": count} for name, count in top_entities],
-            "word_freq":   extract_word_freq(model_text),
+            "top_entities":      [{"name": name, "count": count} for name, count in top_entities],
+            "entity_by_chapter": entity_by_chapter,
+            "word_freq":         extract_word_freq(model_text),
         })
 
     for i, (slug, label) in enumerate(CHAPTERS):
