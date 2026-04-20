@@ -1,6 +1,6 @@
 # Prompted Wisdom
 
-A small experiment in ancient wisdom and modern AI. The same carefully constructed prompt is given to several leading language models — under identical conditions — and each one writes a concise guide across ten themes drawn from 2,500 years of human thought. The results are presented side by side for comparison.
+A small experiment in ancient wisdom and modern AI. The same carefully constructed prompt is given to several leading language models — under identical conditions — and each one writes a concise guide across ten themes drawn from 2,500 years of human thought. The results are presented together — four independent takes on the same questions.
 
 ## Prompt versions and git tags
 
