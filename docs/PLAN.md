@@ -23,6 +23,7 @@
 ## Done
 <!-- Completed items land here temporarily.
      The stop hook archives these to .claude/archive/YYYY-MM.md and clears this section. -->
+- GoatCounter analytics added — script tag in index.html, ADR-10 recorded
 - "Compare" framing audited across all pages — replaced "side by side" / "comparison" language with "four independent perspectives" framing
 - Chapter × entity heatmap added to Statistics page — stats.py extended with entity_by_chapter; CSS grid heatmap with model tabs
 - Manual quote scan across 48 chapters — fabricated quotes flagged in retired models (Gemini 2.0 Flash, Mistral Large); frontier models clean; Commentary updated with attribution notes; v1.5b tagged as full generation

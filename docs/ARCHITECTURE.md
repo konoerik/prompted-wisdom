@@ -26,6 +26,13 @@ Full 48-chapter run: **~$0.54** · Run `make estimate` before each regeneration 
 ## Decisions (ADRs)
 <!-- Append new ADRs with /log -->
 
+### ADR-10: GoatCounter for analytics
+**Date:** 2026-05-13
+**Context:** The site is static, hosted on GitHub Pages with no backend. Needed lightweight, privacy-friendly page-view analytics without introducing a build step, a cookie consent banner, or a heavy third-party script.
+**Decision:** Use [GoatCounter](https://www.goatcounter.com/) — a single async `<script>` tag in `<head>`, no cookies, GDPR-compliant by default, free tier covers the traffic volume expected here. Tracks page views automatically including hash-based SPA navigation via its built-in `hashchange` listener.
+**Alternatives considered:** Google Analytics — rejected: cookie consent overhead, heavyweight, privacy-invasive. Plausible / Fathom — similar privacy story but paid. Self-hosted Umami — rejected: requires a server. No analytics — rejected: some baseline traffic signal is useful for understanding reach without adding friction.
+**Consequences:** One async script tag; zero impact on load path. Dashboard available at konoerik.goatcounter.com. No changes needed to app.js — GoatCounter handles SPA routing automatically.
+
 ### ADR-9: Italic rendering split — format.py detects, app.js converts
 **Date:** 2026-04-20
 **Context:** v1.5b permitted `*italic*` in model output for titles, foreign terms, and light emphasis. The existing pipeline had format.py converting `*italic*` → `<em>italic</em>` and writing that HTML back into the `.md` files, with app.js un-escaping it at render time. This stored HTML fragments inside markdown files, conflating post-processing with the content storage format and making the files harder to read as plain text.
